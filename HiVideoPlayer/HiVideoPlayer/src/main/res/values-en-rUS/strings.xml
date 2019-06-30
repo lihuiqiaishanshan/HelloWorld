@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string name="app_name">VideoPlayer</string>
+
+       <string name="confirm">Confirm</string>
+       <string name="cancle">Cancel</string>
+       <string name="del_success">Succeed</string>
+       <string name="del_all">Are you sure delete all marks ?</string>
+       <string name="nodesc">no description</string>
+
+       <!-- 播放界面按钮 -->
+       <string name="choicePlayMode">Please select the playback mode</string>
+       <string name="video_control_menu">player menu</string>
+       <string name="stereoMode_change">Mode change</string>
+       <string name="no_set_tag">you have not set a bookmark</string>
+       <string name="now_video_playmode">currently playing mode:</string>
+       <string name="not">No</string>
+       <string name="yes">Yes</string>
+       <string name="continue_playvideo">whether to continue play the video?</string>
+       <string name="save_success">saved successfully</string>
+       <string name="video_tag">Video Bookmarks</string>
+       <string name="video_no_set_tag">This video has not set a bookmark</string>
+       <string name="tag_exist">label already exists!</string>
+       <string name="open">Open</string>
+       <string name="delete">Delete</string>
+       <string name="jumpto">Jump to</string>
+       <string name="willjumpto">Will jump to</string>
+       <string name="toplay">to play!</string>
+       <string name="subsetTitle">Sub Settings</string>
+       <string name="audiosetTitle">Audio Settings</string>
+       <string name="showsub">Show Subtitle</string>
+       <string name="closesub">Close Subtitle</string>
+       <string name="soundTrack">Audio track</string>
+       <string name="nosubTitle">No Subtitles</string>
+       <string name="noTrack">No Audio Track</string>
+       <string name="time">Time adjustment</string>
+       <string name="position">Subtitles position</string>
+       <string name="size">Font size</string>
+       <string name="space">Character spacing</string>
+       <string name="line_space">The line spacing</string>
+       <string name="volume_ctl">Volume Control</string>
+
+       <!-- add by 2011-8-4 weiyunkun -->
+       <string name="subexttitle">Ex Subtitle</string>
+       <string name="subintitle">In Subtitle</string>
+       <string name="wrongsub">Errors in the subtitle file</string>
+       <string name="nototaltime">"--:--:--"</string>
+       <string name="close">Close</string>
+       <string name="nofile">the file is not exist!</string>
+       <string name="isloading">data have not prepare success,please waiting!</string>
+       <string name="havenofile">Have no standard media file!</string>
+       <!-- bdplayer string -->
+       <string name="dialogTitleLoading">Loading</string>
+       <string name="dialogMessageContinue">Continue Playing?</string>
+       <string name="dialogTitleCheckDiscInfo">Check Disc Info</string>
+       <string name="dialogTitleCheckIntent">Check Intent</string>
+       <string name="dialogTitleCheckPath">Check Path</string>
+       <string name="dialogMessageLoading">Please wait</string>
+       <string name="dialogExitToast">Press Return key again to exit VideoPlayer</string>
+       <string name="dialogMessageCheckDiscInfo">This is not a BD ROM</string>
+       <string name="dialogMessageCheckIntent">Do not support direct opening HiBDPlayer</string>
+       <string name="dialogMessageCheckPath">BD Category not found</string>
+       <string name="dialogTitleContinue">Memory</string>
+       <string name="dialogTitleTitleSelect">Select Title - Total&#160;%d</string>
+       <string name="dialogTitleChapterSelect">Select Chapter - Total&#160;%d</string>
+       <string name="dialogGetDefaultTitleId">Player is reading the Title ID...</string>
+       <string name="dialogGetDefaultPlaylist">Now reading the Play List...</string>
+       <!-- navigation button -->
+       <string name="navigationButtonPlayMovie">Play Movie</string>
+       <string name="navigationButtonSelectSection">Select Section</string>
+       <!-- option item -->
+       <string name="listItemTitle">Title&#160;%1$s&#160;&#160;%2$s</string>
+       <string name="listItemChapter">Chapter&#160;%1$s&#160;&#160;%2$s</string>
+       <string name="toastNetworkInterrupt">Network Interrupt</string>
+       <string name="toastDeviceRemoved">Device Removed</string>
+       <string name="toastAudio">Audio&#160;%s</string>
+       <string name="toastSubtitle">Subtitle&#160;%s</string>
+       <string name="dialogTitleAudioSelect">Select Audio Track - Total&#160;%d</string>
+       <string name="dialogTitleSpeedSelect">Select Speed</string>
+       <string name="dialogTitleSubtitleSelect">Select Subtitle - Total&#160;%d</string>
+       <string name="dialogTitleAudioChannelSelect">Select Audio Channel - Total&#160;%d</string>
+       <string name="switchFailed">Switch Failed！</string>
+       <string name="mediaInfoUnknown">Unknown</string>
+       <string name="AdvancedOptions">AdvancedOptions</string>
+       <string name="DolbyTrack">Audio:</string>
+       <string name="DolbyMono">Channel Config:</string>
+       <string name="DolbyVolume">Volume:</string>
+       <string name="DolbyChannel">Out Channel:</string>
+       <string name="DolbyVideo">Video:</string>
+       <string name="DolbyRangeInfo">Dynamic Range</string>
+       <string name="DolbyRangeInfoToast">Please restart player after setting!</string>
+	   <string name="searchMessageLoading">Search Subtitle from https://www.shooter.cn/,Please Wait.</string>
+       <string name="searchSubtitleFailed">Sorry, No Subtitles.</string>
+       <string name="downloadMessageLoading">Download Subtitle from https://www.shooter.cn/,Please Wait.</string>
+       <string name="downloadSubtitleFailed">Download Subtitles Failed.</string>
+
+
+       <string name="NoNetworkAccess">Network is not aviliable! Please check your network.</string>
+       <string name="videolist">Video List</string>
+       <string name="multiple">Mutiple Play</string>
+       <string name="multiple_dialog_show">Whether to exit multiple play ?</string>
+       <string name="multiple_not_support">sorry,this player does not support multi-window playback !</string>
+       <string name="no_playlist_show">There is no playlist </string>
+
+       <string name="subtitleOffToast">Please turn on the subtitle switch !</string>
+
+       <string name="return_continue_playvideo">Whether does continue played?</string>
+
+       <string name="toastNetworkTimeout">Network Connect Time Out</string>
+       <string name="toastNetworkConnectFail">Network Connect Failed</string>
+       <string name="toastNetworkResourceNotFound">Can not Find the Resource from Network</string>
+       <string name="toastNetworkDisconnect">Network Disconnect</string>
+       <string name="toastNetworkUnknowError">Network Unknown Error</string>
+
+
+       <string name="scalenosurport">already enter scale mode,please send [return] key or [mouse right] key to exit scale mode!! !</string>
+       <string name="mouseScaleTip">please slide the mouse to set the area you want to enlarge.</string>
+       <string name="mouseScaleExit">exit 8k mouse mode.</string>
+       <string name="mouseScaleOnlyOneTip">only support one zoom!</string>
+
+
+       <string name="multiListNull">Multi-window playback did not get to the playlist ! Please play the video again.</string>
+       <string name="notsupportmode">The file does not support this mode</string>
+
+       <string name="dolby">Dolby</string>
+       <string name="dolby_plus">Dolby Plus</string>
+       <string name="valid_operation">Current operation is not supported</string>
+
+</resources>

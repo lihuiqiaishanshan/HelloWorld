@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- app array -->
+    <!-- app management -->
+    <string-array name="app_management">
+        <item>Unistall</item>
+        <item>Force Stop</item>
+        <item>Clear Defaults</item>
+        <item>Clear Data</item>
+    </string-array>
+    <!-- setting -->
+    <string-array name="picture_mode_string">
+        <item>Mode</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Hue</item>
+        <item>Saturation</item>
+        <item>Black Light</item>
+    </string-array>
+    <string-array name="sound_mode_string">
+        <item>Sound</item>
+        <item>Volume</item>
+        <item>Balance</item>
+    </string-array>
+    <string-array name="senior_mode_string">
+        <item>Language</item>
+        <item>Power Music</item>
+        <item>Music No.</item>
+    </string-array>
+    <!-- >System Info< -->
+    <string-array name="system_info">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>Memory</item>
+        <item>Device Space</item>
+        <item>Android Version</item>
+        <item>Software Version</item>
+    </string-array>
+    <string-array name="system_info_value">
+        <item> Core</item>
+        <item>Android </item>
+    </string-array>
+    <!-- Net State -->
+    <string-array name="net_state">
+        <item>Ethernet:</item>
+        <item>PPPOE:</item>
+        <item>WiFi:</item>
+        <item>IP:</item>
+        <item>Netmask:</item>
+        <item>Gateway:</item>
+        <item>DNS:</item>
+    </string-array>
+    <!-- System Reset -->
+    <string-array name="factory_reset">
+        <item>Restore User Setting</item>
+        <item>Reset Default</item>
+    </string-array>
+    <!-- 本地升级 -->
+    <string-array name="mount_type">
+        <item>USB</item>
+        <item>SATA</item>
+        <item>CARD</item>
+        <item>UNKOWN</item>
+    </string-array>
+    <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <!-- Wi-Fi IP settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. [CHAR LIMIT=25] -->
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </string-array>
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change.[CHAR LIMIT=25] -->
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>Manual</item>
+        <item>Proxy Auto-Config</item>
+    </string-array>
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning\u2026</item>
+        <item>Connecting\u2026</item>
+        <item>Authenticating\u2026</item>
+        <item>Obtaining IP address\u2026</item>
+        <item>Connected</item>
+        <item>Suspended</item>
+        <item>Disconnecting\u2026</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+    </string-array>
+    <!-- Match this with drawable.wifi_signal. --> <skip />
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+
+    <!-- Match this with the constants in WifiDialog. --> <skip />
+    <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <string-array name="wifi_peap_phase2_entries">
+        <item>None</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+</resources>

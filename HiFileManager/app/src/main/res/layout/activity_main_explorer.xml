@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/elv_group"
+    android:background="@drawable/listview_bg"
+    android:layout_marginLeft="@dimen/main_explorer_expandlistview_margin_left"
+    android:layout_marginRight="@dimen/main_explorer_expandlistview_margin_right"
+    android:layout_marginBottom="@dimen/main_explorer_expandlistview_margin_bottom"
+    android:layout_marginTop="@dimen/main_explorer_expandlistview_margin_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:fadingEdge="none"
+    android:listSelector="@drawable/listview_item_selector"/>

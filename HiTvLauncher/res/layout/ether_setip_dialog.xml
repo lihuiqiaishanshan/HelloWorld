@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:background="@drawable/setting_pop_bg" >
+
+        <TextView
+            android:id="@+id/dialog_ip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/ip"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dialog_ip_input"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/dialog_ip_text"
+            android:background="@drawable/setting_ip_selector"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/dialog_subnet_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dialog_ip_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:focusable="false"
+            android:text="@string/subnet"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dialog_subnet_input"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/dialog_ip_input"
+            android:layout_below="@+id/dialog_ip_input"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/setting_ip_selector"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/dialog_defaultGateway_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dialog_subnet_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="23dp"
+            android:focusable="false"
+            android:text="@string/gateway"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dialog_defaultGateway_input"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/dialog_subnet_input"
+            android:layout_below="@+id/dialog_subnet_input"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/setting_ip_selector"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dialog_defaultGateway_text"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dns"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dialog_dns_input"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/dialog_defaultGateway_input"
+            android:layout_below="@+id/dialog_defaultGateway_input"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/setting_ip_selector"
+            android:gravity="center"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/modify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="165dp"
+            android:background="@drawable/setting_btn_ok"
+            android:text="@string/modify"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

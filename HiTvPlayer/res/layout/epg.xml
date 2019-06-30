@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llay_epg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_setting_view_bg"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlay_epg_guide_time"
+        android:layout_width="1145dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="49dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_epg_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/epg_guide"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="32sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_epg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dc_epg_time"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/string_null"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <com.hisilicon.tvui.view.DTVDigitalClock
+            android:id="@+id/dc_epg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_epg_channel_event"
+        android:layout_width="fill_parent"
+        android:layout_height="535dp"
+        android:layout_marginLeft="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llay_epg_channellist"
+            android:layout_width="280dp"
+            android:layout_height="518dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llay_epg_group"
+                android:background="@drawable/epg_channelgroup_title"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_epg_group_left"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:contentDescription="@string/string_null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/common_arrow01" />
+
+                <TextView
+                    android:id="@+id/tv_epg_channelgroup"
+                    android:layout_width="224dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_epg_group_right"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:contentDescription="@string/string_null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/common_arrow02" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_epg_channelList"
+                android:layout_width="fill_parent"
+                android:layout_height="452dp"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@drawable/epg_list_separate"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:footerDividersEnabled="false"
+                android:gravity="center"
+                android:headerDividersEnabled="false"
+                android:listSelector="@drawable/epg_list_selector"
+                android:scrollingCache="false"
+                android:visibility="visible" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_eventlist_tip"
+            android:layout_width="912dp"
+            android:layout_height="528dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/epg_eventlist_view_backgroud"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llay_epg_eventlist"
+                android:layout_width="376dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llay_epg_weekday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="3dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_epg_weekday_left"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:contentDescription="@string/string_null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/common_arrow01" />
+
+                    <TextView
+                        android:id="@+id/tv_epg_weekday"
+                        android:layout_width="320dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/string_null"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_epg_weekday_right"
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:contentDescription="@string/string_null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/common_arrow02" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_epg_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_event_none"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/lv_epg_eventlist"
+                    android:layout_width="374dp"
+                    android:layout_height="452dp"
+                    android:layout_marginRight="2dp"
+                    android:cacheColorHint="#00000000"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@drawable/epg_list_separate"
+                    android:dividerHeight="1dp"
+                    android:fadingEdge="none"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:footerDividersEnabled="false"
+                    android:gravity="center"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@drawable/epg_list_selector"
+                    android:scrollingCache="false"
+                    android:visibility="visible" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llay_epg_play_event"
+                android:layout_width="514dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="9dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/flay_epg_play"
+                    android:layout_width="514dp"
+                    android:layout_height="282dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center" >
+
+                    <SurfaceView
+                        android:id="@+id/sv_epg_play"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/iv_epg_radio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@string/string_null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:src="@drawable/common_radio_bg"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_epg_lock_nosingal_ca_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#ff000000"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/string_null"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_epg_presetn_follow"
+                    android:layout_width="508dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="15dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llay_epg_channel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" >
+
+                        <TextView
+                            android:id="@+id/tv_epg_channel_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_epg_channel_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="8dp"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|right"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_epg_channel_separate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="@string/string_null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/epg_list_separate"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlay_epg_fav_lock"
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" >
+
+                        <ImageView
+                            android:id="@+id/iv_epg_channel_fav"
+                            android:layout_width="25dp"
+                            android:layout_height="fill_parent"
+                            android:layout_toLeftOf="@+id/iv_epg_channel_lock"
+                            android:contentDescription="@string/string_null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:src="@drawable/channellist_fav"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/iv_epg_channel_lock"
+                            android:layout_width="25dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="5dp"
+                            android:contentDescription="@string/string_null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:src="@drawable/channellist_lock"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llay_epg_present_event"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" >
+
+                        <TextView
+                            android:id="@+id/tv_epg_present_event_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_epg_present_event_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llay_epg_follow_event"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" >
+
+                        <TextView
+                            android:id="@+id/tv_epg_follow_event_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_epg_follow_event_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center|left"
+                            android:singleLine="true"
+                            android:text="@string/string_null"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_epg_key"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_epg_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/common_ok" />
+
+        <TextView
+            android:id="@+id/tv_epg_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            android:text="@string/string_null"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_epg_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/common_red" />
+
+        <TextView
+            android:id="@+id/tv_epg_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/epg_red_tip"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_epg_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/common_green" />
+
+        <TextView
+            android:id="@+id/tv_epg_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/epg_green_tip"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_epg_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/common_yellow" />
+
+        <TextView
+            android:id="@+id/tv_epg_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/epg_yellow_tip"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_epg_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/string_null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/common_blue" />
+
+        <TextView
+            android:id="@+id/tv_epg_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/epg_blue_tip"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

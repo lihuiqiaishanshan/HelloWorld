@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="470dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_view_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/confirm_tip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:text="@string/setting_str_country"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="44dp"
+            android:gravity="left"
+            android:text="@string/str_country"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dialog_country_cbx"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            pvr:entries="@array/dvbt_country_code"
+            pvr:entriesValue="@array/dvbt_country_code_value"
+            pvr:lineHeight="20dp"
+            android:textSize="20sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_area_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="44dp"
+            android:gravity="left"
+            android:text="@string/setting_str_area_code"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/editText_area_code"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="13dp" >
+        <Button
+            android:id="@+id/country_code_no"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/setting_no"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </Button>
+        <Button
+            android:id="@+id/country_code_yes"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/setting_yes"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+

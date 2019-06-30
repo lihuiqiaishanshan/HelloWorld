@@ -1,0 +1,65 @@
+package com.hisilicon.tvui.util;
+
+import android.view.KeyEvent;
+
+public class KeyValue
+{
+    public static final int DTV_KEYVALUE_CHNLLIST = KeyEvent.KEYCODE_DPAD_CENTER;
+    public static final int DTV_KEYVALUE_BACKWARD = KeyEvent.KEYCODE_MEDIA_REWIND;
+    public static final int DTV_KEYVALUE_PLAYPAUSE = KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE;
+    public static final int DTV_KEYVALUE_VOLUME_DOWN = KeyEvent.KEYCODE_VOLUME_DOWN;
+    public static final int DTV_KEYVALUE_VOLUME_UP = KeyEvent.KEYCODE_VOLUME_UP;
+    public static final int DTV_KEYVALUE_FORWARD_40 = KeyEvent.KEYCODE_MEDIA_FAST_FORWARD;
+    public static final int DTV_KEYVALUE_FORWARD_42 = KeyEvent.KEYCODE_FORWARD;
+    public static final int DTV_KEYVALUE_0 = KeyEvent.KEYCODE_0;
+    public static final int DTV_KEYVALUE_1 = KeyEvent.KEYCODE_1;
+    public static final int DTV_KEYVALUE_2 = KeyEvent.KEYCODE_2;
+    public static final int DTV_KEYVALUE_3 = KeyEvent.KEYCODE_3;
+    public static final int DTV_KEYVALUE_4 = KeyEvent.KEYCODE_4;
+    public static final int DTV_KEYVALUE_5 = KeyEvent.KEYCODE_5;
+    public static final int DTV_KEYVALUE_6 = KeyEvent.KEYCODE_6;
+    public static final int DTV_KEYVALUE_7 = KeyEvent.KEYCODE_7;
+    public static final int DTV_KEYVALUE_8 = KeyEvent.KEYCODE_8;
+    public static final int DTV_KEYVALUE_9 = KeyEvent.KEYCODE_9;
+    public static final int DTV_KEYVALUE_AUDIO = KeyEvent.KEYCODE_NICAM;
+    public static final int DTV_KEYVALUE_BACK = KeyEvent.KEYCODE_BACK;
+    public static final int DTV_KEYVALUE_CHANNEL_DOWN = KeyEvent.KEYCODE_CHANNEL_DOWN;
+    public static final int DTV_KEYVALUE_CHANNEL_UP = KeyEvent.KEYCODE_CHANNEL_UP;
+    public static final int DTV_KEYVALUE_DEL = KeyEvent.KEYCODE_DEL;
+    public static final int DTV_KEYVALUE_DPAD_CENTER = KeyEvent.KEYCODE_DPAD_CENTER;
+    public static final int DTV_KEYVALUE_DPAD_DOWN = KeyEvent.KEYCODE_DPAD_DOWN;
+    public static final int DTV_KEYVALUE_DPAD_LEFT = KeyEvent.KEYCODE_DPAD_LEFT;
+    public static final int DTV_KEYVALUE_DPAD_RIGHT = KeyEvent.KEYCODE_DPAD_RIGHT;
+    public static final int DTV_KEYVALUE_DPAD_UP = KeyEvent.KEYCODE_DPAD_UP;
+    public static final int DTV_KEYVALUE_VOD = KeyEvent.KEYCODE_F;
+    public static final int DTV_KEYVALUE_GREEN = KeyEvent.KEYCODE_PROG_GREEN;
+    public static final int DTV_KEYVALUE_RED = KeyEvent.KEYCODE_PROG_RED;
+    public static final int DTV_KEYVALUE_YELLOW = KeyEvent.KEYCODE_PROG_YELLOW;
+    public static final int DTV_KEYVALUE_BLUE = KeyEvent.KEYCODE_PROG_BLUE;
+    public static final int DTV_KEYVALUE_INFOBAR = KeyEvent.KEYCODE_INFO;
+    public static final int DTV_KEYVALUE_MEDIA_FAST_FORWARD = KeyEvent.KEYCODE_MEDIA_FAST_FORWARD;
+    public static final int DTV_KEYVALUE_MEDIA_PLAY_PAUSE = KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE;
+    public static final int DTV_KEYVALUE_MEDIA_REWIND = KeyEvent.KEYCODE_MEDIA_REWIND;
+    public static final int DTV_KEYVALUE_MEDIA_STOP = KeyEvent.KEYCODE_MEDIA_STOP;
+    public static final int DTV_KEYVALUE_MENU = KeyEvent.KEYCODE_MENU;
+    public static final int DTV_KEYVALUE_PAGEDOWN = KeyEvent.KEYCODE_PAGE_DOWN;
+    public static final int DTV_KEYVALUE_PAGEUP = KeyEvent.KEYCODE_PAGE_UP;
+    public static final int DTV_KEYVALUE_SEARCH = KeyEvent.KEYCODE_SEARCH;
+    public static final int DTV_KEYVALUE_TXT = KeyEvent.KEYCODE_TELETXT;
+    public static final int DTV_KEYVALUE_SUB = KeyEvent.KEYCODE_CAPTIONS;
+    public static final int DTV_KEYVALUE_VOLUME_MUTE = KeyEvent.KEYCODE_VOLUME_MUTE;
+    public static final int DTV_KEYVALUE_HOME = KeyEvent.KEYCODE_HOME;
+    public static final int DTV_KEYVALUE_SOURCE = KeyEvent.KEYCODE_SOURCE;
+    public static final int DTV_KEYVALUE_EPG = KeyEvent.KEYCODE_GUIDE;
+    public static final int DTV_KEYVALUE_CC = KeyEvent.KEYCODE_CC;
+    public static final int DTV_KEYVALUE_HOLD = KeyEvent.KEYCODE_NICAM;
+    public static final int DTV_KEYVALUE_SIZE = KeyEvent.KEYCODE_MEDIA_FAST_FORWARD;
+    public static final int DTV_KEYVALUE_WINDOW = KeyEvent.KEYCODE_WINDOW;
+    public static final int DTV_KEYVALUE_PICTUREMODE = KeyEvent.KEYCODE_PICTUREMODE;
+    public static final int DTV_KEYVALUE_SOUNDMODE = KeyEvent.KEYCODE_SOUNDMODE;
+    public static final int DTV_KEYVALUE_POWER = KeyEvent.KEYCODE_POWER;
+    public static final int DTV_KEYVALUE_TV_POWER = KeyEvent.KEYCODE_TV_POWER;
+    public static final int DTV_KEYVALUE_STB_POWER = KeyEvent.KEYCODE_STB_POWER;
+    public static final int DTV_KEYVALUE_AVR_POWER = KeyEvent.KEYCODE_AVR_POWER;
+    public static final int DTV_KEYVALUE_SWAP = KeyEvent.KEYCODE_MEDIA;
+}

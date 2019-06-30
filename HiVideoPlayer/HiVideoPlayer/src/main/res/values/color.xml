@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <!-- 天蓝色 -->
+    <color name="azure">#ccf0ffff</color>
+    <!-- 亮灰色 -->
+    <color name="lightgray">#ccd3d3d3</color>
+</resources>

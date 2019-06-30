@@ -1,0 +1,65 @@
+package com.hisilicon.android.hidisplaymanager;
+
+import java.lang.reflect.Field;
+
+import android.util.Log;
+
+/**
+ * hiDispFmt 操作类
+ * Created by lWX454814 on 2017/12/18.
+ */
+
+public class DispFmt {
+    private static String TAG = "HiVideoPlayer_DispFmt";
+    private Class dispFmtCls = null;
+    private Object dispFmtObj = null;
+    public int is_support_3d;
+
+    public DispFmt() {
+    }
+
+    public DispFmt(Object dispFmtObj) {
+//        if (dispFmtObj instanceof com.hisilicon.android.hidisplaymanager.DispFmt) {
+//            mDispFmt = (com.hisilicon.android.hidisplaymanager.DispFmt) dispFmtObj;
+//        } else {
+//            mDispFmt = new com.hisilicon.android.hidisplaymanager.DispFmt();
+//        }
+        this.dispFmtObj = dispFmtObj;
+        if (this.dispFmtObj == null) {
+            return;
+        }
+        this.dispFmtCls = this.dispFmtObj.getClass();
+
+    }
+
+    public Object getDispFmtObj() {
+        return this.dispFmtObj;
+//        return this.mDispFmt;
+    }
+
+    public int getIs_support_3d() {
+        if (this.dispFmtCls == null || this.dispFmtObj == null) {
+//        if (this.mDispFmt == null) {
+            return 0;
+        }
+//        return mDispFmt.is_support_3d;
+        Field field = null;
+        try {
+            field = this.dispFmtCls.getDeclaredField("is_support_3d");
+        } catch (NoSuchFieldException e) {
+            Log.e(TAG, "not find Field is_support_3d !");
+        }
+        if (null == field) {
+            return 0;
+        }
+        int result = 0;
+        try {
+            result = field.getInt(this.dispFmtObj);
+        } catch (IllegalAccessException e) {
+            Log.e(TAG, "get is_support_3d value is error !");
+        }
+        return result;
+    }
+
+
+}

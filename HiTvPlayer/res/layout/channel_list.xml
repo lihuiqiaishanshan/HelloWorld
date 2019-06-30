@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical" >
+
+    <!-- ChannelList -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/common_dark_bg"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewArrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/common_arrow01" />
+
+            <TextView
+                android:id="@+id/textViewGroup"
+                android:layout_width="254dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/all"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/imageViewArrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/common_arrow02" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/channelListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@drawable/channellist_line"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none"
+            android:layout_marginBottom="30dp"
+            android:listSelector="@drawable/chlist_list_item_bg"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- EPG List -->
+
+    <LinearLayout
+        android:id="@+id/EpgListLayout"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/common_dark_bg"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/common_arrow01" />
+
+            <TextView
+                android:id="@+id/textViewEpgDate"
+                android:layout_width="284dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/all"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/common_arrow02" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/EpgListView"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:divider="@drawable/channellist_line"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginBottom="30dp"
+            android:scrollbars="none"
+            android:listSelector="@drawable/chlist_list_item_bg"
+            android:nextFocusDown="@+id/EpgListView"
+            android:nextFocusUp="@+id/EpgListView"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- Tip -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_view_one_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+        <ImageView
+            android:id="@+id/ImgRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/common_red" />
+
+        <TextView
+            android:id="@+id/TipRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/alpha"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ImgGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/common_green" />
+
+        <TextView
+            android:id="@+id/TipGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cas"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ImgYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/common_yellow" />
+
+        <TextView
+            android:id="@+id/TipYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/group"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ImgBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/common_blue" />
+
+        <TextView
+            android:id="@+id/TipBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/epg_red_tip"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:background="@drawable/custom_view_one_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.hisilicon.tvui.view.DTVDigitalClock
+            android:id="@+id/Time_DigitalClock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

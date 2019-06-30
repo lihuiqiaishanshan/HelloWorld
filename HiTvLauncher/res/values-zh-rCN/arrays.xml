@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 应用管理 -->
+    <string-array name="app_management">
+        <item>卸载</item>
+        <item>停止</item>
+        <item>删除默认设置</item>
+        <item>清除数据</item>
+    </string-array>
+    <!-- 设置相关 -->
+    <string-array name="picture_mode_string">
+        <item>模式</item>
+        <item>亮度</item>
+        <item>对比度</item>
+        <item>色调</item>
+        <item>饱和度</item>
+        <item>背光</item>
+    </string-array>
+    <string-array name="sound_mode_string">
+        <item>音效</item>
+        <item>音量</item>
+        <item>平衡</item>
+    </string-array>
+    <string-array name="senior_mode_string">
+        <item>语言切换</item>
+        <item>开机音乐开关</item>
+        <item>开机音乐选择</item>
+    </string-array>
+    <!-- >系统信息< -->
+    <string-array name="system_info">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>内存</item>
+        <item>存储空间</item>
+        <item>Android版本</item>
+        <item>软件版本</item>
+    </string-array>
+    <string-array name="system_info_value">
+        <item> 核</item>
+        <item>Android </item>
+    </string-array>
+    <!-- >网络状态< -->
+    <string-array name="net_state">
+        <item>本地连接:</item>
+        <item>宽带拨号:</item>
+        <item>无线连接:</item>
+        <item>IP地址:</item>
+        <item>子网掩码:</item>
+        <item>网关</item>
+        <item>DNS:"</item>
+    </string-array>
+    <!-- >恢复出厂设置< -->
+    <string-array name="factory_reset">
+        <item>恢复用户设定</item>
+        <item>系统还原</item>
+    </string-array>
+    <!-- 本地升级 -->
+   <string-array name="mount_type">
+        <item>USB</item>
+        <item>SATA</item>
+        <item>CARD</item>
+        <item>未知</item>
+    </string-array>
+   <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <!-- Wi-Fi IP settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. [CHAR LIMIT=25] -->
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>静态IP</item>
+    </string-array>
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change.[CHAR LIMIT=25] -->
+    <string-array name="wifi_proxy_settings">
+        <item>无</item>
+        <item>手动</item>
+        <item>代理自动配置</item>
+    </string-array>
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <string-array name="wifi_status">
+        <item></item>
+        <item>正在扫描\u2026</item>
+        <item>正在连接\u2026</item>
+        <item>正在认证\u2026</item>
+        <item>正在获取IP\u2026</item>
+        <item>已连接</item>
+        <item>暂停</item>
+        <item>正在断开\u2026</item>
+        <item>已断开</item>
+        <item>未成功</item>
+        <item>阻塞</item>
+        <item>暂时避免不良连接</item>
+    </string-array>
+    <!-- Match this with drawable.wifi_signal. --> <skip />
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <string-array name="wifi_signal">
+        <item>差</item>
+        <item>一般</item>
+        <item>好</item>
+        <item>极好</item>
+    </string-array>
+
+    <!-- Match this with the constants in WifiDialog. --> <skip />
+    <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <string-array name="wifi_peap_phase2_entries">
+        <item>None</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+</resources>

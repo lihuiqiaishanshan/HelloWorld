@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="preview_item_size">128dp</dimen>
+    <dimen name="preview_item_gap">24dp</dimen>
+    <dimen name="menu_width">360dp</dimen>
+</resources>

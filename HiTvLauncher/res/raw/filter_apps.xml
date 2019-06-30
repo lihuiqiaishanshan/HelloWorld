@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Applications>
+
+    <!-- ATV -->
+    <Application>
+        <PackageName>
+com.hisilicon.atv
+        </PackageName>
+    </Application>
+    <!-- DTV -->
+    <Application>
+        <PackageName>
+com.hisilicon.dtv
+        </PackageName>
+    </Application>
+    <!-- Launcher -->
+    <Application>
+        <PackageName>
+com.hisilicon.launcher
+        </PackageName>
+    </Application>
+    <!-- quickSetting -->
+    <Application>
+        <PackageName>
+com.hisilicon.quicksetting
+        </PackageName>
+    </Application>
+    <!-- HiTvSetting -->
+    <Application>
+        <PackageName>
+com.hisilicon.tvsetting
+        </PackageName>
+    </Application>
+    <!-- HiTvPlayer -->
+    <Application>
+        <PackageName>
+com.hisilicon.tvui
+        </PackageName>
+    </Application>
+</Applications>

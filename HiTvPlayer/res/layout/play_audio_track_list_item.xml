@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_audiotrack_name"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="left|center"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:gravity="left|center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_audiotrack_check"
+        android:contentDescription="@string/select_audio_bg_des"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/common_checkbox"
+        android:visibility="invisible" />
+
+</LinearLayout>

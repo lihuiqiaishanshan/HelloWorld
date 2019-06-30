@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_nfs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview_bg"
+    android:listSelector="@drawable/listview_item_selector"
+    android:layout_marginBottom="@dimen/activity_list_file_margin50"
+    android:layout_marginLeft="@dimen/activity_list_file_margin100"
+    android:layout_marginRight="@dimen/activity_list_file_margin100"
+    android:layout_marginTop="@dimen/activity_list_file_margin50" />

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/dialog_transparent_fullScreen"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+   >
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="500dp"
+        android:layout_height="320dp"
+        android:background="@drawable/custom_setting_view_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/pvr_shutdown_title"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="@string/pvr_rec_power_shutdown_title"
+            android:textSize="20sp"
+            android:layout_marginRight="27dp"/>
+        <LinearLayout
+            android:id="@+id/llay_type1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_record_shutdown"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/epg_description_button"
+                android:gravity="center"
+                android:text="@string/pvr_rec_power_shutdown"
+                android:textColor="@color/white"
+                android:textSize="18sp" >
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llay_type2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_record_noAction"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/epg_description_button"
+                android:gravity="center"
+                android:text="@string/pvr_rec_power_noAction"
+                android:textColor="@color/white"
+                android:textSize="18sp" >
+            </Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llay_type3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_record_screen_off"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/epg_description_button"
+                android:gravity="center"
+                android:text="@string/pvr_rec_power_screen_off"
+                android:textColor="@color/white"
+                android:textSize="18sp" >
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/llay_screen_on"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#000000"
+       android:visibility="gone"
+       android:orientation="horizontal"
+       >
+   </LinearLayout>
+
+</RelativeLayout>

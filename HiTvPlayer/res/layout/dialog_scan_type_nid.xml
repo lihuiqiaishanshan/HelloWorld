@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    xmlns:digtaleditext="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/custom_setting_view_bg">
+
+    <EditText
+        android:id="@+id/id_dvbc_nid_source"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channeledit_dialog_editview_bg"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/white"
+        android:inputType="number">
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_cancel"
+            android:textColor="@color/white"
+            android:layout_marginEnd="12dp"
+            android:textSize="22sp" >
+        </Button>
+        <Button
+            android:id="@+id/btn_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/timeshift_seek_ok"
+            android:textColor="@color/white"
+            android:layout_marginStart="12dp"
+            android:textSize="22sp" >
+        </Button>
+    </LinearLayout>
+</LinearLayout>

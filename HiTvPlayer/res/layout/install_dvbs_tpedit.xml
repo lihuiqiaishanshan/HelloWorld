@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_dvbs_tpedit_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/install_dvbs_editdlg_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id_dvbs_tpedit_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/str_install_tpedit_title"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:text="@string/str_install_tpedit_freq" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/id_dvbs_tpedit_frequency"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:maxLength="6"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/white" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_freq_unit" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:text="@string/str_install_tpedit_rate" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/id_dvbs_tpedit_rate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:maxLength="6"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/white" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_rate_unit" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:text="@string/str_install_tpedit_pol" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dvbs_tpedit_polarity"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+       <Button
+            android:id="@+id/id_dvbs_tpedit_cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_cancel" />
+
+        <Button
+            android:id="@+id/id_dvbs_tpedit_save"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_save" />
+
+    </LinearLayout>
+
+</LinearLayout>

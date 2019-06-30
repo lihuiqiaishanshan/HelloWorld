@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- First Menu-->
+    <string name="subtitle_options">Subtitle Options</string>
+    <string name="audio_options">Audio Options</string>
+    <string name="jump_time">Jump Time</string>
+    <string name="advanced_options">Advanced Options</string>
+    <string name="_3d_mode">3D Mode</string>
+    <string name="_3d_timing">3D Timing</string>
+    <string name="_2d_mode">2D Mode</string>
+    <string name="_360_mode">360 Mode</string>
+    <string name="_8k_mode">8K Mode</string>
+    <string name="speed">Speed</string>
+    <string name="mkv_video">MKV VIDEO</string>
+
+    <!--Second Menu-->
+    <!--字幕设置菜单相关-->
+    <string name="subtitle_on_off">Subtitle On-Off</string>
+    <string name="subtitle_switching">Subtitle Switching</string>
+    <string name="subtitle_search">Subtitle Search</string>
+    <string name="subtitle_advanced">Subtitle Advanced</string>
+    <string name="subtitle_select">Subtitle Select</string>
+    <!--音频设置相关-->
+    <string name="track_switch">Track Switch</string>
+    <string name="channel_switch">Channel Switch</string>
+    <!--高级设置相关菜单-->
+    <string name="continue_play">Continue Play</string>
+    <string name="forward_rewind">Forward Rewind</string>
+    <string name="full_screen_playback">Full-Screen Playback</string>
+    <string name="single_cycle">Single Cycle</string>
+    <string name="_3d_mvc_adaption">3D MVC Adaption</string>
+    <string name="sdr_mode">SDR Mode</string>
+    <string name="dts_drc_mode">DTS DRC Mode</string>
+    <!--3D选项-->
+    <string name="_2d_mvc_mode_to_3d">2D MVC Mode -> 3D</string>
+    <string name="_2d_sbs_mode_to_3d">2D SBS Mode -> 3D</string>
+    <string name="_2d_tab_mode_to_3d">2D TAB Mode -> 3D</string>
+    <string name="_3d_to_2d_mode">3D -> 2D Mode</string>
+    <string name="_3d_to_3d_side_exchange">3D -> 3D Side Exchange</string>
+    <string name="_3d_stereo_depth">3D Stereo Depth</string>
+    <string name="_2d_sbs_mode_to_2d_mode">2D SBS Mode -> 2D Mode</string>
+    <string name="_2d_tab_mode_to2d_mode">2D TAB Mode -> 2D Mode</string>
+    <string name="_2d_to_2d_original_mode">2D -> 2D Original Mode</string>
+    <string name="frame_packing">Frame Packing</string>
+    <string name="side_by_side">Side By Side</string>
+    <string name="top_and_bottom">Top And Bottom</string>
+    <string name="_8k_mode_mouse">8k Mode Mouse</string>
+    <string name="_8k_mode_cross">8k Mode Cross</string>
+
+    <!--Third Menu-->
+    <string name="time_adjustment">Time Adjustment</string>
+    <string name="subtitle_encode">Subtitle Encode</string>
+    <string name="font_color">Font Color</string>
+    <string name="font_size">Font Size</string>
+    <string name="font_effect">Font Effect</string>
+    <string name="the_line_spacing">The Line Spacing</string>
+    <string name="character_spacing">Character Spacing</string>
+    <string name="_3d_subtitle_adjust">3D Subtitle Adjust</string>
+
+</resources>

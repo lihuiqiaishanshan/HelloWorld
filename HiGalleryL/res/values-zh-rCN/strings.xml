@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">海思图库</string>
+    <string name="scanning">正在扫描图片，请稍候</string>
+    <string name="loading">正在加载...</string>
+    <string name="details">图片名：%1$s,\t宽度：%2$d,\t高度：%3$d,\t大小：%4$s,\t位置：%5$s</string>
+    <string-array name="controllers">
+        <item>浏览</item>
+        <item>缩放</item>
+        <item>旋转</item>
+        <item>幻灯片</item>
+    </string-array>
+    <string name="no_enough_memory">内存不足解码失败</string>
+    <string name="file_not_support">文件格式不支持</string>
+    <string name="decode_failed">解码失败</string>
+    <string name="already_first">已经是第一张！</string>
+    <string name="already_last">已经是最后一张！</string>
+    <string name="media_unmount_warnning">您的外部存储设备已经移除，无法正常浏览图片！</string>
+    <string name="menu">菜单</string>
+    <string name="menu_scale">缩放</string>
+    <string name="menu_rotate">旋转</string>
+    <string name="menu_sliding">幻灯片</string>
+    <string name="menu_animation">动画</string>
+    <string name="menu_sliding_start">启动</string>
+    <string name="interval">间隔</string>
+    <string name="animation">动画</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lock="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/menu_lock"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:nextFocusUp="@+id/menu_lock"
+            android:textSize="20sp"
+            android:background="@drawable/install_btn_bg" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_menu_lock"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+        android:id="@+id/program_lock"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="99dp"
+        android:background="@drawable/install_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_program_lock"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textview_parentalrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_parental_rating"
+            android:gravity="right|center_vertical" />
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_parentalrating"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="99dp"
+            lock:entries="@array/parental_rating"
+            lock:entriesValue="@array/parental_rating_value"
+            lock:lineHeight="50dp"
+            android:background="@drawable/install_btn_bg"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/modify_password"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/install_cbx_bg"
+            android:text="@string/setting_tap_to_set" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_password_modify"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

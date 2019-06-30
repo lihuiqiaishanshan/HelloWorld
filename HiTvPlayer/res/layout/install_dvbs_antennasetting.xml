@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="760dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/id_antennasetting_search"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:background="@drawable/install_btn_bg"
+        android:text="@string/str_install_search"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <include
+        android:id="@+id/id_antennaseting_signal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/install_dvbs_signal_bar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#ff3366aa" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_satellite"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_satellite"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_transponder"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_tp"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_lnbtype"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_lnbtype"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left"
+            android:text="@string/str_install_lnbpower"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_lnbpwr"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_22k"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_22K"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_diseqc_mode"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_dsqctype"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_diseqc_10port"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_dieqc10"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_diseqc_11port"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_dieqc11"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_motor_type"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_antennaseting_motortype"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+</LinearLayout>

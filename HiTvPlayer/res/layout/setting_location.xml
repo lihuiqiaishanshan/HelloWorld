@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dialog_country_cbx"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@+id/editText_area_code"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/dvbt_country_code"
+            pvr:entriesValue="@array/dvbt_country_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/setting_location_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/str_country" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_area_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editText_area_code"
+            android:layout_width="530dp"
+            android:layout_height="44dp"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            android:nextFocusDown="@+id/editText_area_code"
+            android:gravity="center_vertical|center_horizontal"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/setting_location_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_str_area_code" />
+    </RelativeLayout>
+</LinearLayout>

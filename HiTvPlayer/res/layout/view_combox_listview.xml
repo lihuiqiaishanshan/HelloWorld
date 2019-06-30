@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:popup="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/id_comm_cmb_lstvw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialog_background"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:listSelector="@drawable/install_cbx_lst_item_bg"
+        popup:lineHeight="30dp" />
+
+</LinearLayout>

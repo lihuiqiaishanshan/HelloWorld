@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_dvbs_networkedit_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/install_dvbs_editdlg_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id_dvbs_stltedit_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/str_satellite"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/str_name"
+            android:textSize="22sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/id_dvbs_stltedit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:inputType="textCapCharacters"
+            android:maxLength="31"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+
+        </EditText>
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/str_install_longitude"
+            android:textSize="22sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/id_dvbs_stltedit_lgtvalue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:text="@string/str_install_longtype"
+            android:textSize="22sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dvbs_stltedit_longtype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_dvbs_stltedit_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_dvbs_stltedit_save"
+            android:layout_marginLeft="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_save"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

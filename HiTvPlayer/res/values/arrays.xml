@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- epg start -->
+    <string-array name="weekday_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <!-- epg end -->
+
+    <!-- recordinglist start -->
+    <string-array name="type_array">
+        <item>Record</item>
+        <item>Play</item>
+        <item>Hint</item>
+        <item>PowerDown</item>
+        <item>PowerOn</item>
+        <item>Unknow</item>
+    </string-array>
+    <string-array name="cycle_array">
+        <item>OneTime</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>unknow</item>
+    </string-array>
+    <!-- recordinglist end -->
+
+    <!-- settinglock start -->
+    <string-array name="parental_rating">
+        <item>OFF</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="parental_rating_value">
+        <item>0</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="sgp_parental_rating">
+        <item>OFF</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>PG13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+
+    <string-array name="sgp_parental_rating_value">
+        <item>0</item>
+        <item>4</item>
+        <item>7</item>
+        <item>13</item>
+        <item>16</item>
+        <item>18</item>
+        <item>21</item>
+    </string-array>
+    <!-- settinglock end -->
+
+    <!-- settingpvr start -->
+    <string-array name="timeshift_time">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 h</item>
+        <item>2 h</item>
+    </string-array>
+    <string-array name="timeshift_time_value">
+        <item>900</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+    </string-array>
+    <!-- settingpvr end -->
+
+    <!-- settingosd start -->
+    <string-array name="inforbar_time">
+        <item>5s</item>
+        <item>6s</item>
+        <item>7s</item>
+        <item>8s</item>
+        <item>9s</item>
+        <item>10s</item>
+    </string-array>
+
+    <string-array name="inforbar_time_value">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <!-- settingosd end -->
+
+    <!-- settingaudio start -->
+    <string-array name="language_code">
+        <item>Chinese</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Indonesian</item>
+        <item>Malay</item>
+        <item>Multiple Language</item>
+        <item>Thai</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <string-array name="language_code_value">
+        <item>chi</item>
+        <item>eng</item>
+        <item>fre</item>
+        <item>deu</item>
+        <item>ind</item>
+        <item>msa</item>
+        <item>mul</item>
+        <item>tha</item>
+        <item>vie</item>
+    </string-array>
+    <!-- settingaudio end -->
+
+    <!-- PM start -->
+    <string-array name="channelmanager_sort_array">
+        <item >Default</item>
+        <item >Service Name</item>
+        <item >FTA/Scramble</item>
+        <item >ServiceID TSID</item>
+        <item >LCN</item>
+        <item >TPID</item>
+        <item >Lock</item>
+    </string-array>
+
+    <!-- PM end -->
+
+    <!-- subtitle start -->
+    <string-array name="sub_lang">
+        <item>Close</item>
+        <item>Chinese</item>
+        <item>English</item>
+    </string-array>
+     <!-- subtitle end -->
+
+    <!-- epg start -->
+    <string-array name="epg_content_movie">
+        <item>movie/drama (general)</item>
+        <item>detective/thriller</item>
+        <item>adventure/western/war</item>
+        <item>science fiction/fantasy/horror</item>
+        <item>comedy</item>
+        <item>soap/melodrama/folkloric</item>
+        <item>romance</item>
+        <item>serious/classical/religious/historical movie/drama</item>
+        <item>adult movie/drama</item>
+    </string-array>
+
+    <string-array name="epg_content_new">
+        <item>news/current affairs(general)</item>
+        <item>news/weather report</item>
+        <item>news magazine</item>
+        <item>documentary</item>
+        <item>discussion/interview/debate</item>
+    </string-array>
+
+    <string-array name="epg_content_game">
+        <item>show/game show(general)</item>
+        <item>game show/quiz/contest</item>
+        <item>variety show</item>
+        <item>talk show</item>
+    </string-array>
+
+    <string-array name="epg_content_sport">
+        <item>sports (general)</item>
+        <item>special events (Olympic Games, World Cup, etc.)</item>
+        <item>sports magazines</item>
+        <item>football/soccer</item>
+        <item>tennis/squash</item>
+        <item>team sports (excluding football)</item>
+        <item>athletics</item>
+        <item>motor sport</item>
+        <item>water sport</item>
+        <item>winter sports</item>
+        <item>equestrian</item>
+        <item>martial sports</item>
+    </string-array>
+
+    <string-array name="epg_content_child">
+        <item>children\'s/youth programmes (general)</item>
+        <item>pre-school children\'s programmes</item>
+        <item>entertainment programmes for 6 to 14</item>
+        <item>entertainment programmes for 10 to 16</item>
+        <item>informational/educational/school programmes</item>
+        <item>cartoons/puppets</item>
+    </string-array>
+
+    <string-array name="epg_content_music">
+        <item>music/ballet/dance (general)</item>
+        <item>rock/pop</item>
+        <item>serious music/classical music</item>
+        <item>folk/traditional music</item>
+        <item>jazz</item>
+        <item>musical/opera</item>
+        <item>ballet</item>
+    </string-array>
+
+    <string-array name="epg_content_art">
+        <item>arts/culture (without music, general)</item>
+        <item>performing arts</item>
+        <item>fine arts</item>
+        <item>religion</item>
+        <item>popular culture/traditional arts</item>
+        <item>literature</item>
+        <item>film/cinema</item>
+        <item>experimental film/video</item>
+        <item>broadcasting/press</item>
+        <item>new media</item>
+        <item>arts/culture magazines</item>
+        <item>fashion</item>
+    </string-array>
+
+    <string-array name="epg_content_social">
+        <item>social/political issues/economics (general)</item>
+        <item>magazines/reports/documentary</item>
+        <item>economics/social advisory</item>
+        <item>remarkable people</item>
+    </string-array>
+
+    <string-array name="epg_content_edu">
+        <item>education/science/factual topics (general)</item>
+        <item>nature/animals/environment</item>
+        <item>technology/natural sciences</item>
+        <item>medicine/physiology/psychology</item>
+        <item>foreign countries/expeditions</item>
+        <item>social/spiritual sciences</item>
+        <item>further education</item>
+        <item>languages</item>
+    </string-array>
+
+    <string-array name="epg_content_lei">
+        <item>leisure hobbies (general)</item>
+        <item>tourism/travel</item>
+        <item>handicraft</item>
+        <item>motoring</item>
+        <item>fitness and health</item>
+        <item>cooking</item>
+        <item>advertisement/shopping</item>
+        <item>gardening</item>
+    </string-array>
+
+    <string-array name="epg_content_spe">
+        <item>original language</item>
+        <item>black and white</item>
+        <item>unpublished</item>
+        <item>live broadcast</item>
+    </string-array>
+    <!-- epg end -->
+
+     <!-- autosearch start -->
+     <string-array name="auto_source_code">
+        <item>ATV</item>
+        <item>DTV</item>
+        <item>ATV+DTV</item>
+     </string-array>
+
+     <string-array name="auto_source_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+     </string-array>
+
+      <string-array name="auto_dtvtype_code">
+        <item>DTMB</item>
+        <item>DVBC</item>
+        <item>DVBT</item>
+        <item>DVBS</item>
+     </string-array>
+
+      <string-array name="auto_dtvtype_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+     </string-array>
+     <!-- autosearch end -->
+
+    <!-- dvbt_country start -->
+    <string-array name="dvbt_country_code">
+        <item>Australia</item>
+        <item>Deutschland</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Russian</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Vietnam</item>
+        <item>Italy</item>
+        <item>South Africa</item>
+    </string-array>
+
+    <string-array name="dvbt_country_code_value">
+        <item>AUS</item>
+        <item>DEU</item>
+        <item>FRA</item>
+        <item>GBR</item>
+        <item>IDN</item>
+        <item>MYS</item>
+        <item>RUS</item>
+        <item>SGP</item>
+        <item>THA</item>
+        <item>VNM</item>
+        <item>ITA</item>
+        <item>ZAF</item>
+    </string-array>
+    <!-- dvbt_country end -->
+
+    <!-- dbt_country start -->
+    <string-array name="isdbt_country_code">
+        <item>Brazil</item>
+        <item>Japan</item>
+        <item>Philippines</item>
+    </string-array>
+
+    <string-array name="isdbt_country_code_value">
+        <item>BRA</item>
+        <item>JPN</item>
+        <item>PHL</item>
+    </string-array>
+    <!-- dbt_country end -->
+
+    <!-- atsc_country start -->
+    <string-array name="atsc_country_code">
+        <item>USA</item>
+    </string-array>
+
+    <string-array name="atsc_country_code_value">
+        <item>USA</item>
+    </string-array>
+    <!-- atsc_country end -->
+
+    <!-- dtmb_country start -->
+    <string-array name="dtmb_country_code">
+        <item>China</item>
+    </string-array>
+
+    <string-array name="dtmb_country_code_value">
+        <item>CHN</item>
+    </string-array>
+    <!-- dtmb_country end -->
+
+    <!-- dvbc_country start -->
+    <string-array name="dvbc_country_code">
+        <item>Australia</item>
+        <item>China</item>
+        <item>Deutschland</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Russian</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Vietnam</item>
+    </string-array>
+
+    <string-array name="dvbc_country_code_value">
+        <item>AUS</item>
+        <item>CHN</item>
+        <item>DEU</item>
+        <item>FRA</item>
+        <item>GBR</item>
+        <item>IDN</item>
+        <item>MYS</item>
+        <item>RUS</item>
+        <item>SGP</item>
+        <item>THA</item>
+        <item>VNM</item>
+    </string-array>
+    <!-- dvbc_country end -->
+
+    <!-- source start -->
+    <string-array name="source_value">
+        <item>ATV</item>
+        <item>DVBC</item>
+        <item>DTMB</item>
+        <item>AV1</item>
+        <item>AV2</item>
+        <item>AV3</item>
+        <item>VGA</item>
+        <item>YPBPR1</item>
+        <item>YPBPR2</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>MEDIA</item>
+        <item>MEDIA2</item>
+        <item>SCART1</item>
+        <item>SCART2</item>
+        <item>AUTO</item>
+        <item>DVBT</item>
+        <item>ATSC</item>
+        <item>DVBS</item>
+        <item>ISDBT</item>
+    </string-array>
+    <!-- source end -->
+
+    <!-- mts start -->
+    <string-array name="mts_values">
+        <item>MONO</item>
+        <item>STEREO</item>
+        <item>DUAL_A</item>
+        <item>DUAL_B</item>
+        <item>DUAL_AB</item>
+        <item>BTSC_MONO</item>
+        <item>BTSC_STEREO</item>
+        <item>BTSC_SAP</item>
+        <item>NICAM_FORCED_MONO</item>
+        <item>NICAM_MONO</item>
+        <item>NICAM_STEREO</item>
+        <item>NICAM_DUAL_A</item>
+        <item>NICAM_DUAL_B</item>
+        <item>NICAM_DUAL_AB</item>
+        <item>AUTO</item>
+    </string-array>
+    <!-- mts end -->
+
+    <!-- atv_manual_scan start -->
+    <string-array name="atv_audiosystem_values">
+        <item>BG</item>
+        <item>I</item>
+        <item>DK</item>
+        <item>M</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="atv_colorsystem_values">
+        <item>AUTO</item>
+        <item>PAL</item>
+        <item>NTSC</item>
+        <item>SECAM</item>
+        <item>PAL M</item>
+        <item>PAL N</item>
+    </string-array>
+    <!-- atv_manual_scan end -->
+
+    <!-- dra_channel start -->
+    <string-array name="dra_raw_channel_array">
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>3.0</item>
+        <item>3.1</item>
+        <item>4.0</item>
+        <item>4.1</item>
+        <item>5.0</item>
+        <item>5.1</item>
+    </string-array>
+    <!-- dra_channel end -->
+
+    <string-array name="country_values_need_set_area">
+        <item>IDN</item>
+        <item>PHL</item>
+    </string-array>
+
+    <!-- install define start -->
+    <string-array name="array_install_s_menu">
+        <item>Antenna Settings</item>
+        <item>Satellite List</item>
+        <item>Transponder List</item>
+        <item>Motor Settings</item>
+        <item>Limit Setup</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center">
+
+    <RelativeLayout
+            android:id="@+id/scan_progress_whole_lay"
+            android:layout_width="630dp"
+            android:layout_height="450dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_setting_view_bg">
+
+        <LinearLayout
+                android:id="@+id/scan_progress_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/scan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/str_install_progress_title"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/line_wide"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/scan_progress_dtv_result_layout"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_progress_title_layout"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:id="@+id/tv_count_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_tv"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                    android:id="@+id/tv_count_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_count_name_txt"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_number_zero"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                    android:id="@+id/radio_count_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_count_name_txt"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_radio"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                    android:id="@+id/radio_count_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/radio_count_name_txt"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_number_zero"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                    android:id="@+id/atv_count_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/radio_count_name_txt"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_atv_channel"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+
+            <TextView
+                    android:id="@+id/atv_count_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/atv_count_name_txt"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_number_zero"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/scan_progress_atv_result_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_progress_dtv_result_layout"
+                android:layout_marginLeft="80dp">
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/scan_progress_result_layout"
+                android:layout_below="@+id/scan_progress_atv_result_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:id="@+id/scan_progress_freq_layout"
+                    android:layout_width="370dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp">
+
+                <TextView
+                        android:id="@+id/freq_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_install_tp_info"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"/>
+
+                <TextView
+                        android:id="@+id/freq_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/freq_name_txt"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_freq_unit"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/scan_progress_atsc_ch_layout"
+                    android:layout_width="319dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="80dp">
+
+                <TextView
+                        android:id="@+id/atsc_ch_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_atsc_ch_info"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"/>
+
+                <TextView
+                        android:id="@+id/atsc_ch_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/atsc_ch_name_txt"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_number_zero"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_progress_result_layout"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <SeekBar
+                    android:id="@+id/widget_seekbar"
+                    android:layout_width="450dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:progressDrawable="@drawable/seek_bar_progress"
+                    android:thumb="@null"/>
+
+            <TextView
+                    android:id="@+id/seekbar_value_txt"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Combox="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_dvb_setting_tunerinfo_view"
+        android:layout_width="450dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="@string/str_install_tuner_signal"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_dvb_tuner_signal"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                Combox:lineHeight="30sp"
+                android:textSize="22sp" >
+            </com.hisilicon.tvui.view.Combox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="@string/str_install_tuner_device"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_dvb_tuner_device"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                Combox:lineHeight="30sp"
+                android:textSize="22sp" >
+            </com.hisilicon.tvui.view.Combox>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/id_dvb_install_reset_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_install_reset"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/id_dvb_tuner_set_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_save"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:gravity="center"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_recorded_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:contentDescription="@string/string_null"
+        android:src="@drawable/recorded_radio"
+        android:visibility="visible" />
+<!--
+    <TextView
+        android:id="@+id/tv_recorded_date"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center|left"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textIsSelectable="true"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+-->
+    <TextView
+        android:id="@+id/tv_recorded_name"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textIsSelectable="true"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

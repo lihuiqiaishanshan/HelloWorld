@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">4KGallery</string>
+    <string name="hello_world">Image Info</string>
+    <string name="scanning">Scanning...</string>
+    <string name="loading">Loading...</string>
+    <string name="details">Name：%1$s,\tWidth：%2$d,\tHeight：%3$d,\tSize：%4$s,\tPath：%5$s</string>
+
+    <string-array name="controllers">
+        <item>Explorer</item>
+        <item>Scale</item>
+        <item>Rotate</item>
+        <item>Sliding</item>
+    </string-array>
+    <string name="no_enough_memory">Have not enough memory size to decode this pic</string>
+    <string name="file_not_support">ERR : File type is not supported</string>
+    <string name="decode_failed">decodeFile failed</string>
+    <string name="already_first">Already the first!</string>
+    <string name="already_last">Already the last!</string>
+    <string name="menu">Menu</string>
+    <string name="menu_scale">Scale</string>
+    <string name="menu_rotate">Rotate</string>
+    <string name="menu_sliding">Sliding</string>
+    <string name="menu_sliding_start">Start</string>
+    <string name="menu_animation">Animation</string>
+    <string name="interval">Interval</string>
+    <string name="animation">Animation</string>
+    <string name="media_unmount_warnning">Your USB storage has removed, we cann\'t show pictures any more!</string>
+
+    <string name="picker_string">&lt;small>%1$s&lt;/small> &#160;&#160;&#160;&#160;&#160;&#160; &lt;b> %2$s &lt;/b> &#160;&#160;&#160;&#160;&#160;&#160; &lt;small>%3$s&lt;/small></string>
+
+    <drawable name="transparent">#00000000</drawable>
+
+</resources>

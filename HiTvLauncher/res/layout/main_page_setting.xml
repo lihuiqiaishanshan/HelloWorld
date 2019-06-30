@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/set_item_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_net_marginLeft"
+        android:layout_marginTop="@dimen/set_item_net_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/set_item_recover"
+        android:nextFocusRight="@+id/set_item_pic"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_bordeaux"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_net_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_net" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_net_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/net_setting"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_pic_marginLeft"
+        android:layout_marginTop="@dimen/set_item_pic_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/set_item_systeminfo"
+        android:nextFocusLeft="@+id/set_item_net"
+        android:nextFocusRight="@+id/set_item_sound"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_cyan"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_pic_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_pic_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_pic_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/pic_setting"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_sound_marginLeft"
+        android:layout_marginTop="@dimen/set_item_sound_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/set_item_help"
+        android:nextFocusLeft="@+id/set_item_pic"
+        android:nextFocusRight="@+id/set_item_sysupgrade"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_yellow"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_sound_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/setting_icon_sound_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_sound_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/voice_setting"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_sysupgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_sysupgrade_marginLeft"
+        android:layout_marginTop="@dimen/set_item_sysupgrade_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/set_item_help"
+        android:nextFocusLeft="@+id/set_item_sound"
+        android:nextFocusRight="@+id/set_item_advanced"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_purple"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_sysupgrade_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_system_upgrade" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_sysupgrade_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/system"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_advanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_advanced_marginLeft"
+        android:layout_marginTop="@dimen/set_item_advanced_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/set_item_help"
+        android:nextFocusLeft="@+id/set_item_sysupgrade"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_green"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_advance_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_adavance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_advance_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/advance_setting"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_recover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_recover_marginLeft"
+        android:layout_marginTop="@dimen/set_item_recover_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/set_item_systeminfo"
+        android:nextFocusUp="@+id/set_item_net"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_skyblue"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_recover_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_recover" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_recover_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/recover_setting"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_systeminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_systeminfo_marginLeft"
+        android:layout_marginTop="@dimen/set_item_systeminfo_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/set_item_recover"
+        android:nextFocusRight="@+id/set_item_help"
+        android:nextFocusUp="@+id/set_item_pic"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_seablue"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_systeminfo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_system_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_systeminfo_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/system_info"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_item_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/set_item_help_marginLeft"
+        android:layout_marginTop="@dimen/set_item_help_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/set_item_systeminfo"
+        android:nextFocusUp="@+id/set_item_sound"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_orange"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/set_help_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/setting_icon_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_help_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:shadowColor="@color/shadowColor"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/help"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

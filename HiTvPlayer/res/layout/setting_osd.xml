@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_osd_inforbar_time"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@+id/seting_osd_inforbar_time"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/inforbar_time"
+            pvr:entriesValue="@array/inforbar_time_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_inforbar_time" />
+    </RelativeLayout>

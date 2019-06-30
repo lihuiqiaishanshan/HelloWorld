@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dolby_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff223344"
+    android:visibility="visible" >
+
+    <TextView
+        android:id="@+id/dolby_audio"
+        style="@style/styleDolbyInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/dolby_mono"
+        style="@style/styleDolbyInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/dolby_audio"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/dolby_volume"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/dolby_mono"
+        android:layout_marginTop="15dp"
+        style="@style/styleDolbyInfoText"/>
+
+    <TextView
+        android:id="@+id/dolby_trackMode"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/dolby_volume"
+        android:layout_marginTop="15dp"
+        style="@style/styleDolbyInfoText"/>
+
+    <TextView
+        android:id="@+id/dolby_video"
+        style="@style/styleDolbyInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dolby_audio"
+        android:layout_alignBottom="@+id/dolby_audio"
+        android:layout_alignLeft="@+id/dolby_volume"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

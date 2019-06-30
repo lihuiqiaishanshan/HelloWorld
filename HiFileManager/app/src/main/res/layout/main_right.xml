@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabmain" android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    > -->
+   
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout android:id="@+id/expandFile"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:gravity="center">
+        <ExpandableListView android:visibility="visible" android:id="@+id/expandlistView"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:focusable="true"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/listview_item_selector"
+        />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/listFile"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:gravity="center">
+        <ListView android:visibility="invisible" android:id="@+id/listView"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:focusable="true"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/listview_item_selector"
+        />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/gridFile"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:gravity="center">
+        <GridView android:visibility="invisible" android:fadingEdge="none"
+        android:layout_gravity="center" android:id="@+id/gridView"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:horizontalSpacing="5dp" android:verticalSpacing="20dp"
+        android:listSelector="@drawable/gridview_item_selector"
+        android:columnWidth="5dp" android:numColumns="4" />
+        </LinearLayout>
+    </FrameLayout>
+<!-- </LinearLayout> -->

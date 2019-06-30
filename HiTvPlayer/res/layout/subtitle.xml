@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_ttx_nodata"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/custom_setting_view_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_ttx_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/subtitle_language_code"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ListView
+            android:id="@+id/lv_sub_subtitlelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:divider="@drawable/common_line"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:listSelector="@drawable/subtitle_list_selector" >
+
+            <!--
+            android:scrollbarTrackVertical="@drawable/info_scroll_bar_bg"
+                android:scrollbarThumbVertical="@drawable/info_scroll_bar"
+            -->
+        </ListView>
+    </LinearLayout>
+
+</merge>

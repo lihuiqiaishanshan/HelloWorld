@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/hisi_logo" />
+
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="110dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/wifi_signal_off"
+        android:scaleX="0.9"
+        android:scaleY="1.0" />
+
+    <ImageView
+        android:id="@+id/interactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/wifi"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/wifi"
+        android:background="@drawable/interactive_no_connect"
+        android:scaleX="0.9"
+        android:scaleY="1.0" />
+
+    <com.hisilicon.launcher.view.ScrollLayout
+        android:id="@+id/root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.hisilicon.launcher.view.MainPageApp
+            android:id="@+id/app_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.hisilicon.launcher.view.MainPageApp>
+
+        <com.hisilicon.launcher.view.MainPageSetting
+            android:id="@+id/set_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.hisilicon.launcher.view.MainPageSetting>
+    </com.hisilicon.launcher.view.ScrollLayout>
+
+    <com.hisilicon.launcher.view.TagView
+        android:id="@+id/tag_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" >
+    </com.hisilicon.launcher.view.TagView>
+
+</RelativeLayout>

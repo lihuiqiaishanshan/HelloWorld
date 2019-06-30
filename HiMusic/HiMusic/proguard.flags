@@ -1,0 +1,6 @@
+-dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+
+-keep class com.hisilicon.android.music.AudioPreview {
+  public void playPauseClicked(android.view.View);
+}

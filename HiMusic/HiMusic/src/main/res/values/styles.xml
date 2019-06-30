@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.NoTitleBar.Fullscreen" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

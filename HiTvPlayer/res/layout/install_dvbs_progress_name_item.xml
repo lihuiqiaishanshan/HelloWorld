@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="5dp" >
+
+    <TextView
+        android:id="@+id/id_dvbs_progress_name_itemname"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="22sp" />
+
+</LinearLayout>

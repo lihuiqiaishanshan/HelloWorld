@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+     <color name="shadowColor">#656565</color>
+     <color name="allapptitle">#55fffafa</color>
+     <color name="grey">#666666</color>
+     <color name="greywhite">#aafffafa</color>
+     <color name="gold">#FFFF00</color>
+     <color name="tagunfocus">#999999</color>
+     <color name="state_focused">#000000</color>
+      <color name="state_nofocused">#ffffff</color>
+     <string-array name="text_color">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+        <item>#000000</item>
+    </string-array>
+</resources>

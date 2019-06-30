@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_dvbs_networkedit_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/setting_restore_confirm"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/restore_confirm_no"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_no"
+                android:textColor="@color/white" >
+            </Button>
+
+            <Button
+                android:id="@+id/restore_confirm_yes"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_yes"
+                android:textColor="@color/white" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

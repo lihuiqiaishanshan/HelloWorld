@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <config id="product">DPT</config>
+    <config id="thumbnailEnable">true</config>
+    <config id="backgroundMusicEnable">false</config>
+    <config id="HDREnable">false</config>
+    <config id="netOpenSourceEnable">false</config>
+</map>

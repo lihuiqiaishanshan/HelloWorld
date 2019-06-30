@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- First Menu-->
+    <string name="subtitle_options">字幕设置</string>
+    <string name="audio_options">音频设置</string>
+    <string name="jump_time">跳转时间</string>
+    <string name="advanced_options">高级设置</string>
+    <string name="_3d_mode">3D 模式</string>
+    <string name="_3d_timing">3D 时序</string>
+    <string name="_2d_mode">2D 模式</string>
+    <string name="_360_mode">360 模式</string>
+    <string name="_8k_mode">8K 模式</string>
+    <string name="speed">播放速度</string>
+    <string name="mkv_video">MKV VIDEO</string>
+
+    <!--Second Menu-->
+    <!--字幕设置菜单相关-->
+    <string name="subtitle_on_off">字幕显示</string>
+    <string name="subtitle_switching">字幕切换</string>
+    <string name="subtitle_search">字幕搜索</string>
+    <string name="subtitle_advanced">字幕高级</string>
+    <string name="subtitle_select">字幕选择</string>
+    <!--音频设置相关-->
+    <string name="track_switch">音轨切换</string>
+    <string name="channel_switch">声道切换</string>
+    <!--高级设置相关菜单-->
+    <string name="continue_play">断点播放</string>
+    <string name="forward_rewind">快进快退</string>
+    <string name="full_screen_playback">全屏播放</string>
+    <string name="single_cycle">单部循环</string>
+    <string name="_3d_mvc_adaption">3D MVC 自适应</string>
+    <string name="sdr_mode">SDR 模式</string>
+    <string name="dts_drc_mode">DTS DRC 模式</string>
+    <!--3D选项-->
+    <string name="_2d_mvc_mode_to_3d">2D MVC模式转3D</string>
+    <string name="_2d_sbs_mode_to_3d">2D SBS模式转3D</string>
+    <string name="_2d_tab_mode_to_3d">2D TAB模式转3D</string>
+    <string name="_3d_to_2d_mode">3D模式转2D</string>
+    <string name="_3d_to_3d_side_exchange">3D左右交换</string>
+    <string name="_3d_stereo_depth">3D景深</string>
+    <string name="_2d_sbs_mode_to_2d_mode">2D SBS模式转2D</string>
+    <string name="_2d_tab_mode_to2d_mode">2D TAB模式转2D</string>
+    <string name="_2d_to_2d_original_mode">2D转2D原始模式</string>
+    <string name="frame_packing">Frame Packing</string>
+    <string name="side_by_side">Side By Side</string>
+    <string name="top_and_bottom">Top And Bottom</string>
+    <string name="_8k_mode_mouse">8k Mode Mouse</string>
+    <string name="_8k_mode_cross">8k Mode Cross</string>
+
+    <!--Third Menu-->
+    <string name="time_adjustment">时间调节</string>
+    <string name="subtitle_encode">字幕编码</string>
+    <string name="font_color">字体颜色</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_effect">字体效果</string>
+    <string name="the_line_spacing">字幕行距</string>
+    <string name="character_spacing">字符间距</string>
+    <string name="_3d_subtitle_adjust">3D字幕调整</string>
+</resources>

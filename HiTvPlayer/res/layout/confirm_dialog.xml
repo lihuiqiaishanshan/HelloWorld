@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="260dp"
+        android:background="@drawable/custom_setting_view_bg"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/confirm_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/confirm_tip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/confirm_no"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_no"
+                android:textSize="20dp"
+                android:textColor="@color/white" >
+            </Button>
+
+            <Button
+                android:id="@+id/confirm_yes"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_yes"
+                android:textSize="20dp"
+                android:textColor="@color/white" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

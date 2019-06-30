@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tv_page -->
+    <dimen name="tv_item_window_marginLeft">118px</dimen>
+    <dimen name="tv_item_window_marginTop">130px</dimen>
+    <dimen name="tv_item_dvbc_marginLeft">590dp</dimen>
+    <dimen name="tv_item_dvbc_marginTop">73dp</dimen>
+    <dimen name="tv_item_av1_marginLeft">770dp</dimen>
+    <dimen name="tv_item_av1_marginTop">73dp</dimen>
+    <dimen name="tv_item_dtmb_marginLeft">590dp</dimen>
+    <dimen name="tv_item_dtmb_marginTop">224dp</dimen>
+    <dimen name="tv_item_av2_marginLeft">770dp</dimen>
+    <dimen name="tv_item_av2_marginTop">224dp</dimen>
+    <dimen name="tv_item_ypbpr_marginLeft">950dp</dimen>
+    <dimen name="tv_item_ypbpr_marginTop">73dp</dimen>
+    <dimen name="tv_item_vga_marginLeft">950dp</dimen>
+    <dimen name="tv_item_vga_marginTop">224dp</dimen>
+    <dimen name="tv_item_atv_marginLeft">58dp</dimen>
+    <dimen name="tv_item_atv_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi1_marginLeft">272dp</dimen>
+    <dimen name="tv_item_hdmi1_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi2_marginLeft">486dp</dimen>
+    <dimen name="tv_item_hdmi2_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi3_marginLeft">700dp</dimen>
+    <dimen name="tv_item_hdmi3_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi4_marginLeft">914dp</dimen>
+    <dimen name="tv_item_hdmi4_marginTop">376dp</dimen>
+
+    <!-- app_page -->
+    <dimen name="app_item_mediacenter_marginLeft">58dp</dimen>
+    <dimen name="app_item_mediacenter_marginTop">373dp</dimen>
+    <dimen name="app_item_browser_marginLeft">270dp</dimen>
+    <dimen name="app_item_browser_marginTop">373dp</dimen>
+    <dimen name="app_item_multi_screen_marginLeft">483dp</dimen>
+    <dimen name="app_item_multi_screen_marginTop">373dp</dimen>
+    <dimen name="app_item_icon_3d_marginLeft">696dp</dimen>
+    <dimen name="app_item_icon_3d_marginTop">373dp</dimen>
+    <dimen name="app_item_tvqq_marginLeft">910dp</dimen>
+    <dimen name="app_item_tvqq_marginTop">373dp</dimen>
+
+    <!-- setting_page -->
+    <dimen name="set_item_net_marginTop">162dp</dimen>
+    <dimen name="set_item_net_marginLeft">58dp</dimen>
+    <dimen name="set_item_pic_marginLeft">269dp</dimen>
+    <dimen name="set_item_pic_marginTop">162dp</dimen>
+    <dimen name="set_item_sound_marginLeft">482dp</dimen>
+    <dimen name="set_item_sound_marginTop">162dp</dimen>
+    <dimen name="set_item_sysupgrade_marginLeft">694dp</dimen>
+    <dimen name="set_item_sysupgrade_marginTop">162dp</dimen>
+    <dimen name="set_item_advanced_marginLeft">906dp</dimen>
+    <dimen name="set_item_advanced_marginTop">162dp</dimen>
+    <dimen name="set_item_recover_marginLeft">58dp</dimen>
+    <dimen name="set_item_recover_marginTop">316dp</dimen>
+    <dimen name="set_item_systeminfo_marginLeft">269dp</dimen>
+    <dimen name="set_item_systeminfo_marginTop">316dp</dimen>
+    <dimen name="set_item_help_marginLeft">482dp</dimen>
+    <dimen name="set_item_help_marginTop">316dp</dimen>
+
+    <dimen name="dimen_780px">780px</dimen>
+    <dimen name="dimen_440px">440px</dimen>
+    <dimen name="dimen_800px">800px</dimen>
+    <dimen name="dimen_600px">600px</dimen>
+    <dimen name="dimen_200px">200px</dimen>
+    <dimen name="dimen_350px">350px</dimen>
+    <dimen name="dimen_400px">400px</dimen>
+    <dimen name="dimen_180px">180px</dimen>
+    <dimen name="dimen_100px">100px</dimen>
+</resources>

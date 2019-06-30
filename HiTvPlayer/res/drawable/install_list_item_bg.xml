@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:drawable="@drawable/common_btn_focus_in"></item>
+    <item android:state_selected="true" android:drawable="@drawable/common_btn_normal"></item>
+    <item android:drawable="@drawable/common_focuse_outside"></item>
+</selector>

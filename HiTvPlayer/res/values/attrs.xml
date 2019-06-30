@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="popupWindow">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="listHeight" format="dimension" />
+        <attr name="entries" format="integer" />
+        <attr name="entriesValue" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="digtaledittext">
+        <attr name="maxnumber" format="integer" />
+        <attr name="minnumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="checkbox">
+        <attr name="checkboxText" format="string" />
+        <attr name="checkboxTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

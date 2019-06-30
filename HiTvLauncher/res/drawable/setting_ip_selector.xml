@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 没有焦点时的背景图片 -->
+    <item android:drawable="@drawable/setting_ip_no_selected" android:state_window_focused="false"/>
+    <!-- 选中时的图片背景 -->
+    <item android:drawable="@drawable/setting_ip_selected" android:state_selected="true"/>
+    <!-- 获得焦点时的图片背景 -->
+    <item android:drawable="@drawable/setting_ip_selected" android:state_focused="true"/>
+    <!-- 点击时的图片背景 -->
+    <item android:drawable="@drawable/setting_ip_selected" android:state_pressed="true"/>
+
+</selector>

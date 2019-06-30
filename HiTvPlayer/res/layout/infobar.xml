@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_channelInfo_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="28dp"
+    android:layout_marginLeft="62dp"
+    android:layout_marginRight="62dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_av_channelInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_channelnameInfo"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="19dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_info_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_pay_off" />
+
+            <TextView
+                android:id="@+id/TextView_Channel_Num"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/channel_number"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/TextView_Channel_Name"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/channel_name"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.hisilicon.tvui.view.DTVDigitalClock
+                android:id="@+id/Time_DigitalClock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_btnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="19dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+	    <TextView
+                android:id="@+id/tv_info_channel_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_info_channel_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_info_channel_weekday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:textSize="20sp"/>
+             <ImageView
+                android:id="@+id/iv_info_channel_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:visibility="gone"
+                android:src="@drawable/channellist_lock" />
+            <ImageView
+                android:id="@+id/iv_info_channel_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/channel_skip" />
+
+            <ImageView
+                android:id="@+id/iv_info_multiaudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_voice_off" />
+
+            <ImageView
+                android:id="@+id/iv_info_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_sub_off" />
+
+            <ImageView
+                android:id="@+id/iv_info_teletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_txt_off" />
+
+            <ImageView
+                android:id="@+id/iv_info_sdhd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_sd_on"
+                android:visibility="invisible" />
+
+           <ImageView
+                android:id="@+id/iv_infobar_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/iv_desc"
+                android:src="@drawable/info_usb_off" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_dtvpfInfo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="19dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextView_PresentEvent_ID"
+                android:layout_width="560dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextView_FollowEvent_Notify_ID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LinearLayout_atvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="19dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/TextView_atv_colorsystem"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextView_atv_audiosystem"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextView_atv_mts"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_pvr_recording_info"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_pvr_time_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="580dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pvr_recordtime_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="21dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="@string/pvr_record_time"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pvr_recordtime_info_value"
+                    android:layout_width="420dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textIsSelectable="false"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pvr_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="21dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/pvr_storage_tag"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_pvr_storage_progress_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="601dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pvr_storage_path"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="@string/pvr_storage_path"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pvr_storage_path_value"
+                    android:layout_width="420dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:ellipsize="end"
+                    android:focusableInTouchMode="true"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_pvr_storage__info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_pvr_storage__number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/pvr_storage_used_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="left"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pvr_storage_used"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="false"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="0dp"
+                        android:layout_toRightOf="@id/pvr_storage_used_value"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="@string/pvr_storage_used"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/pvr_storage_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="0dp"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pvr_storage_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="560dp"
+                    android:layout_height="wrap_content"
+                    android:max="100" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

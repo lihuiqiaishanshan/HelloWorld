@@ -1,0 +1,67 @@
+LOCAL_PATH:= $(call my-dir)
+
+ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 24 ))" )))
+    $(shell ln -sf AndroidManifest.xml_24 $(LOCAL_PATH)/HiVideoPlayer/src/main/AndroidManifest.xml)
+else
+    $(shell ln -sf AndroidManifest.xml_20 $(LOCAL_PATH)/HiVideoPlayer/src/main/AndroidManifest.xml)
+endif
+
+ifeq (STB,$(HISI_PRODUCT_LINE))
+    $(shell ln -sf DispFmt.java_STB $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/model/bluray/DispFmt.java)
+    $(shell ln -sf HiDisplayManager.java_STB $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/model/bluray/HiDisplayManager.java)
+    ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 26 ))" )))
+        #$(shell ln -sf HiSphereProjection.java_STB_26 $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/view/HiSphereProjection.java)
+    else
+        $(shell ln -sf HiSphereProjection.java_STB_24 $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/view/HiSphereProjection.java)
+    endif
+else
+    $(shell ln -sf DispFmt.java_DPT $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/model/bluray/DispFmt.java)
+    $(shell ln -sf HiDisplayManager.java_DPT $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/model/bluray/HiDisplayManager.java)
+    #$(shell ln -sf HiSphereProjection.java_DPT $(LOCAL_PATH)/HiVideoPlayer/src/main/java/com/hisilicon/android/videoplayer/view/HiSphereProjection.java)
+endif
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := platform
+
+LOCAL_STATIC_JAVA_LIBRARIES := hiVideoPlayer-pinyin4j-2.5.0
+ifeq (STB,$(HISI_PRODUCT_LINE))
+    LOCAL_STATIC_JAVA_LIBRARIES += HiDisplaySetting
+    ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 26 ))" )))
+        # LOCAL_STATIC_JAVA_LIBRARIES += HiSphereProjection
+        LOCAL_STATIC_JAVA_LIBRARIES += HiSysManager
+    endif
+endif
+
+src_dirs :=HiVideoPlayer/src/main/java/
+#指定Java源码路径
+LOCAL_SRC_FILES := $(call all-java-files-under, $(src_dirs))
+source_dir:=HiVideoPlayer/src/main/
+#指定Res路径
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/$(source_dir)/res
+#指定清单配置文件
+LOCAL_FULL_MANIFEST_FILE := $(LOCAL_PATH)/$(source_dir)/AndroidManifest.xml
+LOCAL_JNI_SHARED_LIBRARIES := libandroid_runtime
+#LOCAL_JNI_SHARED_LIBRARIES += libbdinfo_jni  libbluray_ex  libdvdinfo_jni  libdvdnav  libdvdread  libsysmanagerservice_jni
+
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := platform
+LOCAL_32_BIT_ONLY := true
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_USE_AAPT2 := false
+LOCAL_PACKAGE_NAME := HiVideoPlayer
+LOCAL_PROGUARD_ENABLED := disabled
+#ALL_DEFAULT_INSTALLED_MODULES += $(LOCAL_PACKAGE_NAME)
+#LOCAL_PROGUARD_FLAG_FILES := proguard.cfg
+include $(BUILD_PACKAGE)
+include $(CLEAR_VARS)
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := hiVideoPlayer-pinyin4j-2.5.0:HiVideoPlayer/libs/pinyin4j-2.5.0.jar
+#ifdef $(LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES)
+#LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := hiVideoPlayer-pinyin4j-2.5.0:libs/pinyin4j-2.5.0.jar
+#endif
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_MULTI_PREBUILT)

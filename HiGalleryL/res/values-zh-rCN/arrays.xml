@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="anim_name">
+        <item>无动画</item>
+        <item>缩放</item>
+        <item>滑动</item>
+        <item>淡入</item>
+        <item>随机</item>
+    </string-array>
+</resources>

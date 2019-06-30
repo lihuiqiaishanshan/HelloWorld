@@ -1,0 +1,33 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_SRC_FILES := $(call all-java-files-under, src)
+
+$(warning $(SUPPORT_OVERSEAAPP))
+LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_SRC_FILES += $(call all-java-files-under, platform)
+
+LOCAL_PACKAGE_NAME := HiTvLauncher
+
+LOCAL_JAVA_LIBRARIES := HitvManager
+
+LOCAL_STATIC_JAVA_LIBRARIES := Hitv
+
+LOCAL_STATIC_JAVA_LIBRARIES += HiDTV
+
+LOCAL_CERTIFICATE := platform
+LOCAL_JNI_SHARED_LIBRARIES := libhitvclient
+
+LOCAL_OVERRIDES_PACKAGES := platform
+
+LOCAL_PROGUARD_ENABLED := disabled
+LOCAL_OVERRIDES_PACKAGES := Home
+ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) <= 20  ))" )))
+	ALL_DEFAULT_INSTALLED_MODULES += $(LOCAL_PACKAGE_NAME)
+else
+	LOCAL_MULTILIB := 32
+endif
+
+include $(BUILD_PACKAGE)

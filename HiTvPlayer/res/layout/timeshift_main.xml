@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_timeshift_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="100dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/timeshift_tag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/play_no_signal_title" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/timeshift_status"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_view_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/timeshift_channel_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="fill_vertical"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/timeshift_channel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/timeshift_play_time"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:focusable="false"
+                android:layout_gravity="left"
+                android:background="@drawable/timeshift_progressbar_time_popup"
+                android:gravity="top|center_horizontal" />
+            <TextView
+                android:id="@+id/timeshift_begin_time"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/timeshift_play_time"
+                android:paddingTop="0dp"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/timeshift_play_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="870dp"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/timeshift_begin_time"
+                android:indeterminate="false"
+                android:indeterminateBehavior="cycle"
+                android:max="100"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="0"
+                android:thumb="@drawable/progress_thumb" />
+
+            <TextView
+                android:id="@+id/timeshift_record_time"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="30dp"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="133dp"
+                android:background="@drawable/btn_fast_backward" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:focusable="false"
+                android:background="@drawable/btn_play" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:focusable="false"
+                android:background="@drawable/btn_speed" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="600dp"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/common_red" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:focusable="false"
+                android:text="@string/timeshift_seek_tag"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

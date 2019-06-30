@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/setup_country_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:gravity="center_vertical|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/select_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:minHeight="60.0dip"
+            android:text="@string/str_country"
+            android:textColor="#FFFFFF"
+            android:textSize="35px" />
+
+        <GridView
+            android:id="@+id/country_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#2a6c83"
+            android:horizontalSpacing="2dp"
+            android:listSelector="#ffffff"
+            android:numColumns="5"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="4dp"
+            android:paddingTop="5dp"
+            android:verticalSpacing="2dp" >
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

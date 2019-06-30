@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_audio_1"
+            android:layout_width="490dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_audio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_audio_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_audio_2"
+            android:layout_width="490dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_audio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_audio_2" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/stereo_multichannel_btn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:nextFocusDown="@+id/ad_btn"
+            android:textSize="20sp"
+            android:background="@drawable/install_btn_bg" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_str_audio_mode"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/ad_btn"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:nextFocusDown="@+id/ad_btn"
+            android:textSize="20sp"
+            android:background="@drawable/install_btn_bg" />
+
+        <TextView
+            android:id="@+id/textViewAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:textSize="20sp"
+            android:text="@string/setting_str_ad"
+            android:gravity="right|center_vertical" />
+
+    </RelativeLayout>
+</LinearLayout>
