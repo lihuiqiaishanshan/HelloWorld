@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HiDTVPlayerActivity!</string>
+    <string name="app_name">HiTVPlayer</string>
+
+    <!-- sample  start -->
+    <string name="channel_list">CHANNEL LIST</string>
+    <string name="channel_name">Channel Name:</string>
+    <string name="channel_num">Channel Number:</string>
+    <!-- sample  end -->
+
+    <string name="string_null"></string>
+
+    <!-- player  start -->
+    <string name="play_no_channel_title">No channel data</string>
+    <string name="play_no_channel_tip">No channel now. Please scan first!</string>
+    <string name="play_no_signal_title">No Signal or Weak Signal</string>
+    <string name="play_signal_unsupport">Signal unsupported</string>
+    <string name="play_av_stop_title">Frontend data stopped</string>
+    <string name="play_ca_title">Scrambled</string>
+    <string name="play_channel_invalid">INVALID</string>
+    <string name="play_password_menu_lock">Please enter MenuLock password</string>
+    <string name="play_password_program_lock">Please enter ProgramLock password</string>
+    <string name="play_password_parental_rating">Please enter ParentLock password</string>
+    <string name="play_password_source_lock">Please enter SourceLock password</string>
+    <string name="play_password_lock_setting">Please enter LockSetting password</string>
+    <string name="password_wrong_tip">Password is incorrect</string>
+    <string name="select_audio_track">Select Audio Track</string>
+    <string name="select_audio_bg_des">Select Audio Track CheckBox</string>
+    <string name="play_wait_dialog_message">Waiting</string>
+    <string name="play_unlock_fail">Unlock failed</string>
+    <string name="play_no_radio_and_data">No radio and data</string>
+    <string name="play_no_tv_and_radio">No tv and radio</string>
+    <string name="play_no_data_and_tv">No data and tv</string>
+    <string name="play_pip_scramble">PIP program is scrambled</string>
+    <string name="play_channel_search">Scanning channels…</string>
+    <!-- player  end -->
+
+    <!-- navigation start -->
+    <string name="home_list_view_des">View image background</string>
+    <!-- navigation end -->
+
+    <!-- install  start -->
+    <string name="str_no_data">no data</string>
+    <string name="str_set_fail">Failed to set</string>
+    <string name="str_save_fail">Failed to save</string>
+    <string name="str_save_query">Do you want to save?</string>
+    <string name="str_dvbc_validate_input">Please enter valid arguments(freq between 113–866, symbol rate between 900-7200)</string>
+    <string name="str_dvbc_nid_input">Please enter valid arguments(network id between 0–65535)</string>
+    <string name="str_atsc_validate_input">Please enter a valid argument, atsc_t freq between 2–69, atsc_cab freq between 1–135</string>
+    <string name="str_add">Add</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_save">Save</string>
+    <string name="str_name">Name</string>
+    <string name="str_tv">DTV Channel</string>
+    <string name="str_radio">Radio Channel</string>
+    <string name="str_strength">Signal Strength</string>
+    <string name="str_qaulity">Signal Quality</string>
+    <string name="str_satellite">Satellite</string>
+    <string name="str_transponder">Transponder</string>
+    <string name="str_rate_unit">Kbps</string>
+    <string name="str_freq_unit">MHz</string>
+    <string name="str_on">On</string>
+    <string name="str_off">Off</string>
+    <string name="str_country">Country</string>
+    <string name="str_source">Source</string>
+    <string name="str_version">Version</string>
+    <string name="str_motor12_goto">Go to</string>
+    <string name="str_install_atsc_cab_format">Cable Format</string>
+    <string name="str_install_service_cab_format">Service Type</string>
+
+    <string name="str_please_wait">Please wait.</string>
+    <string name="str_none">None</string>
+    <string name="str_install_type">Install Type</string>
+    <string name="str_save_success">Save successfully</string>
+    <string name="str_install_range_out">Please enter a valid parameter of [%1$s],enter a value of %2$d to %3$d</string>
+    <string name="str_no_input_tip">Please enter a valid parameter, the parameter can not be empty</string>
+    <string name="str_can_not_save">0 position is 0 degree, can not be saved using new one</string>
+    <string name="str_dtelete_fail">Fail to delete</string>
+    <string name="str_dvbs_validate_input">Please enter a valid data, C:3000-4800 ku:10600-12750, Symbolrate:1-60000</string>
+    <string name="str_percent" translatable="false">%d%%</string>
+    <!-- install  end -->
+
+    <!-- install  start -->
+    <string name="str_install_search">Scan</string>
+    <string name="str_install_lnbtype">LNB type</string>
+    <string name="str_install_lnbpower">LNB power</string>
+    <string name="str_install_22k">22k switch</string>
+    <string name="str_install_diseqc_mode">DiSEqC type</string>
+    <string name="str_install_diseqc_10port">DiSEqC1.0 Port</string>
+    <string name="str_install_diseqc_11port">DiSEqC1.1 Port</string>
+    <string name="str_install_diseqc_20port">DiSEqC2.0 Port</string>
+    <string name="str_install_motor_type">Motor Type</string>
+    <string name="str_install_motor_reset">Reset</string>
+    <string name="str_install_local_long">Local Longitude</string>
+    <string name="str_install_locat_lati">Local Latitude</string>
+    <string name="str_install_longitude">Longitude</string>
+    <string name="str_install_longtype">Direction</string>
+    <string name="str_install_scan_title">Installation</string>
+    <string name="str_install_scan_catype">CA Type</string>
+    <string name="str_install_scan_channel">Channel Type</string>
+    <string name="str_install_scan_network">Network Search</string>
+    <string name="str_install_scan_mode">Scan Type</string>
+    <string name="str_install_scan_start">Start Scan</string>
+    <string name="str_install_scan_stop_query">Are you sure to stop scanning?</string>
+    <string name="str_install_tpedit_title">Transponder Edit</string>
+    <string name="str_install_ctpedit_mainfreq">Main Freq</string>
+    <string name="str_install_ctpedit_networkid">Network Id</string>
+    <string name="str_install_ctpedit_freq">Start Freq</string>
+    <string name="str_install_tpedit_freq">Frequency</string>
+    <string name="str_install_tpedit_rate">Symbol rate</string>
+    <string name="str_install_tpedit_pol">Polarity</string>
+    <string name="str_install_move_step">Move Step</string>
+    <string name="str_install_to_west">To West</string>
+    <string name="str_install_to_east">To East</string>
+    <string name="str_install_goto">Go to X</string>
+    <string name="str_install_reference">Go to reference</string>
+    <string name="str_install_pos_no">Position No.(Save)</string>
+    <string name="str_install_limit_type">Limit Type</string>
+    <string name="str_install_progress_title">Scanning</string>
+    <string name="str_install_progress_start_fail">Failed to start scanning of [%s]</string>
+    <string name="str_install_tuner_lock_fail">Fail</string>
+    <string name="str_install_tuner_sucess">Success</string>
+    <string name="str_install_nit_scan">NIT Scan</string>
+    <string name="str_install_quick_scan">Quick Scan</string>
+    <string name="str_install_full_scan">Full Scan</string>
+    <string name="str_install_blind_scan">Blind Scan</string>
+    <string name="str_install_manual_scan">Manual Scan</string>
+    <string name="str_install_bandwidth">Bandwidth</string>
+    <string name="str_install_qam">QAM</string>
+    <string name="str_install_dvbt_id">%1$4d : %2$d KHz</string>
+    <string name="str_install_tuner_signal">Tuner signal</string>
+    <string name="str_install_tuner_device">Tuner device</string>
+    <string name="str_install_reset">Install reset</string>
+    <string name="str_install_oneseg">OneSeg</string>
+    <string name="str_number_zero">0</string>
+    <string name="str_install_tp_info">Frequency</string>
+    <string name="str_atsc_ch_info">CH</string>
+    <string name="str_scan_type_select">Select Scan Type</string>
+    <string name="str_scan_type_name">Scan Type</string>
+    <string name="str_signal_type_select">Select Signal Type</string>
+    <string name="str_atv_channel">Analog Channel</string>
+
+    <string name="str_install_network_noselect">Please select a satellite firstly</string>
+    <string name="str_install_network_delete_query">Are you sure to delete the satellite selected ?</string>
+    <string name="str_install_network_name_exist">The satellite name already exists, please input again</string>
+    <string name="str_install_tp_noselect">Please select a transponder first</string>
+    <string name="str_install_tpdelete_query">Are you sure to delete the transponder %dHz?</string>
+    <string name="str_install_west">West</string>
+    <string name="str_install_east">East</string>
+    <string name="str_install_stop_move">Stop</string>
+    <string name="str_install_disable">Disable</string>
+    <string name="str_install_long_west">West Longitude</string>
+    <string name="str_install_long_east">East Longitude</string>
+    <string name="str_install_lati_south">South Latitude</string>
+    <string name="str_install_lati_north">North Latitude</string>
+    <string name="str_install_locking">Tuner is locking</string>
+    <string name="str_install_all">ALL</string>
+    <string name="str_install_fta">Free</string>
+    <string name="str_install_scramble">Scrambled</string>
+    <string name="str_install_tv">TV</string>
+    <string name="str_install_radio">Radio</string>
+    <string name="str_install_blind">Blind</string>
+    <string name="str_install_auto_full">Auto Full</string>
+    <string name="str_install_enhanced">Enhance</string>
+    <string name="str_install_diseqc10">DiSEqC  1.0</string>
+    <string name="str_install_diseqc11">DiSEqC  1.1</string>
+    <string name="str_install_diseqc1110">DiSEqC  1.1/1.0</string>
+    <string name="str_install_diseqc12">DiSEqC  1.2</string>
+    <string name="str_install_diseqc20">DiSEqC  2.0</string>
+    <string name="str_install_usals">USALS</string>
+    <string name="str_install_port_a">A</string>
+    <string name="str_install_port_b">B</string>
+    <string name="str_install_port_c">C</string>
+    <string name="str_install_port_d">D</string>
+    <string name="str_install_network_reach_max">The number of satellites has reached the maximum(64).</string>
+    <string name="str_install_fail_addsatellite">Failed to add the satellite.</string>
+    <string name="str_install_fail_addtp">Failed to add the transponder.</string>
+    <string name="str_install_add_satellite">Add Satellite</string>
+    <string name="str_install_edit_satellite">Edit Satellite</string>
+    <string name="str_install_add_tp">Add Transponder</string>
+    <string name="str_install_edit_tp">Edit Transponder</string>
+    <!-- install end -->
+
+    <!-- pip start -->
+    <string name="str_pip_close_first">Please close the PIP first</string>
+    <string name="str_pip_not_support">PIP not supported</string>
+    <string name="str_pu_program_updated">Program updated</string>
+    <string name="str_pu_rescan_tip">Program is updated. Please re-scanning.</string>
+    <string name="str_timeshift_not_support">Time-shift not supported</string>
+    <string name="str_pvr_not_support">Record not supported</string>
+    <string name="str_cc_not_support">CC not supported</string>
+    <string name="str_pvr_not_support_usb">Please insert storage device,And set correct record path </string>
+    <string name="str_pvr_not_support_tip">No external storage device</string>
+    <!-- pip end -->
+
+    <!-- setting start -->
+    <string name="setting_headline">Basic Settings</string>
+    <string name="setting_total_lock">Lock Switch</string>
+    <string name="setting_program_lock">Channel Lock</string>
+    <string name="setting_parental_rating">Parent Lock</string>
+    <string name="setting_source_lock">Source Lock</string>
+    <string name="setting_source_select">Source Select</string>
+    <string name="setting_key_lock">Key Lock</string>
+    <string name="setting_pvr_path_null">No external storage device</string>
+    <string name="setting_password_modify">Change Password </string>
+    <string name="setting_old_password">Current Password</string>
+    <string name="setting_new_password">New Password</string>
+    <string name="setting_confirm_password">Confirm Password</string>
+    <string name="setting_old_password_error">Old password is incorrect. Please enter again</string>
+    <string name="setting_new_password_confirm_error">Confirmed password is incorrect. Please enter again</string>
+    <string name="setting_old_password_null">Old password cannot be empty. Please enter password with four numbers</string>
+    <string name="setting_new_password_null">New password cannot be empty. Please enter password with four numbers</string>
+    <string name="setting_old_password_length_error">Old password length is incorrect. Please enter password with four numbers</string>
+    <string name="setting_new_password_length_error">New password length is incorrect. Please enter password with four numbers</string>
+    <string name="setting_new_password_change_ok">Password has been changed successfully</string>
+    <string name="setting_new_password_same_with_old">The old password and the new password are identical. Do not need to modify!</string>
+    <string name="setting_record_path">Record Path</string>
+    <string name="setting_timeshift_time">TimeShift Length</string>
+    <string name="setting_inforbar_time">OSD Time</string>
+    <string name="setting_timeshift_to_record">TimeShift to Record</string>
+    <string name="setting_menu_lock">Menu Lock</string>
+    <string name="setting_tap_to_set">Tap to Set</string>
+    <string name="setting_time_switch">Automatically synchronize time by TDT</string>
+    <string name="setting_time_switch_tot">Automatically synchronize timezone by TOT</string>
+    <string name="setting_time_zone_region_code">Region code by TOT</string>
+    <string name="setting_oad_switch">OAD</string>
+    <string name="setting_yes">OK</string>
+    <string name="setting_no">Cancel</string>
+    <string name="setting_modify_password">Modify Password</string>
+    <string name="setting_stack_version">Stack Version:</string>
+    <string name="setting_java_api_version">Java API Version:</string>
+    <string name="setting_app_version">APP Version:</string>
+    <string name="setting_restore_tip_message">This operation will delete all channels and settings that the user was added. Are you sure to continue?</string>
+    <string name="setting_restore_confirm">Are you sure to restore the default data?</string>
+    <string name="setting_switch_on">ON</string>
+    <string name="setting_switch_off">OFF</string>
+    <string name="setting_language_audio_1">Primary Audio Language</string>
+    <string name="setting_language_audio_2">Secondary Audio Language</string>
+    <string name="setting_language_epg_1">Primary EPG Language</string>
+    <string name="setting_language_subt_1">Primary Subt Language</string>
+    <string name="setting_language_subt_2">Secondary Subt Language</string>
+    <string name="setting_language_teletext_1">Primary Teletext Language</string>
+    <string name="setting_str_country">Please select Country</string>
+    <string name="setting_str_area_code">Area code</string>
+    <string name="setting_str_audio_mode">Stereo Mode / Multichannel Mode</string>
+    <string name="setting_str_ad">Audio Description</string>
+    <string name="setting_oad_progress_title">Downloading software</string>
+    <!-- setting end -->
+
+    <!-- PVR start -->
+    <string name="pvr_record_time">Recorded Time :</string>
+    <string name="pvr_storage_tag">Storage :</string>
+    <string name="pvr_storage_path">Storage path :</string>
+    <string name="pvr_storage_used">Used</string>
+    <string name="pvr_ensure_stop_title">Stop Recording</string>
+    <string name="pvr_ensure_stop">Are you sure to stop recording?</string>
+    <string name="pvr_record_path_removed_tip">The current record path is invalid. Please select other record path in Setting</string>
+    <string name="pvr_record_path_error">No storage device or record path is invalid</string>
+    <string name="pvr_disk_space_lack">Free disk space is less than 100M</string>
+    <string name="pvr_disk_full_stop">Disk is full. Pvr has stopped.</string>
+    <string name="pvr_disk_slow">Disk is slow.</string>
+    <string name="pvr_set_record_time">Set Recording Time</string>
+    <string name="pvr_set_record_time_hour">H</string>
+    <string name="pvr_set_record_time_min">M</string>
+    <string name="pvr_set_record_default_hour">1</string>
+    <string name="pvr_set_record_default_min">0</string>
+    <string name="pvr_rec_finished">Recording finished.</string>
+    <string name="pvr_rec_ews_start">Catastrophe early warning,stop recording</string>
+    <string name="pvr_rec_offoron_sup">Recording is not allowed within 2 minutes after power and before shutdown</string>
+    <string name="pvr_rec_nodata">Service not supported</string>
+    <string name="pvr_rec_power_shutdown">Stop recording and turn off</string>
+    <string name="pvr_rec_power_noAction">Continue recording</string>
+    <string name="pvr_rec_power_screen_off">Turn off the screen and continue recording</string>
+    <string name="pvr_rec_power_shutdown_title">Please select the operation you need:</string>
+    <!-- PVR end -->
+    <string name="pvr_timeshift_start_fail">Start record/timeshift failed</string>
+    <string name="pvr_timeshift_start_ATSC">Recording is not supported in ATSC</string>
+    <!-- Timeshift start-->
+    <string name="timeshift_seek_tag">Seek</string>
+    <string name="timeshift_no_space">No space. Please select other record path in Setting</string>
+    <string name="timeshift_stop_tip_title">Stop Timeshift</string>
+    <string name="timeshift_stop_tip">Are you sure to stop timeshift?</string>
+    <string name="timeshift_catch_live">Timeshift time longer than live time.</string>
+    <string name="timeshift_seek_jump_to">Jump To:</string>
+    <string name="timeshift_seek_time_separator">:</string>
+    <string name="timeshift_seek_ok">OK</string>
+    <string name="seek_time_error">Please select the right time</string>
+    <string name="seek_error">Seek error</string>
+    <string name="timeshift_start_fail">Failed to start timeshift</string>
+    <string name="timeshift_ews_start">Catastrophe early warning,stop TimeShift</string>
+    <string name="timeshift_playing_error">The code stream is abnormal,stop TimeShift.</string>
+    <!-- Timeshift end-->
+
+    <!-- infobar start -->
+    <string name="info_unknown_channel">Unknown Channel</string>
+    <string name="info_unknown_program">Unknown Program</string>
+    <string name="info_satellite">Satellite : </string>
+    <string name="info_transponder">Transponder : </string>
+    <string name="info_bandwidth_frequency">Frequency/Bandwidth : </string>
+    <string name="info_modulation">Modulation :</string>
+    <string name="info_frequency_symbolrate">Frequency/SymbolRate : </string>
+    <string name="info_quality">Quality :</string>
+    <string name="info_strength">Strength :</string>
+    <string name="info_horizontal">H</string>
+    <string name="info_vertical">V</string>
+    <string name="info_program_description">Program Description :</string>
+    <string name="iv_desc">imageview</string>
+    <string name="info_channel_num_invalid">INVALID</string>
+    <string name="info_color_system">Color System:</string>
+    <string name="info_audio_system">Audio System:</string>
+    <string name="info_mtsmode">MTS Mode:</string>
+    <string name="toast_4k_not_support">4K IS NOT supported now.</string>
+    <!-- infobar end -->
+
+    <!-- epg start -->
+    <string name="epg_guide">Electronic Program Guide</string>
+    <string name="epg_event_none">No programs currently</string>
+    <string name="epg_event_description">Program Description:</string>
+    <string name="epg_button_exit">Exit</string>
+    <string name="epg_event_ok_tip">Detail</string>
+    <string name="epg_green_tip">Switch Channel List</string>
+    <string name="epg_red_tip">Book</string>
+    <string name="epg_book_seperate">:</string>
+    <string name="epg_yellow_tip">Previous Day</string>
+    <string name="epg_blue_tip">Next Day</string>
+    <string name="epg_book_title">Book</string>
+    <string name="epg_book_channel">Channel</string>
+    <string name="epg_book_name">Name</string>
+    <string name="epg_book_type">Type</string>
+    <string name="epg_book_start_date">Date</string>
+    <string name="epg_book_date_year">Y</string>
+    <string name="epg_book_date_month">M</string>
+    <string name="epg_book_date_day">D</string>
+    <string name="epg_book_start_time">Time</string>
+    <string name="epg_book_date_hour">H</string>
+    <string name="epg_book_date_minute">M</string>
+    <string name="epg_book_date_second">S</string>
+    <string name="epg_book_duration">Duration</string>
+    <string name="epg_book_cycle">Cycle</string>
+    <string name="epg_book_success_tip">Succeeded to add this booking!</string>
+    <string name="epg_book_date_invalid">Start date or time is in the past!</string>
+    <string name="epg_book_failure_tip">Failed to add this booking!</string>
+    <string name="epg_book_time_error_tip">Start date or time is in the past or time is not synchronized!</string>
+    <string name="epg_book_conflict_tip">Failed to add the booking for conflict.The conflicted booking list shows below:</string>
+    <string name="epg_go_on_button">Go On</string>
+    <string name="epg_cancel_button">Cancel</string>
+    <string name="epg_book_scramble_cannot_book">Scramble program cannot be booked!</string>
+    <string name="epg_book_update_success_tip">Succeeded to update this book!</string>
+    <string name="epg_book_update_failure_tip">Failed to update this book!</string>
+    <string name="epg_parent_lock_desc_age">At least %1$d years old</string>
+    <string name="epg_age_source">Age: %1$d</string>
+    <string name="epg_parent_lock_desc_less">Free</string>
+    <string name="epg_parent_lock_desc_title">Parental Rating:</string>
+    <string name="epg_parent_lock_content">Content with&#160;</string>
+    <string name="epg_parent_lock_desc_drugs"> Drugs</string>
+    <string name="epg_parent_lock_desc_violence"> Violence</string>
+    <string name="epg_parent_lock_desc_sex"> Sex</string>
+    <!-- epg end -->
+
+    <!-- recordinglist start -->
+    <string name="book_time_alarm_title">The booking task will begin in 60 seconds</string>
+    <string name="book_time_arrive_title">The booking time is up, and task begins!</string>
+    <string name="book_time_alarm_tip">An error occurs while obtaining booking data.</string>
+    <string name="book_time_alarm_ok">OK</string>
+    <string name="book_time_alarm_cancel">Cancel</string>
+    <string name="book_time_arriving_title">Book task will begin in 30 seconds</string>
+    <string name="book_time_arriving_tip">Press any key to quit and cancel book</string>
+    <string name="book_time_arriving_cancel_success">Book has been canceled</string>
+    <string name="book_time_arriving_cancel_fail">Delete Book has fail,please try again</string>
+    <string name="recording_list_title">Recording List</string>
+    <string name="recording_list_recorded">Recorded</string>
+    <string name="recording_list_book_record">Book Record</string>
+    <string name="recording_list_book_view">Book View</string>
+    <string name="recording_list_book_add">Add</string>
+    <string name="recording_list_book_edit">Edit</string>
+    <string name="recording_list_book_delete">Delete</string>
+    <string name="recording_list_book_delete_all">Delete All</string>
+    <string name="recording_list_usable">Usable</string>
+    <string name="recording_list_total">Total:</string>
+    <string name="recording_list_available_space">Available Space:</string>
+    <string name="recording_list_information_title">Information:</string>
+    <string name="recording_list_information_name">Name</string>
+    <string name="recording_list_information_duration">Duration</string>
+    <string name="recording_list_information_resolution">Resolution</string>
+    <string name="recording_list_information_size">Size</string>
+    <string name="recording_list_play_loading">Loading......</string>
+    <string name="recording_list_play_status_error">Play status error, please try to preview!</string>
+    <string name="recording_list_play_start_error">start error</string>
+    <string name="recording_list_play_loading_error">Loading error</string>
+    <string name="recording_list_play_recorded_current_file">Current File:</string>
+    <string name="recording_list_play_recorded_new_file">New File:</string>
+    <string name="recording_list_play_recorded_file_list_no_resource">No resource found. Please check the record path in setting!</string>
+    <string name="recording_list_play_recorded_file_existed"> is already existed!</string>
+    <string name="recording_list_play_recorded_file_not_existed"> is not existed!</string>
+    <string name="recording_list_play_recorded_full_screen_play">Full Screen Play</string>
+    <string name="recording_list_play_recorded_preview">Preview</string>
+    <string name="recording_list_play_recorded_preview_tip">Do you want to preview?</string>
+    <string name="recording_list_play_recorded_rename">Rename</string>
+    <string name="recording_list_play_recorded_rename_tip">Do you want to rename the current file?</string>
+    <string name="recording_list_play_recorded_rename_success">Rename has been finished!</string>
+    <string name="recording_list_play_recorded_delete">Delete</string>
+    <string name="recording_list_play_recorded_delete_tip">Do you want to delete current file?</string>
+    <string name="recording_list_play_recorded_delete_success">Succeeded to delete!</string>
+    <string name="recording_list_play_recorded_delete_failure">Failed to delete!</string>
+    <string name="recording_list_play_recorded_delete_all">Delete All</string>
+    <string name="recording_list_play_recorded_delete_all_tip">Do you want to delete all files?</string>
+    <string name="recording_list_play_recorded_delete_all_success">Succeeded to delete All!</string>
+    <string name="recording_list_play_recorded_delete_all_failure">Failed to Delete All!</string>
+    <string name="recording_list_play_waitting">Current operation is running and please wait!</string>
+    <string name="book_sure_to_delete_one_message">This booking event will be deleted, and the operation cannot be recovered.</string>
+    <string name="book_sure_to_delete_all_message">All booking events will be deleted, and the operation cannot be recovered.</string>
+    <!-- recordinglist end -->
+
+    <!-- teletext start -->
+    <string name="teletext_nodata">No teletext data</string>
+    <!-- teletext end -->
+
+    <!-- DRA start -->
+    <string name="dra_tag">DRA</string>
+    <string name="dra_error">Error</string>
+    <!-- DRA end -->
+
+    <!-- subtitle start -->
+    <string name="subtitle_language_code">Subtitle Switch</string>
+    <string name="subtitle_off">off</string>
+    <string name="subtitle_nodata">No subtitle data</string>
+    <!-- subtitle end -->
+
+    <!-- closed caption start -->
+    <string name="cc_nodata">No CC data</string>
+    <!-- closed caption end -->
+
+    <!-- audio start -->
+    <string name="audio_title">Audio Switch</string>
+    <string name="audio_s">S</string>
+    <string name="audio_l">L</string>
+    <string name="audio_r">R</string>
+    <string name="audio_nodata">no audio data</string>
+    <!-- audio end -->
+
+
+    <!-- PM start -->
+    <string name="cas">CAS</string>
+    <string name="alpha">Alpha</string>
+    <string name="digital">Digital</string>
+    <string name="group">Group</string>
+    <string name="channel_edit_title">Channel Edit</string>
+    <string name="channel_rename_title">Rename</string>
+    <string name="channel_group_list">Group List</string>
+    <string name="channel_tp_list">TP List</string>
+    <string name="channel_channel_list">Channel List</string>
+    <string name="name">Name</string>
+    <string name="tp_list_title">Freq/Pol/Symbol</string>
+    <string name="audio_pid">Audio PID</string>
+    <string name="video_pid">Video PID</string>
+    <string name="pcr_pid">PCR PID</string>
+    <string name="channel_edit_dialog_title">Channel Edit</string>
+    <string name="add_channel_dialog_title">Add Channel</string>
+    <string name="choice_sort_type_dialog_title">Select Sort Type</string>
+    <string name="channel_manager_sort_lock">Lock</string>
+    <string name="add_channel">Add Channel</string>
+    <string name="edit">Edit</string>
+    <string name="no">NO.</string>
+    <string name="favorite">Favorite</string>
+    <string name="skip">Skip</string>
+    <string name="lock">Lock</string>
+    <string name="skip_unskip">Skip/UnSkip</string>
+    <string name="lock_unlock">Lock/UnLock</string>
+    <string name="fav_unfav">Favorite/UnFavorite</string>
+    <string name="add_to_fav">Add To Fav</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="sort">Sort</string>
+    <string name="move">Move</string>
+    <string name="muti_operate">Multi-Operate</string>
+    <string name="cancel_skip">Cancel</string>
+    <string name="cancel_lock">Cancel</string>
+    <string name="cancel_delete">Cancel</string>
+    <string name="cancel_move">Cancel</string>
+    <string name="search">Search</string>
+    <string name="cas_all">All</string>
+    <string name="cas_fta">FTA</string>
+    <string name="cas_scramble">Scramble</string>
+    <string name="delete_all">Delete All</string>
+    <string name="move_to"> Move To Position :</string>
+    <string name="save_dialog_title">Save Data</string>
+    <string name="save_dialog_msg">Please wait while saving</string>
+    <string name="sure_to_delete">Sure to delete ?</string>
+    <string name="sure_to_delete_message"> Channels will be deleted, and the operation cannot be recovered.</string>
+    <string name="sure_to_delete_one_message"> Channel will be deleted, and the operation cannot be recovered.</string>
+    <string name="sure_to_delete_all_message">All channels will be deleted, and the operation cannot be recovered.</string>
+    <string name="it_cant_be_empty">It cannot be empty.</string>
+    <string name="pid_is_out_of_range">PID is out of range </string>
+    <string name="name_conflict">Channel name conflict </string>
+    <string name="database_error">Error in DataBase loading and this cannot be recovered. Please restore the app!</string>
+    <string name="all">All</string>
+    <!-- PM end -->
+
+    <!-- PvrActivity media start -->
+    <string name="media_title_str">Title: &#160;</string>
+    <string name="media_init_time">00:00:00</string>
+    <!-- PvrActivity media end -->
+
+    <!-- PvrActivity playmode start -->
+    <string name="random_str">Random Mode</string>
+    <string name="cycle_str">Circulation Mode</string>
+    <!-- PvrActivity playmode end -->
+
+    <!-- PvrActivity subtitile start -->
+    <string name="no_soundtrack">No Soundtrack</string>
+    <string name="no_subtitle">No subtitle data</string>
+    <string name="no_teletext">No teletext data</string>
+    <string name="close_subtitle">off</string>
+    <!-- PvrActivity subtitile end -->
+
+    <!-- PvrActivity progress dialog start -->
+    <string name="dialog_title_loading">Loading</string>
+    <string name="dialog_message_loading">Please wait…</string>
+    <string name="loading_error">Loading error!</string>
+    <string name="sorry">Sorry</string>
+    <string name="confirm">Confirm</string>
+    <!-- PvrActivity progress dialog end -->
+
+    <!-- EWS start -->
+    <string name="str_disaster_type_description">Disaster:</string>
+    <string name="str_disaster_date_description">Date:</string>
+    <string name="str_disaster_position_description">Position:</string>
+    <string name="str_disaster_characteristic_description">Characteristic:</string>
+    <string name="str_disaster_message_description">Message:</string>
+    <!-- EWS end -->
+
+    <!-- SSU start -->
+    <string name="ssu_str_description">Software update :</string>
+    <!-- SSU end -->
+
+    <!-- ATV string -->
+    <!-- Signal source start -->
+    <string name="dvbc">DVB-C</string>
+    <string name="dtmb">DTMB</string>
+    <string name="atv">ATV</string>
+    <string name="cvbs1">AV1</string>
+    <string name="cvbs2">AV2</string>
+    <string name="ypbpr1">YPbPr</string>
+    <string name="hdmi1">HDMI1</string>
+    <string name="hdmi2">HDMI2</string>
+    <string name="hdmi3">HDMI3</string>
+    <string name="hdmi4">HDMI4</string>
+    <string name="vga">VGA</string>
+    <string name="move_channel_ok">OK</string>
+    <string name="move_channel_cancel">Cancel</string>
+    <!-- Signal source end -->
+
+    <!-- Search start -->
+    <string name="finetune">FineTune Scan</string>
+    <string name="manual_search">Manual Search</string>
+    <string name="frequency_rate">Freq :</string>
+    <string name="frequency_band">Band :</string>
+    <string name="channel_string">Current Channel :</string>
+    <string name="channel_number">0</string>
+    <string name="band_val">VHF-L</string>
+    <!-- Search end -->
+
+    <!-- VGA adjusting start -->
+    <string name="adjusting">Auto Adjusting …</string>
+    <string name="adjust_failed">Auto Adjust Failure!</string>
+    <string name="adjust_success">Auto Adjust Success!</string>
+    <string name="exit">Exit</string>
+    <string name="all_scan_freq_rate">%1$s MHz</string>
+    <!-- VGA adjusting end -->
+
+    <!-- channel edit start -->
+    <string name="channel_edit_list">Channel Edit</string>
+    <string name="channel_skip">Skip</string>
+    <string name="channel_move">Move</string>
+    <string name="channel_delete">Dele</string>
+    <string name="channel_rename">Rename</string>
+    <!-- channel edit end -->
+
+    <string name="str_count_time">s to power off</string>
+    <string name="pvr_record_time_zero">00:00:00</string>
+
+    <!-- dts stream type -->
+    <string name="dts_dts">DTS</string>
+    <string name="dts_dtsex">DTS Express</string>
+    <string name="dts_dtshd">DTS-HD</string>
+    <string name="dts_unknow">UNKNOW</string>
+    <!-- ATSC CAB FORMAT -->
+    <string name="atsc_cable_format_auto">Auto</string>
+    <string name="atsc_cable_format_std">STD</string>
+    <string name="atsc_cable_format_hrc">HRC</string>
+    <string name="atsc_cable_format_irc">IRC</string>
+
+    <!-- PVR file play -->
+    <string name="media_stop_text">Stop</string>
+    <string name="media_play_text">play/pause</string>
+    <string name="media_fastforward_text">FastForward</string>
+    <string name="media_rewinddown_text">RewindDown</string>
+    <string name="media_next_text">Next</string>
+    <string name="media_pre_text">Pre</string>
+    <string name="media_pre_slow_text">SlowBack</string>
+    <string name="media_next_slow_text">SlowForward</string>
+    <string name="media_pre_seek_text">Seek -30s</string>
+    <string name="media_next_seek_text">Seek +30s</string>
+    <string name="media_seek">Seek</string>
+    <string name="media_subtitles_text">Subtitle</string>
+    <string name="media_track_text">Track</string>
+    <string name="media_info_text">Info</string>
+    <!-- PVR file play  end-->
+
+    <!-- OAD -->
+    <string name="oad_download_finish">Download finish</string>
+    <string name="oad_download_hint">Please do not power off, download and upgrade in about one minute.</string>
+</resources>

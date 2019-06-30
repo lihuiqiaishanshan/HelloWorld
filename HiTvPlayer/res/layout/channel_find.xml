@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="512dp"
+    android:layout_marginLeft="56dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/custom_view_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/search"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_channel_find_search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/channeledit_dialog_editview_bg"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@color/white"
+        android:textSize="30sp" >
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView_channel_find_channel_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:divider="@drawable/channellist_line"
+        android:listSelector="@drawable/chlist_list_item_bg" >
+
+    </ListView>
+
+</LinearLayout>

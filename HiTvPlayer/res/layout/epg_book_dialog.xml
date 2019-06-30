@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Combox="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="434dp"
+    android:layout_height="528dp"
+    android:layout_gravity="right"
+    android:layout_marginBottom="90dp"
+    android:background="@drawable/custom_setting_view_bg"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_epg_book_title"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/epg_book_title"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/llay_epg_book_information"
+        android:layout_width="380dp"
+        android:layout_height="385dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_channel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_channel_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_channel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_channel_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_channel"
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_name_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_name"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_name_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_epg_book_name"
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="textNoSuggestions"
+                android:maxLength="31"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_type"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_type_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_type"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_type_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/cbx_epg_book_type"
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                Combox:lineHeight="30sp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_cycle_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_cycle_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_cycle"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_cycle_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/cbx_epg_book_cycle"
+                android:layout_width="280dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                Combox:lineHeight="30sp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_start_date"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_start_date_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_start_date"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_start_date_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llay_epg_book_start_date_year_month_day"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_date_year"
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:maxLength="4"
+                    android:nextFocusRight="@+id/et_epg_book_start_date_month"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_date_year"
+                    android:layout_width="25dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_year"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_date_month"
+                    android:layout_width="55dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:maxLength="2"
+                    android:nextFocusRight="@+id/et_epg_book_start_date_day"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_date_month"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_month"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_date_day"
+                    android:layout_width="55dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/et_epg_book_start_time_hour"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_date_day"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_day"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_start_time"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_start_time_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_start_time"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_start_time_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llay_epg_book_start_time_year_hour_day"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_time_hour"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:maxLength="2"
+                    android:nextFocusRight="@+id/et_epg_book_start_time_minute"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_time_hour"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_hour"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_time_minute"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:maxLength="2"
+                    android:nextFocusRight="@+id/et_epg_book_start_time_second"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_time_minute"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_minute"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_start_time_second"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/et_epg_book_duration_hour"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_start_time_second"
+                    android:layout_width="21dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_second"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_epg_book_duration"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_epg_book_duration_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_duration"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_epg_book_duration_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/llay_epg_book_duration_year_hour_day"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_epg_book_duration_hour"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:maxLength="2"
+                    android:nextFocusRight="@+id/et_epg_book_duration_minute"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_duration_hour"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_hour"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_duration_minute"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:singleLine="true"
+                    android:maxLength="2"
+                    android:nextFocusRight="@+id/et_epg_book_duration_second"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_duration_minute"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_minute"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_epg_book_duration_second"
+                    android:layout_width="73dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/btn_epg_book_ok"
+                    android:singleLine="true"
+                    android:text="@string/string_null"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_epg_book_duration_second"
+                    android:layout_width="21dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/epg_book_date_second"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_epg_book_ok_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_epg_book_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/epg_description_button"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/epg_cancel_button"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_epg_book_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/epg_description_button"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/setting_time_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/setting_time_switch" />
+        <Button
+            android:id="@+id/time_switch"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/install_btn_bg"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/setting_time_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/setting_time_switch_tot" />
+        <Button
+            android:id="@+id/time_switch_tot"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:background="@drawable/install_btn_bg"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/setting_time_zone_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/setting_time_textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/setting_time_zone_region_code" />
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/time_zone_region_select"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@+id/time_zone_region_select"
+            android:layout_marginRight="97dp"
+            pvr:lineHeight="50dp" />
+    </RelativeLayout>
+</LinearLayout>

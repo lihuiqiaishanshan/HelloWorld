@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/dvbt_manualscan_whole_lay"
+        android:layout_width="630dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dvbt_manualscan_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/dvbt_manualscan_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_install_manual_scan"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line_wide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_dvbt_freqname"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/str_install_ctpedit_freq"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_dvbt_frmindex"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:focusable="true" >
+            </com.hisilicon.tvui.view.Combox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/str_install_bandwidth"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_dvbt_scan_bandwidth_combox"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </com.hisilicon.tvui.view.Combox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout_dvbt_version"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left"
+                android:text="@string/str_version"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_dvbt_version"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </com.hisilicon.tvui.view.Combox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout_isdbt_oneseg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/str_install_oneseg"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </TextView>
+
+            <com.hisilicon.tvui.view.Combox
+                android:id="@+id/id_isdbt_oneseg"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/install_cbx_bg"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </com.hisilicon.tvui.view.Combox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dvbtscan_progress_freq_qaulity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:singleLine="true"
+                android:text="@string/str_qaulity"
+                android:textColor="@color/white" />
+             <SeekBar
+                android:id="@+id/dvbtfreq_qaulity_seekbar"
+                android:layout_width="250dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:progressDrawable="@drawable/seek_bar_progress"
+                android:thumb="@null" />
+            <TextView
+                android:id="@+id/dvbtfreq_qaulity_value_txt"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/id_dvbt_start_scan_btn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_install_scan_start"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

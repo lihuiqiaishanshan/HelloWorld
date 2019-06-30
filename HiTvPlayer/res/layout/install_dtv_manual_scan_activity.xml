@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- DVB-C手动搜索 -->
+    <LinearLayout
+        android:id="@+id/ly_dvbc_manual_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_dvbc_manual_scan_view" />
+    </LinearLayout>
+
+    <!-- DVB-T手动搜索 -->
+    <LinearLayout
+        android:id="@+id/ly_dvbt_manual_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_dvbt_manual_scan_view" />
+    </LinearLayout>
+
+    <!-- ATSC手动搜索 -->
+    <LinearLayout
+        android:id="@+id/ly_atsc_manual_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_atsc_manual_scan_view" />
+    </LinearLayout>
+
+    <!-- 搜索进度 -->
+    <LinearLayout
+        android:id="@+id/ly_scan_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_scan_progress_view" />
+    </LinearLayout>
+</merge>

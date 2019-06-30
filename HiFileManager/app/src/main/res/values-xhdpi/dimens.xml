@@ -1,0 +1,124 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--libs-->
+    <!-- The max amount of scroll ItemTouchHelper will trigger if dragged view is out ofRecyclerView's bounds.-->
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">15dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">90dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">600dp</dimen>
+
+    <dimen name="fastscroll_default_thickness">6dp</dimen>
+    <dimen name="fastscroll_minimum_range">38dp</dimen>
+    <dimen name="fastscroll_margin">0dp</dimen>
+
+    <dimen name="normal_button_width">349dp</dimen>
+    <dimen name="normal_button_height">171dp</dimen>
+
+    <dimen name="normal2_button_width">176dp</dimen>
+    <dimen name="normal2_button_height">172dp</dimen>
+
+    <dimen name="ref_image_live_width">496dp</dimen>
+    <dimen name="ref_image_zongyi_width">238dp</dimen>
+    <dimen name="ref_image_music_but_width">225dp</dimen>
+
+    <dimen name="main_home_view_btn_margin_100dp">75dp</dimen>
+    <dimen name="main_home_view_btn_margin_0dp">0dp</dimen>
+    <dimen name="main_home_view_btn_margin_x10dp">-7dp</dimen>
+    <dimen name="main_home_view_hot_reflected_img_0_width">331dp</dimen>
+    <dimen name="main_home_view_btn_margin_12dp">9dp</dimen>
+    <dimen name="main_home_view_btn_margin_468dp">351dp</dimen>
+    <dimen name="main_home_view_btn_margin_698dp">523dp</dimen>
+
+    <!--MainExplorer-->
+    <dimen name="main_explorer_expandlistview_margin_left">75dp</dimen>
+    <dimen name="main_explorer_expandlistview_margin_right">75dp</dimen>
+    <dimen name="main_explorer_expandlistview_margin_bottom">37dp</dimen>
+    <dimen name="main_explorer_expandlistview_margin_top">37dp</dimen>
+
+    <dimen name="item_expand_group_text_size">20sp</dimen>
+    <dimen name="item_expand_group_padding">30dp</dimen>
+    <dimen name="item_expand_child_text_size">21sp</dimen>
+    <dimen name="item_expand_child_padding">45dp</dimen>
+
+    <!--FileListActivity-->
+    <dimen name="tv_folder_title_char_size">21sp</dimen>
+    <dimen name="tv_folder_title_margin4">3dp</dimen>
+    <dimen name="activity_list_file_margin50">38dp</dimen>
+    <dimen name="activity_list_file_margin100">75dp</dimen>
+
+    <!--gridview config-->
+    <integer name="item_file_grid_num_col">4</integer>
+    <dimen name="item_file_grid_horizontal_space">3dp</dimen>
+    <dimen name="item_file_grid_vertical_space">12dp</dimen>
+
+    <!--adapter item-->
+    <dimen name="item_file_list_img_width">45dp</dimen>
+    <dimen name="item_file_list_img_height">45dp</dimen>
+    <dimen name="item_file_list_img_margin_left">3dp</dimen>
+    <dimen name="item_file_list_tv_size_height">38dp</dimen>
+    <dimen name="item_file_list_tv_size_margin_right">7dp</dimen>
+    <dimen name="item_file_list_tv_title_size">20sp</dimen>
+    <dimen name="item_file_list_tv_title_margin_left">7dp</dimen>
+    <dimen name="item_file_list_tv_title_margin_top">7dp</dimen>
+    <!--adapter item grid-->
+    <dimen name="item_file_grid_img_height">112dp</dimen>
+    <dimen name="item_file_grid_img_margin_top">15dp</dimen>
+    <dimen name="item_file_grid_title_margin_left">37dp</dimen>
+    <dimen name="item_file_grid_title_margin_right">37dp</dimen>
+    <dimen name="item_file_grid_tv_title_size">20sp</dimen>
+
+    <!--menu gridview-->
+    <dimen name="menu_padding">7dp</dimen>
+    <dimen name="menu_hor_spacing">7dp</dimen>
+    <dimen name="menu_ver_spacing">7dp</dimen>
+    <dimen name="menu_et_title_size">12sp</dimen>
+    <dimen name="menu_et_pending">4dp</dimen>
+    <dimen name="menu_btn_margin_right">15dp</dimen>
+    <dimen name="menu_btn_width">60dp</dimen>
+
+    <!--nfs or samba item-->
+    <dimen name="item_nfs_iv_height">45dp</dimen>
+    <dimen name="item_nfs_iv_margin_left">3dp</dimen>
+    <dimen name="item_nfs_tv_size_height">37dp</dimen>
+    <dimen name="item_nfs_tv_size_margin_right">7dp</dimen>
+    <dimen name="item_nfs_tv_text_margin_left">7dp</dimen>
+    <dimen name="item_nfs_tv_text_margin_top">7dp</dimen>
+    <dimen name="item_nfs_tv_text_size">19sp</dimen>
+
+    <!--samba new server-->
+    <dimen name="item_samba_ll_width">300dp</dimen>
+    <dimen name="item_samba_ll_margin_top">15dp</dimen>
+    <dimen name="item_samba_tv_size15">11dp</dimen>
+    <dimen name="item_samba_tv_width">90dp</dimen>
+    <dimen name="item_samba_et_width">202dp</dimen>
+    <dimen name="item_samaba_size_20">15sp</dimen>
+    <dimen name="item_samba_120dp">90dp</dimen>
+    <dimen name="item_samba_270dp">202dp</dimen>
+    <dimen name="item_samba_70dp">53dp</dimen>
+    <dimen name="item_samba_20dp">15dp</dimen>
+    <dimen name="item_samba_100dp">75dp</dimen>
+    <dimen name="item_samba_40dp">30dp</dimen>
+    <dimen name="item_samba_64dp">48dp</dimen>
+
+    <!--nfs add-->
+    <dimen name="item_nfs_add_400dp">300dp</dimen>
+    <dimen name="item_nfs_add_30dp">22dp</dimen>
+    <dimen name="item_nfs_add_15sp">11sp</dimen>
+    <dimen name="item_nfs_add_280dp">210dp</dimen>
+    <dimen name="item_nfs_add_20dp">15dp</dimen>
+    <dimen name="item_nfs_add_7dp">5dp</dimen>
+    <dimen name="item_nfs_add_100dp">75dp</dimen>
+    <dimen name="item_nfs_add_70dp">52dp</dimen>
+    <dimen name="item_nfs_add_40dp">30dp</dimen>
+    <dimen name="item_nfs_add_24dp">18dp</dimen>
+    <dimen name="item_nfs_add_300dp">225dp</dimen>
+    <dimen name="item_nfs_add_5dp">3dp</dimen>
+    <dimen name="item_nfs_add_50dp">37dp</dimen>
+    <dimen name="item_nfs_add_60dp">45dp</dimen>
+    <dimen name="item_nfs_add_28sp">21sp</dimen>
+    <dimen name="item_nfs_add_800dp">600dp</dimen>
+
+
+</resources>

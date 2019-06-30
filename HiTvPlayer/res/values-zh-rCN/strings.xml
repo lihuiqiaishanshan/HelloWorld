@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HiDTVPlayerActivity!</string>
+    <string name="app_name">海思数字电视播放器</string>
+
+    <!-- sample  start -->
+    <string name="channel_list">频道列表</string>
+    <string name="channel_name">频道名称:</string>
+    <string name="channel_num">频道号:</string>
+    <!-- sample  end -->
+
+    <string name="string_null"></string>
+
+    <!-- player  start -->
+    <string name="play_no_channel_title">无频道数据</string>
+    <string name="play_no_channel_tip">当前无频道，请先搜索!</string>
+    <string name="play_no_signal_title">信号弱或无信号</string>
+    <string name="play_signal_unsupport">信号不支持</string>
+    <string name="play_av_stop_title">前端数据停止</string>
+    <string name="play_ca_title">加密频道</string>
+    <string name="play_channel_invalid">无效</string>
+    <string name="play_password_menu_lock">请输入菜单锁密码</string>
+    <string name="play_password_program_lock">请输入节目锁密码</string>
+    <string name="play_password_parental_rating">请输入父母锁密码</string>
+    <string name="play_password_source_lock">请输入信源锁密码</string>
+    <string name="play_password_lock_setting">请输入锁设置密码</string>
+    <string name="password_wrong_tip">输入密码错误</string>
+    <string name="select_audio_track">声道选择</string>
+    <string name="select_audio_bg_des">声道选择选中图标</string>
+    <string name="play_wait_dialog_message">等待中</string>
+    <string name="play_unlock_fail">解锁失败</string>
+    <string name="play_no_radio_and_data">无广播频道和数据频道</string>
+    <string name="play_no_tv_and_radio">无电视频道和广播节目</string>
+    <string name="play_no_data_and_tv">无电视频道和数据频道</string>
+    <string name="play_pip_scramble">画中画节目加扰</string>
+    <string name="play_channel_search">频道搜索中…</string>
+    <!-- player  end -->
+
+    <!-- navigation start -->
+    <string name="home_list_view_des">图标背景</string>
+    <!-- navigation end -->
+
+    <!-- install  start -->
+    <string name="str_no_data">没有数据</string>
+    <string name="str_set_fail">设置失败</string>
+    <string name="str_save_fail">保存失败</string>
+    <string name="str_save_query">是否要保存</string>
+    <string name="str_dvbc_validate_input">输入合法参数, 频点介于113–866之间，符号率介于900-7200之间</string>
+    <string name="str_dvbc_nid_input">输入合法参数, 网络ID介于0–65535之间</string>
+    <string name="str_atsc_validate_input">输入合法参数, ATSC_T 频点介于2–69之间，ATSC_CAB 频点介于1–135之间</string>
+    <string name="str_add">添加</string>
+    <string name="str_delete">删除</string>
+    <string name="str_edit">编辑</string>
+    <string name="str_yes">是</string>
+    <string name="str_no">否</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_save">保存</string>
+    <string name="str_name">名称</string>
+    <string name="str_tv">电视</string>
+    <string name="str_radio">广播</string>
+    <string name="str_strength">信号强度</string>
+    <string name="str_qaulity">信号质量</string>
+    <string name="str_satellite">卫星</string>
+    <string name="str_transponder">转发器</string>
+    <string name="str_rate_unit">Kbps</string>
+    <string name="str_freq_unit">MHz</string>
+    <string name="str_on">开</string>
+    <string name="str_off">关</string>
+    <string name="str_country">国家</string>
+    <string name="str_source">源</string>
+    <string name="str_version">版本</string>
+    <string name="str_motor12_goto">转动</string>
+    <string name="str_install_atsc_cab_format">Cable 类型</string>
+    <string name="str_install_service_cab_format">服务类型</string>
+
+    <string name="str_please_wait">请稍后&#8230;</string>
+    <string name="str_none">无</string>
+    <string name="str_install_type">安装类型</string>
+    <string name="str_save_success">保存成功</string>
+    <string name="str_install_range_out" >输入参数[%1$s]范围不对,请输入%2$d到%3$d</string>
+    <string name="str_no_input_tip">请输入有效参数，参数不能为空</string>
+    <string name="str_can_not_save">0存储位保存0度位置，不能存储其他位置</string>
+    <string name="str_dtelete_fail">删除失败</string>
+    <string name="str_dvbs_validate_input">请输入合法参数，C波段频点:3000-4800，ku波段频点:10600-12750，符号率:1-60000</string>
+    <!-- install  end -->
+
+    <!-- install  start -->
+    <string name="str_install_search">搜索</string>
+    <string name="str_install_lnbtype">高频头类型</string>
+    <string name="str_install_lnbpower">高频头电源</string>
+    <string name="str_install_22k">22K开关</string>
+    <string name="str_install_diseqc_mode">DiSEqC 类型</string>
+    <string name="str_install_diseqc_10port">DiSEqC1.0 端口</string>
+    <string name="str_install_diseqc_11port">DiSEqC1.1端口</string>
+    <string name="str_install_diseqc_20port">DiSEqC2.0 端口</string>
+    <string name="str_install_motor_type">马达类型</string>
+    <string name="str_install_motor_reset">重置</string>
+    <string name="str_install_local_long">本地经度</string>
+    <string name="str_install_locat_lati">本地纬度</string>
+    <string name="str_install_longitude">经度</string>
+    <string name="str_install_longtype">方向</string>
+    <string name="str_install_scan_title">节目搜索设置</string>
+    <string name="str_install_scan_catype">CA类型</string>
+    <string name="str_install_scan_channel">频道类型</string>
+    <string name="str_install_scan_network">网络搜索</string>
+    <string name="str_install_scan_mode">搜索模式</string>
+    <string name="str_install_scan_start">开始搜索</string>
+    <string name="str_install_scan_stop_query">是否确定要退出节目搜索？</string>
+    <string name="str_install_tpedit_title">转发器编辑</string>
+    <string name="str_install_ctpedit_mainfreq">主频点</string>
+    <string name="str_install_ctpedit_networkid">网络ID</string>
+    <string name="str_install_ctpedit_freq">频点</string>
+    <string name="str_install_tpedit_freq">频点</string>
+    <string name="str_install_tpedit_rate">符号率</string>
+    <string name="str_install_tpedit_pol">极化方式</string>
+    <string name="str_install_move_step">步进</string>
+    <string name="str_install_to_west">向西</string>
+    <string name="str_install_to_east">向东</string>
+    <string name="str_install_goto">转动到X</string>
+    <string name="str_install_reference">返回中心点</string>
+    <string name="str_install_pos_no">位置索引</string>
+    <string name="str_install_limit_type">极限方向</string>
+    <string name="str_install_progress_title">频道搜索中</string>
+    <string name="str_install_progress_start_fail">启动搜索卫星[%s]节目失败</string>
+    <string name="str_install_tuner_lock_fail">锁频失败</string>
+    <string name="str_install_tuner_sucess">成功</string>
+    <string name="str_install_nit_scan">NIT搜索</string>
+    <string name="str_install_quick_scan">快速搜索</string>
+    <string name="str_install_full_scan">全频搜索</string>
+    <string name="str_install_manual_scan">手动搜索</string>
+    <string name="str_install_blind_scan">盲扫</string>
+    <string name="str_install_bandwidth">带宽</string>
+    <string name="str_install_qam">调制方式</string>
+    <string name="str_install_dvbt_id">%1$4d : %2$d KHz</string>
+    <string name="str_install_tuner_signal">信号类型</string>
+    <string name="str_install_tuner_device">接收设备</string>
+    <string name="str_install_reset">恢复默认设置</string>
+    <string name="str_install_oneseg">OneSeg</string>
+    <string name="str_number_zero">0</string>
+    <string name="str_install_tp_info">频率</string>
+    <string name="str_atsc_ch_info">CH</string>
+    <string name="str_scan_type_select">选择搜索类型</string>
+    <string name="str_scan_type_name">搜索类型</string>
+    <string name="str_signal_type_select">选择信号类型</string>
+    <string name="str_atv_channel">模拟频道</string>
+
+    <string name="str_install_network_noselect">请首先选择卫星</string>
+    <string name="str_install_network_delete_query">确定要删除所选择的卫星?</string>
+    <string name="str_install_network_name_exist">卫星名称已存在，请重新输入</string>
+    <string name="str_install_tp_noselect">请先选择转发器</string>
+    <string name="str_install_tpdelete_query">是否确定要删除此转发器 %dHz?</string>
+    <string name="str_install_west">西</string>
+    <string name="str_install_east">东</string>
+    <string name="str_install_stop_move">停止</string>
+    <string name="str_install_disable">取消</string>
+    <string name="str_install_long_west">西经</string>
+    <string name="str_install_long_east">东经</string>
+    <string name="str_install_lati_south">南纬</string>
+    <string name="str_install_lati_north">北纬</string>
+    <string name="str_install_locking">正在锁频</string>
+    <string name="str_install_all">全部</string>
+    <string name="str_install_fta">免费</string>
+    <string name="str_install_scramble">加密</string>
+    <string name="str_install_tv">电视</string>
+    <string name="str_install_radio">广播</string>
+    <string name="str_install_blind">盲扫</string>
+    <string name="str_install_auto_full">全频点</string>
+    <string name="str_install_enhanced">加强电压</string>
+    <string name="str_install_diseqc10">DiSEqC  1.0</string>
+    <string name="str_install_diseqc11">DiSEqC  1.1</string>
+    <string name="str_install_diseqc1110">DiSEqC  1.1/1.0</string>
+    <string name="str_install_diseqc12">DiSEqC  1.2</string>
+    <string name="str_install_diseqc20">DiSEqC  2.0</string>
+    <string name="str_install_usals">USALS</string>
+    <string name="str_install_port_a">A</string>
+    <string name="str_install_port_b">B</string>
+    <string name="str_install_port_c">C</string>
+    <string name="str_install_port_d">D</string>
+    <string name="str_install_network_reach_max">卫星个数已达到最大值(64).</string>
+    <string name="str_install_fail_addsatellite">添加卫星失败.</string>
+    <string name="str_install_fail_addtp">添加转发器失败.</string>
+    <string name="str_install_add_satellite">添加卫星</string>
+    <string name="str_install_edit_satellite">编辑卫星</string>
+    <string name="str_install_add_tp">添加转发器</string>
+    <string name="str_install_edit_tp">编辑转发器</string>
+    <!-- install end -->
+
+    <!-- pip start -->
+    <string name="str_pip_close_first">请先关闭画中画</string>
+    <string name="str_pip_not_support">不支持画中画</string>
+    <string name="str_pu_program_updated">节目已更新</string>
+    <string name="str_pu_rescan_tip">节目已更新，请重新搜台</string>
+    <string name="str_timeshift_not_support">不支持时移</string>
+    <string name="str_pvr_not_support">不支持录制</string>
+    <string name="str_cc_not_support">不支持CC</string>
+    <string name="str_pvr_not_support_usb">请插入存储设备，并设置正确录制路径</string>
+    <string name="str_pvr_not_support_tip">无外接存储设备</string>
+    <!-- pip end -->
+
+    <!-- setting start -->
+    <string name="setting_headline">基本设置</string>
+    <string name="setting_total_lock">总开关</string>
+    <string name="setting_program_lock">频道锁</string>
+    <string name="setting_parental_rating">父母锁</string>
+    <string name="setting_source_lock">信源锁</string>
+    <string name="setting_source_select">信源选择</string>
+    <string name="setting_key_lock">按键锁</string>
+    <string name="setting_pvr_path_null">无外接存储设备</string>
+    <string name="setting_password_modify">修改密码 </string>
+    <string name="setting_old_password">原密码</string>
+    <string name="setting_new_password">新密码</string>
+    <string name="setting_confirm_password">确认密码</string>
+    <string name="setting_old_password_error">原密码错误,请重新输入</string>
+    <string name="setting_new_password_confirm_error">确认密码错误,请重新输入</string>
+    <string name="setting_old_password_null">原密码不能为空,请输入四位密码</string>
+    <string name="setting_new_password_null">新密码不能为空,请输入四位密码</string>
+    <string name="setting_old_password_length_error">原密码长度错误,请输入四位密码</string>
+    <string name="setting_new_password_length_error">新密码长度错误，请输入四位密码</string>
+    <string name="setting_new_password_change_ok">新密码修改成功</string>
+    <string name="setting_new_password_same_with_old">新密码与旧密码相同，不需要修改!</string>
+    <string name="setting_record_path">录制路径</string>
+    <string name="setting_timeshift_time">时移长度</string>
+    <string name="setting_inforbar_time">信息栏显示时间</string>
+    <string name="setting_timeshift_to_record">时移转录制</string>
+    <string name="setting_menu_lock">菜单锁</string>
+    <string name="setting_tap_to_set">点击设置</string>
+    <string name="setting_time_switch">自动同步TDT时间</string>
+    <string name="setting_time_switch_tot">自动同步TOT时区</string>
+    <string name="setting_time_zone_region_code">TOT时区同步的区域码</string>
+    <string name="setting_oad_switch">软件升级（OAD）</string>
+    <string name="setting_yes">确认</string>
+    <string name="setting_no">取消</string>
+    <string name="setting_modify_password">修改密码</string>
+    <string name="setting_stack_version">协议栈版本号：</string>
+    <string name="setting_java_api_version">Java接口版本号:</string>
+    <string name="setting_app_version">应用版本号:</string>
+    <string name="setting_restore_tip_message">此操作将删除用户添加的所有频道以及设置信息，是否继续？</string>
+    <string name="setting_restore_confirm">确认恢复默认数据?</string>
+    <string name="setting_switch_on">打开</string>
+    <string name="setting_switch_off">关闭</string>
+    <string name="setting_language_audio_1">第一音频语言</string>
+    <string name="setting_language_audio_2">第二音频语言</string>
+    <string name="setting_language_epg_1">第一EPG语言</string>
+    <string name="setting_language_subt_1">第一字幕语言</string>
+    <string name="setting_language_subt_2">第二字幕语言</string>
+    <string name="setting_language_teletext_1">第一图文语言</string>
+    <string name="setting_str_country">请选择国家</string>
+    <string name="setting_str_area_code">区域号</string>
+    <string name="setting_str_audio_mode">立体声 / 多声道</string>
+    <string name="setting_str_ad">音频描述</string>
+    <string name="setting_oad_progress_title">正在下载升级文件</string>
+    <!-- setting end -->
+
+    <!-- PVR start -->
+    <string name="pvr_record_time">已录制时长:</string>
+    <string name="pvr_storage_tag">存储空间:</string>
+    <string name="pvr_storage_path">录制路径名:</string>
+    <string name="pvr_storage_used">已使用</string>
+    <string name="pvr_ensure_stop_title">停止录制</string>
+    <string name="pvr_ensure_stop">确定停止录制？</string>
+    <string name="pvr_record_path_removed_tip">当前录制路径无效，请在设置中选择其他录制路径</string>
+    <string name="pvr_record_path_error">没插入存储设备或录制路径无效</string>
+    <string name="pvr_disk_space_lack">剩余磁盘空间小于100M</string>
+    <string name="pvr_disk_full_stop">磁盘满，录制已停止</string>
+    <string name="pvr_disk_slow">磁盘读写速度慢</string>
+    <string name="pvr_set_record_time">设置录制时间</string>
+    <string name="pvr_set_record_time_hour">H</string>
+    <string name="pvr_set_record_time_min">M</string>
+    <string name="pvr_set_record_default_hour">1</string>
+    <string name="pvr_set_record_default_min">0</string>
+    <string name="pvr_rec_finished">录制结束</string>
+    <string name="pvr_rec_ews_start">有灾难预警消息，停止刻录</string>
+    <string name="pvr_rec_offoron_sup">开关机2分钟内禁止刻录</string>
+    <string name="pvr_rec_nodata">服务不支持</string>
+    <string name="pvr_rec_power_shutdown">停止录制并关机</string>
+    <string name="pvr_rec_power_noAction">继续刻录</string>
+    <string name="pvr_rec_power_screen_off">熄屏继续录制</string>
+    <string name="pvr_rec_power_shutdown_title">请选择你需要的操作：</string>
+
+
+    <!-- PVR end -->
+    <string name="pvr_timeshift_start_fail">启动录制/时移失败！</string>
+    <string name="pvr_timeshift_start_ATSC">ATSC制式不支持录制</string>
+    <!-- Timeshift start-->
+    <string name="timeshift_seek_tag">跳转</string>
+    <string name="timeshift_no_space">无空间，请在设置中选择其他录制路径</string>
+    <string name="timeshift_stop_tip_title">停止时移</string>
+    <string name="timeshift_stop_tip">确定停止时移？</string>
+    <string name="timeshift_catch_live">时移追上直播。</string>
+    <string name="timeshift_seek_jump_to">跳转至 :</string>
+    <string name="timeshift_seek_time_separator">:</string>
+    <string name="timeshift_seek_ok">确定</string>
+    <string name="seek_time_error">请选择正确的时间进行跳转</string>
+    <string name="seek_error">跳转失败</string>
+    <string name="timeshift_start_fail">启动时移失败</string>
+    <string name="timeshift_ews_start">有灾难预警消息，停止时移</string>
+    <string name="timeshift_playing_error">码流播放异常，停止时移</string>
+    <!-- Timeshift end-->
+
+    <!-- infobar start -->
+    <string name="info_unknown_channel">未知频道</string>
+    <string name="info_unknown_program">未知节目</string>
+    <string name="info_satellite">卫星 : </string>
+    <string name="info_transponder">转发器 : </string>
+    <string name="info_bandwidth_frequency">频率/带宽 : </string>
+    <string name="info_modulation">制式 :</string>
+    <string name="info_frequency_symbolrate">频率/符号率 : </string>
+    <string name="info_quality">信号质量 :</string>
+    <string name="info_strength">信号强度 :</string>
+    <string name="info_horizontal">H</string>
+    <string name="info_vertical">V</string>
+    <string name="info_program_description">节目描述 :</string>
+    <string name="iv_desc">图片</string>
+    <string name="info_channel_num_invalid">无效</string>
+    <string name="info_color_system">颜色制式:</string>
+    <string name="info_audio_system">声音制式:</string>
+    <string name="info_mtsmode">丽音模式:</string>
+    <string name="toast_4k_not_support">不支持4K.</string>
+    <!-- infobar end -->
+
+    <!-- epg start -->
+    <string name="epg_guide">电子节目指南</string>
+    <string name="epg_event_none">目前没有节目</string>
+    <string name="epg_event_description">节目说明：</string>
+    <string name="epg_button_exit">退出</string>
+    <string name="epg_event_ok_tip">详情</string>
+    <string name="epg_green_tip">切换频道列表</string>
+    <string name="epg_red_tip">预约</string>
+    <string name="epg_book_seperate">:</string>
+    <string name="epg_yellow_tip">前一天</string>
+    <string name="epg_blue_tip">后一天</string>
+    <string name="epg_book_title">预定</string>
+    <string name="epg_book_channel">频道名称</string>
+    <string name="epg_book_name">预定名称</string>
+    <string name="epg_book_type">预定类型</string>
+    <string name="epg_book_start_date">开始日期</string>
+    <string name="epg_book_date_year">年</string>
+    <string name="epg_book_date_month">月</string>
+    <string name="epg_book_date_day">日</string>
+    <string name="epg_book_start_time">开始时间</string>
+    <string name="epg_book_date_hour">时</string>
+    <string name="epg_book_date_minute">分</string>
+    <string name="epg_book_date_second">秒</string>
+    <string name="epg_book_duration">持续时间</string>
+    <string name="epg_book_cycle">预定周期</string>
+    <string name="epg_book_success_tip">预定任务添加成功！</string>
+    <string name="epg_book_date_invalid">开始日期或时间为过去时间！</string>
+    <string name="epg_book_failure_tip">预定任务添加失败！</string>
+    <string name="epg_book_time_error_tip">开始日期或时间为过去时间,或者时间未同步!</string>
+    <string name="epg_book_conflict_tip">预定任务添加失败，当前预定任务与已有预定任务存在冲突。冲突预定任务列表如下：</string>
+    <string name="epg_go_on_button">继续</string>
+    <string name="epg_cancel_button">取消</string>
+    <string name="epg_book_scramble_cannot_book">加扰节目无法预约</string>
+    <string name="epg_book_update_success_tip">预定任务修改成功！</string>
+    <string name="epg_book_update_failure_tip">预定任务修改失败！</string>
+    <string name="epg_parent_lock_desc_age">至少%1$d岁</string>
+    <string name="epg_parent_lock_desc_less">无限制</string>
+    <string name="epg_age_source">年龄: %1$d</string>
+    <string name="epg_parent_lock_desc_title">父母锁级别:</string>
+    <string name="epg_parent_lock_content">内容含有</string>
+    <string name="epg_parent_lock_desc_drugs">毒品</string>
+    <string name="epg_parent_lock_desc_violence">暴力</string>
+    <string name="epg_parent_lock_desc_sex">色情</string>
+    <!-- epg end -->
+
+    <!-- recordinglist start -->
+    <string name="book_time_alarm_title">预定任务将在60秒后开始</string>
+    <string name="book_time_arrive_title">预约时间到达，预约任务开始！</string>
+    <string name="book_time_alarm_tip">预定数据获取失败。</string>
+    <string name="book_time_alarm_ok">确定</string>
+    <string name="book_time_alarm_cancel">取消</string>
+    <string name="book_time_arriving_title">预约任务将在30秒后开始</string>
+    <string name="book_time_arriving_tip">按任意键退出,并取消预约</string>
+    <string name="book_time_arriving_cancel_success">已取消当前预约</string>
+    <string name="book_time_arriving_cancel_fail">删除预约内容失败，请重试</string>
+    <string name="recording_list_title">录像列表</string>
+    <string name="recording_list_recorded">已录制</string>
+    <string name="recording_list_book_record">预定录制</string>
+    <string name="recording_list_book_view">预定播放</string>
+    <string name="recording_list_book_add">添加</string>
+    <string name="recording_list_book_edit">编辑</string>
+    <string name="recording_list_book_delete">删除</string>
+    <string name="recording_list_book_delete_all">删除所有</string>
+    <string name="recording_list_usable">可使用</string>
+    <string name="recording_list_total">总共：</string>
+    <string name="recording_list_available_space">可用空间：</string>
+    <string name="recording_list_information_title">文件信息：</string>
+    <string name="recording_list_information_name">名称</string>
+    <string name="recording_list_information_duration">时长</string>
+    <string name="recording_list_information_resolution">分辨率</string>
+    <string name="recording_list_information_size">大小</string>
+    <string name="recording_list_play_loading">加载进行中</string>
+    <string name="recording_list_play_status_error">播放状态出错，请尝试重新预览！</string>
+    <string name="recording_list_play_start_error">启动出错</string>
+    <string name="recording_list_play_loading_error">加载出错</string>
+    <string name="recording_list_play_recorded_current_file">当前文件：</string>
+    <string name="recording_list_play_recorded_new_file">新文件名：</string>
+    <string name="recording_list_play_recorded_file_list_no_resource">未找到资源文件，请检查设置中的录制路径！</string>
+    <string name="recording_list_play_recorded_file_existed"> 已经存在！</string>
+    <string name="recording_list_play_recorded_file_not_existed"> 不存在！</string>
+    <string name="recording_list_play_recorded_full_screen_play">全屏播放</string>
+    <string name="recording_list_play_recorded_preview">预览</string>
+    <string name="recording_list_play_recorded_preview_tip">重新播放当前文件吗？</string>
+    <string name="recording_list_play_recorded_rename">重命名</string>
+    <string name="recording_list_play_recorded_rename_tip">确定重命名当前文件吗？</string>
+    <string name="recording_list_play_recorded_rename_success">重命名操作已成功！</string>
+    <string name="recording_list_play_recorded_delete">删除</string>
+    <string name="recording_list_play_recorded_delete_tip">确定删除当前文件吗？</string>
+    <string name="recording_list_play_recorded_delete_success">删除操作已成功！</string>
+    <string name="recording_list_play_recorded_delete_failure">删除失败！</string>
+    <string name="recording_list_play_recorded_delete_all">删除所有</string>
+    <string name="recording_list_play_recorded_delete_all_tip">确定删除所有文件吗？</string>
+    <string name="recording_list_play_recorded_delete_all_success">删除所有操作已成功！</string>
+    <string name="recording_list_play_recorded_delete_all_failure">删除所有失败！</string>
+    <string name="recording_list_play_waitting">操作进行中，请稍候！</string>
+    <string name="book_sure_to_delete_one_message">该条预约任务将被删除，操作不可恢复。</string>
+    <string name="book_sure_to_delete_all_message">全部预约任务将被删除，操作不可恢复。</string>
+    <!-- recordinglist end -->
+
+    <!-- teletext start -->
+    <string name="teletext_nodata">没有图文电视数据</string>
+    <!-- teletext end -->
+
+    <!-- DRA start -->
+    <string name="dra_tag">DRA</string>
+    <string name="dra_error">Error</string>
+    <!-- DRA end -->
+
+    <!-- subtitle start -->
+    <string name="subtitle_language_code">字幕切换</string>
+    <string name="subtitle_off">关闭</string>
+    <string name="subtitle_nodata">没有字幕数据</string>
+    <!-- subtitle end -->
+
+    <!-- closed caption start -->
+    <string name="cc_nodata">没有CC数据</string>
+    <!-- closed caption end -->
+
+    <!-- audio start -->
+    <string name="audio_title">音频切换</string>
+    <string name="audio_s">S</string>
+    <string name="audio_l">L</string>
+    <string name="audio_r">R</string>
+    <string name="audio_nodata">没有音频数据</string>
+    <!-- audio end -->
+
+
+    <!-- PM start -->
+    <string name="cas">加密</string>
+    <string name="alpha">拼音</string>
+    <string name="digital">数字</string>
+    <string name="group">分组</string>
+    <string name="channel_edit_title">频道编辑</string>
+    <string name="channel_rename_title">重命名</string>
+    <string name="channel_group_list">分组列表</string>
+    <string name="channel_tp_list">频点列表</string>
+    <string name="channel_channel_list">频道列表</string>
+    <string name="name">名称</string>
+    <string name="tp_list_title">频率/极化方式/符号率</string>
+    <string name="audio_pid">音频 PID</string>
+    <string name="video_pid">视频 PID</string>
+    <string name="pcr_pid">PCR PID</string>
+    <string name="channel_edit_dialog_title">频道编辑</string>
+    <string name="add_channel_dialog_title">添加频道</string>
+    <string name="choice_sort_type_dialog_title">选择排序类型</string>
+    <string name="channel_manager_sort_lock">加锁</string>
+    <string name="add_channel">添加频道</string>
+    <string name="edit">编辑</string>
+    <string name="no">序号</string>
+    <string name="favorite">喜爱</string>
+    <string name="skip">跳过</string>
+    <string name="lock">加锁</string>
+    <string name="skip_unskip">跳过/取消跳过</string>
+    <string name="lock_unlock">加锁/取消加锁</string>
+    <string name="fav_unfav">喜爱/取消喜爱</string>
+    <string name="add_to_fav">添加到喜爱</string>
+    <string name="delete">删除</string>
+    <string name="rename">重命名</string>
+    <string name="sort">排序</string>
+    <string name="move">移动</string>
+    <string name="muti_operate">多项操作</string>
+    <string name="cancel_skip">取消</string>
+    <string name="cancel_lock">取消</string>
+    <string name="cancel_delete">取消</string>
+    <string name="cancel_move">取消</string>
+    <string name="search">查找</string>
+    <string name="cas_all">全部</string>
+    <string name="cas_fta">非加密</string>
+    <string name="cas_scramble">加密</string>
+    <string name="delete_all">删除全部</string>
+    <string name="move_to"> 移动到位置:</string>
+    <string name="save_dialog_title">数据保存</string>
+    <string name="save_dialog_msg">请稍后，数据正在保存中</string>
+    <string name="sure_to_delete">确认删除？</string>
+    <string name="sure_to_delete_message">个频道将被删除，操作不可恢复。</string>
+    <string name="sure_to_delete_one_message">个频道将被删除，操作不可恢复。</string>
+    <string name="sure_to_delete_all_message">全部频道将被删除，操作不可恢复。</string>
+    <string name="it_cant_be_empty">编辑项不能为空</string>
+    <string name="pid_is_out_of_range">PID不能大于 </string>
+    <string name="name_conflict">节目名称冲突 </string>
+    <string name="database_error">数据读取错误，无法恢复，请将软件恢复出厂设置！</string>
+    <string name="all">全部</string>
+    <!-- PM end -->
+
+    <!-- PvrActivity media start -->
+    <string name="media_title_str">片名: &#160;</string>
+    <string name="media_init_time">00:00:00</string>
+    <!-- PvrActivity media end -->
+
+    <!-- PvrActivity playmode start -->
+    <string name="random_str">随机播放</string>
+    <string name="cycle_str">循环播放</string>
+    <!-- PvrActivity playmode end -->
+
+    <!-- PvrActivity subtitile start -->
+    <string name="no_soundtrack">无音轨</string>
+    <string name="no_subtitle">无字幕</string>
+    <string name="no_teletext">无图文</string>
+    <string name="close_subtitle">关闭</string>
+    <!-- PvrActivity subtitile end -->
+
+    <!-- PvrActivity progress dialog start -->
+    <string name="dialog_title_loading">正在加载</string>
+    <string name="dialog_message_loading">正在加载中，请稍后......</string>
+    <string name="loading_error">加载错误！</string>
+    <string name="sorry">抱歉</string>
+    <string name="confirm">确认</string>
+    <!-- PvrActivity progress dialog end -->
+
+    <!-- EWS start -->
+    <string name="str_disaster_type_description">灾难类型:</string>
+    <string name="str_disaster_date_description">日期:</string>
+    <string name="str_disaster_position_description">位置:</string>
+    <string name="str_disaster_characteristic_description">特征:</string>
+    <string name="str_disaster_message_description">信息:</string>
+    <!-- EWS end -->
+
+    <!-- SSU start -->
+    <string name="ssu_str_description">软件升级 :</string>
+    <!-- SSU end -->
+
+    <!-- ATV string -->
+    <!-- Signal source start -->
+    <string name="dvbc">DVB-C</string>
+    <string name="dtmb">DTMB</string>
+    <string name="atv">ATV</string>
+    <string name="cvbs1">AV1</string>
+    <string name="cvbs2">AV2</string>
+    <string name="ypbpr1">YPbPr</string>
+    <string name="hdmi1">HDMI1</string>
+    <string name="hdmi2">HDMI2</string>
+    <string name="hdmi3">HDMI3</string>
+    <string name="hdmi4">HDMI4</string>
+    <string name="vga">VGA</string>
+    <string name="move_channel_ok">确认</string>
+    <string name="move_channel_cancel">取消</string>
+    <!-- Signal source end -->
+
+    <!-- Search start -->
+    <string name="finetune">微调</string>
+    <string name="manual_search">手动搜索</string>
+    <string name="frequency_rate">频率 :</string>
+    <string name="frequency_band">频段 :</string>
+    <string name="channel_string">当前频道 :</string>
+    <string name="channel_number">0</string>
+    <string name="band_val">VHF-L</string>
+    <!-- Search end -->
+
+    <!-- VGA adjusting start -->
+    <string name="adjusting">自动调整 …</string>
+    <string name="adjust_failed">自动调整失败!</string>
+    <string name="adjust_success">自动调整成功!</string>
+    <string name="exit">退出</string>
+    <string name="all_scan_freq_rate">%1$s MHz</string>
+    <!-- VGA adjusting end -->
+
+    <!-- channel edit start -->
+    <string name="channel_edit_list">频道编辑</string>
+    <string name="channel_skip">跳过</string>
+    <string name="channel_move">移动</string>
+    <string name="channel_delete">删除</string>
+    <string name="channel_rename">重命名</string>
+    <!-- channel edit end -->
+
+    <string name="str_count_time">秒之后关机</string>
+    <string name="pvr_record_time_zero">00:00:00</string>
+
+    <!-- dts stream type -->
+    <string name="dts_dts">DTS</string>
+    <string name="dts_dtsex">DTS Express</string>
+    <string name="dts_dtshd">DTS-HD</string>
+    <string name="dts_unknow">UNKNOW</string>
+    <!-- ATSC CAB FORMAT -->
+    <string name="atsc_cable_format_auto">Auto</string>
+    <string name="atsc_cable_format_std">STD</string>
+    <string name="atsc_cable_format_hrc">HRC</string>
+    <string name="atsc_cable_format_irc">IRC</string>
+
+    <!-- PVR file play -->
+    <string name="media_stop_text">停止</string>
+    <string name="media_play_text">播放/暂停</string>
+    <string name="media_fastforward_text">快进</string>
+    <string name="media_rewinddown_text">快退</string>
+    <string name="media_next_text">下一首</string>
+    <string name="media_pre_text">上一首</string>
+    <string name="media_pre_slow_text">慢退</string>
+    <string name="media_next_slow_text">慢进</string>
+    <string name="media_pre_seek_text">前进30秒</string>
+    <string name="media_next_seek_text">后退30秒</string>
+    <string name="media_seek">跳放</string>
+    <string name="media_subtitles_text">字幕</string>
+    <string name="media_track_text">音轨</string>
+    <string name="media_info_text">信息</string>
+    <!-- PVR file play  end-->
+
+    <!-- OAD -->
+    <string name="oad_download_finish">下载完成</string>
+    <string name="oad_download_hint">请不要断电，一分钟左右完成下载和升级。</string>
+</resources>

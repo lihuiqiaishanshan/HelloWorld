@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_def"
+    android:gravity="center" >
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_local_explorer"
+        style="@style/NormalButton"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="100dp" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_nfs_explorer"
+        style="@style/NormalButton"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/btn_local_explorer" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_baidu_explorer"
+        style="@style/NormalButton"
+        android:layout_alignRight="@id/btn_local_explorer"
+        android:layout_below="@id/btn_local_explorer"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-10dp" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_upnp_explorer"
+        style="@style/NormalButton2"
+        android:layout_alignLeft="@id/btn_nfs_explorer"
+        android:layout_alignTop="@id/btn_baidu_explorer"
+        android:layout_marginRight="-0dp" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_samba_explorer"
+        style="@style/NormalButton2"
+        android:layout_alignRight="@id/btn_nfs_explorer"
+        android:layout_alignTop="@id/btn_baidu_explorer"
+        android:layout_below="@id/btn_nfs_explorer"
+        android:layout_marginLeft="-0dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_baidu_explorer"
+        android:layout_alignRight="@id/btn_samba_explorer"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/btn_baidu_explorer" >
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp" android:contentDescription="@string/nodesc"/>
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="468dip" android:contentDescription="@string/nodesc"/>
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="698dip" android:contentDescription="@string/nodesc"/>
+    </RelativeLayout>
+
+</RelativeLayout>

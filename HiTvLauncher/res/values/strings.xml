@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- basic -->
+    <string name="app_name">HiTvLauncher</string>
+    <string name="please_wait">Application is loading,please wait……</string>
+    <string name="no_del_sys_app">System application cannot uninstall</string>
+    <string name="please_sure">Please confirm whether the uninstaill<g id="part1">%1$s</g>?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="clear_data">Clear data</string>
+    <string name="clear_data_suc">Clear data success!</string>
+    <string name="clear_data_fail">Clear data fail!</string>
+    <string name="clear_data_dlg_title">"Delete the application data? "</string>
+    <string name="force_stop_package">"Stop this application? "</string>
+    <string name="clear_default">"Remove the default settings? "</string>
+    <string name="clear_data_dlg_text">"The system will permanently delete all data for this application. This includes all files, settings, account, database etc.."</string>
+    <string name="myapp_title">All application</string>
+    <string name="info_txt">Press the menu key management application</string>
+    <string name="wifi_state_unknow">please input the wifi or the wifi not support</string>
+
+    <!-- TV Page -->
+    <string name="vga">VGA</string>
+    <string name="dvbc">DVB-C</string>
+    <string name="dtmb">DTMB</string>
+    <string name="dvbt">DVB-T</string>
+    <string name="atsc">ATSC</string>
+    <string name="dvbs">DVBS</string>
+    <string name="isdbt">ISDBT</string>
+    <string name="atv">ATV</string>
+    <string name="av1">AV1</string>
+    <string name="av2">AV2</string>
+    <string name="ypbpr">YPbPr</string>
+    <string name="hdmi1">HDMI1</string>
+    <string name="hdmi2">HDMI2</string>
+    <string name="hdmi3">HDMI3</string>
+    <string name="hdmi4">HDMI4</string>
+    <string name="toast_av2_not_supported">AV2 source not supported on this device.</string>
+    <string name="toast_hdmi4_not_supported">HDMI4 source not supported on this device.</string>
+
+    <!-- App Page -->
+    <string name="appstore_normal">App Store</string>
+    <string name="app_normal">All App</string>
+    <string name="media_normal">MediaCenter</string>
+    <string name="email_normal">Browser</string>
+    <string name="multi_normal">DLNA</string>
+    <string name="three_normal">3DBenchmark</string>
+    <string name="qq_normal">TVQQ</string>
+
+    <string name="exo_player_normal">ExoPlayer</string>
+    <string name="miracast_normal">Miracast</string>
+    <string name="browser_normal">Browser</string>
+    <string name="failed_to_start">Failed to start</string>
+
+    <!-- Set Page -->
+    <string name="net_setting">Network</string>
+    <string name="pic_setting">Picture</string>
+    <string name="voice_setting">Sound</string>
+    <string name="system">Upgrade</string>
+    <string name="advance_setting">Advanced</string>
+    <string name="recover_setting">Restore</string>
+    <string name="system_info">Info</string>
+    <string name="help">Help</string>
+
+    <string name="netstat_connected">Connected</string>
+    <string name="netstat_unconnected">Unconnected</string>
+    <string name="networkerror">Can not find any update information please check the network </string>
+
+    <!-- TagView -->
+    <string name="tag_tv">TV</string>
+    <string name="tag_app">App</string>
+    <string name="tag_setting">Setting</string>
+
+    <!-- Sound Setting -->
+    <string name="sndmode_standard_string">Standard</string>
+    <string name="sndmode_news_string">News</string>
+    <string name="sndmode_music_string">Music</string>
+    <string name="sndmode_movie_string">Movie</string>
+    <string name="sndmode_sport_string">Sport</string>
+    <string name="sndmode_user_string">User</string>
+
+    <!-- Locale Setting -->
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+
+    <!-- System ShutDown -->
+    <string name="sleep_close">Off</string>
+    <string name="five_min">5 Minutes</string>
+    <string name="thirty_min">30 Minutes</string>
+    <string name="sixty_min">60 Minutes</string>
+    <string name="ninety_min">90 Minutes</string>
+    <string name="sixscore_min">120 Minutes</string>
+
+    <!-- Power music on/off -->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <!-- Music number -->
+    <string name="music_1">Music 1</string>
+    <string name="music_2">Music 2</string>
+
+    <!-- System Update -->
+    <string name="system_update_local">LocalUpdate</string>
+    <string name="system_update_net">OnlineUpdate</string>
+
+    <!-- >Select Tv Model< -->
+
+    <string name="select_TV_version">please select update version：</string>
+    <!-- Net Setting -->
+    <string name="net_ether_setting">Ethernet Setting</string>
+    <string name="net_state_setting">Network State</string>
+
+    <!-- Net Setting Input -->
+    <string name="net_input_title">Name:</string>
+    <string name="net_input_pwd_title">Pass:</string>
+    <string name="net_input_account">Enter account name</string>
+    <string name="net_input_pwd">Enter password</string>
+    <string name="net_auto_connect">Even after the automatic fault line</string>
+
+    <!-- Net Setting Connect Info -->
+    <string name="net_connecting">Connecting……</string>
+    <string name="net_connect_failed">Connection failed!</string>
+    <string name="net_connect_pppoe_auth_failed">Wrong user name or password!</string>
+    <string name="net_setting_ip">Setting IP……</string>
+    <string name="net_set_ip_failed">Please set the correct IP</string>
+    <string name="net_getting_ip">Getting IP……</string>
+
+    <!-- Wifi Setting -->
+    <string name="wifi_setting">WiFi Setting</string>
+    <string name="wifi_status">Status</string>
+    <string name="wifi_add_network">Add network</string>
+    <string name="wifi_signal">Signal strength</string>
+    <string name="wifi_speed">Link speed</string>
+    <string name="wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <string name="wifi_secured_second_item">, secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <string name="wifi_save">Save</string>
+    <string name="wifi_forget">Forget</string>
+    <string name="wifi_cancel">Cancel</string>
+    <string name="wifi_remembered">Saved</string>
+    <string name="wifi_not_in_range">Not in range</string>
+    <string name="wifi_disabled_generic">Disabled</string>
+    <string name="wifi_disabled_network_failure">Avoided poor Internet connection</string>
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+    <string name="wifi_connect">Connect</string>
+    <string name="wifi_fail_to_scan">Can\'t scan for networks</string>
+    <string name="wifi_stoped">To see available networks, turn Wi\u2011Fi on.</string>
+
+    <!-- Wi-Fi dialog -->
+    <string name="wifi_security_none">None</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <string name="wifi_security_short_wpa">WPA</string>
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_ssid">Network SSID</string>
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <string name="wifi_security">Security</string>
+    <string name="wifi_password">Password</string>
+    <string name="wifi_show_password">Show password</string>
+    <string name="wifi_show_advanced">Show advanced options</string>
+    <string name="proxy_settings_title">Proxy</string>
+    <string name="proxy_hostname_label">Proxy hostname</string>
+    <string name="proxy_hostname_hint">proxy.example.com</string>
+    <string name="proxy_port_label">Proxy port</string>
+    <string name="proxy_port_hint">8080</string>
+    <string name="proxy_exclusionlist_label">Bypass proxy for</string>
+    <string name="proxy_exclusionlist_hint">example.com,mycomp.test.com,localhost</string>
+    <string name="proxy_url">"PAC URL: "</string>
+    <string name="proxy_error_invalid_host">The hostname you typed isn\'t valid.</string>
+    <string name="proxy_error_invalid_exclusion_list">The exclusion list you typed isn\'t properly formatted. Type a comma-separated list of excluded domains.</string>
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <string name="proxy_error_invalid_port">The port you typed isn\'t valid.</string>
+    <string name="proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other apps.</string>
+    <string name="wifi_ip_settings">IP settings</string>
+    <string name="wifi_ip_address">IP address</string>
+    <string name="wifi_ip_address_hint">196.168.1.128</string>
+    <string name="wifi_gateway">Gateway</string>
+    <string name="wifi_gateway_hint">192.168.1.1</string>
+    <string name="wifi_network_prefix_length">Network prefix length</string>
+    <string name="wifi_network_prefix_length_hint" translatable="false">24</string>
+    <string name="wifi_dns1">DNS 1 </string>
+    <string name="wifi_dns1_hint">8.8.8.8</string>
+    <string name="wifi_dns2">DNS 2</string>
+    <string name="wifi_dns2_hint">8.8.4.4</string>
+    <string name="wifi_ip_settings_invalid_ip_address">Type a valid IP address.</string>
+    <string name="wifi_ip_settings_invalid_gateway">Type a valid gateway address.</string>
+    <string name="wifi_ip_settings_invalid_dns">Type a valid DNS address.</string>
+    <string name="wifi_ip_settings_invalid_network_prefix_length">Type a network prefix length between 0 and 32.</string>
+    <string name="wifi_unchanged">(unchanged)</string>
+    <string name="connected_via_wifi_assistant">Connected via Wi\u2011Fi assistant</string>
+    <string name="wifi_no_internet">No Internet Access Detected, won\'t automatically reconnect.</string>
+    <string name="wifi_disabled_wifi_failure">WiFi Connection Failure</string>
+    <string name="wifi_band_24ghz" translatable="false">2.4GHz</string>
+    <string name="wifi_band_5ghz" translatable="false">5GHz</string>
+    <string name="wifi_frequency">Frequency</string>
+    <string name="wifi_display_options_done">Done</string>
+    <string name="wifi_eap_method">EAP method</string>
+    <string name="please_select_phase2">Phase 2 authentication</string>
+    <string name="wifi_eap_ca_cert">CA certificate</string>
+    <string name="wifi_eap_user_cert">User certificate</string>
+    <string name="wifi_eap_identity">Identity</string>
+    <string name="wifi_eap_anonymous">Anonymous identity</string>
+    <string name="proxy_url_title">"PAC URL: "</string>
+    <string name="proxy_url_hint" translatable="false">https://www.example.com/proxy.pac</string>
+    <string name="wifi_unspecified">(unspecified)</string>
+
+    <!--Wi-Fi Status-->
+    <string name="wifi_stoping">Turning Wi\u2011Fi off\u2026</string>
+    <string name="wifi_starting">Turning Wi\u2011Fi on\u2026</string>
+    <string name="wifi_refresh">Refresh WiFi list</string>
+    <string name="wifi_add_new">Add WIFI network</string>
+    <string name="wifi_direct_connect">Direct WIFI</string>
+    <string name="wifi_wps_setup_msg">Starting WPS\u2026</string>
+    <string name="wifi_wps_onstart_pbc">Press the Wi\u2011Fi Protected Setup button on your router. It may be called \"WPS\" or contain this symbol:</string>
+    <string name="wifi_wps_onstart_pin">Enter pin <xliff:g id="number">%1$s</xliff:g> on your Wi\u2011Fi router. The setup can take up to two minutes to complete.</string>
+    <string name="wifi_wps_complete">WPS succeeded. Connecting to the network\u2026</string>
+    <string name="wifi_wps_connected">Connected to Wi\u2011Fi network <xliff:g id="network_name">%s</xliff:g></string>
+    <string name="wifi_wps_in_progress">WPS is already in progress and can take up to two minutes to complete</string>
+    <string name="wifi_wps_failed_generic">WPS failed. Please try again in a few minutes.</string>
+    <string name="wifi_wps_failed_wep">The wireless router security setting (WEP) is not supported</string>
+    <string name="wifi_wps_failed_tkip">The wireless router security setting (TKIP) is not supported</string>
+    <string name="wifi_wps_failed_overlap">Another WPS session was detected. Please try again in a few minutes.</string>
+    <string name="wifi_pppoe_auth_failure">Pppoe Authentication problem</string>
+
+    <!-- Ether Setting -->
+    <string name="ether">Ethernet</string>
+    <string name="ether_setting">Ethernet Setting</string>
+    <string name="ether_auto_ip">DHCP</string>
+    <string name="ether_manual_ip">Static IP</string>
+    <string name="ether_pppoe_set">Pppoe setting</string>
+    <string name="ether_pppoe">Pppoe</string>
+
+    <!-- System Update Dialog -->
+    <string name="system_no_update_text">Can\'t find upgrade file!</string>
+    <string name="system_update_textview">The upgrade process is irreversible, now completed the upgrade to restart the TV?</string>
+    <string name="system_back_textview">Restart the TV to restore the system restore settings, this operation is not reversible?</string>
+    <string name="user_back_textview">Restart the TV to restore all user settings, this operation is not reversible?</string>
+    <string name="net_update_failed_text">Test failed, please check the TV network settings!</string>
+    <string name="net_update_success_text">Download available Update package?</string>
+    <string name="net_update_finish_text">Upgrade package download is complete, whether to restart the TV to complete the upgrade?</string>
+    <string name="net_update_pause_text">The network connection has been disconnected and the download has been suspended</string>
+    <string name="sdcard_not_exist">sdcard not exist</string>
+    <string name="sdcard_available_space_not_enough">sdcard available space not enoughsd</string>
+    <string name="file_check_failed">File check failed</string>
+
+    <!-- Net Setting IP setting -->
+    <string name="ip">IP</string>
+    <string name="subnet">Netmask</string>
+    <string name="network_prefix">Prefix length</string>
+    <string name="gateway">Gateway</string>
+    <string name="modify">Modify</string>
+    <string name="forget">Never Save</string>
+    <string name="dns">DNS</string>
+    <string name="toast_download_failed">Download Failed!Please check the File on server.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="apk_not_found">can not find the tv application</string>
+    <!-- Europe DTV -->
+    <string name="new_service_found">New services have been found.</string>
+
+    <string name="restore_success">Restore default settings successfully, reboot to apply</string>
+</resources>

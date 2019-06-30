@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+         <TextView
+               android:id="@+id/marknameView"
+               android:layout_width="165dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               android:layout_marginStart="3dp"
+               android:layout_marginTop="3dp"
+               />
+         <TextView
+               android:id="@+id/markpointView"
+               android:layout_width="112dp"
+               android:layout_height="wrap_content"
+               android:layout_toEndOf="@id/marknameView"
+               android:layout_alignTop="@id/marknameView"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               />
+         <Button
+               android:id="@+id/delete"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:focusable="true"
+               android:layout_alignParentEnd="true"
+               android:text="@string/delete"
+               android:layout_marginEnd="3dp"
+               android:layout_marginTop="3dp"
+               />
+         <Button
+               android:id="@+id/watch"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:focusable="true"
+               android:layout_toStartOf="@id/delete"
+               android:layout_alignTop="@id/delete"
+               android:text="@string/open"
+               />
+</RelativeLayout>

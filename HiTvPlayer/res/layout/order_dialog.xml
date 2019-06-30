@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:background="@drawable/custom_setting_view_bg" >
+        <TextView
+            android:id="@+id/prompt_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/prompt_txt"
+            android:layout_below="@+id/prompt_txt"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/channeledit_dialog_button_selector"
+            android:text="@string/move_channel_ok" />
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/prompt_txt"
+            android:layout_below="@+id/prompt_txt"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/channeledit_dialog_button_selector"
+            android:text="@string/move_channel_cancel" />
+</RelativeLayout>

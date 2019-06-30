@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 视频播放窗口 -->
+    <SurfaceView
+        android:id="@+id/play_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <SurfaceView
+        android:id="@+id/play_surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" />
+
+    <SurfaceView
+        android:id="@+id/play_atv_surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" />
+
+    <SurfaceView
+        android:id="@+id/play_ginga_surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" />
+
+    <!-- 广播背景图片 -->
+    <LinearLayout
+        android:id="@+id/ly_radio_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_radio_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <!-- 菜单 -->
+    <LinearLayout
+        android:id="@+id/ly_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/navigation" />
+    </LinearLayout>
+
+    <!-- channel List -->
+
+    <LinearLayout
+        android:id="@+id/ly_channel_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/channel_list" />
+    </LinearLayout>
+
+    <!--dolby log view -->
+    <ImageView
+        android:id="@+id/dolby_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"/>
+
+    <!-- Info Bar -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_channelInfo_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/infobar" />
+    </LinearLayout>
+
+    <!-- 右上角数字 -->
+    <TextView
+        android:id="@+id/tv_play_channel_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:visibility="gone" />
+
+      <com.hisilicon.tvui.view.SignalShow
+         android:id="@+id/tv_play_signal_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+       />
+
+    <!-- 提示框 -->
+    <LinearLayout
+        android:id="@+id/ly_tip_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/channellist_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"  >
+
+        <TextView
+            android:id="@+id/tv_tip_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_no_signal_title"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Detail Info -->
+    <LinearLayout
+        android:id="@+id/LinearLayout_detail_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/detailinfo" />
+    </LinearLayout>
+
+    <!-- 时移  -->
+    <LinearLayout
+        android:id="@+id/ly_timeshift"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+        <include layout="@layout/timeshift_main" />
+    </LinearLayout>
+
+    <!-- PVR小红点  -->
+    <LinearLayout
+        android:id="@+id/linearlayout_pvr_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1160dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/pvr_tag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/play_no_signal_title"
+            android:src="@drawable/pvr_tag" />
+    </LinearLayout>
+
+    <!-- Channel Find View -->
+
+    <LinearLayout
+        android:id="@+id/ly_channel_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:visibility="gone" >
+
+        <include layout="@layout/channel_find" />
+    </LinearLayout>
+
+    <!-- Record Set Time View -->
+    <LinearLayout
+        android:id="@+id/ly_record_time_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="gone" >
+        <include layout="@layout/record_time_dialog" />
+    </LinearLayout>
+
+    <!-- DRA tag view -->
+    <TextView
+        android:id="@+id/dra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="left|bottom"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:focusableInTouchMode="false"/>
+
+    <!-- DRA channel view -->
+    <TextView
+        android:id="@+id/dra_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="left|bottom"
+        android:visibility="gone"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:focusableInTouchMode="false"/>
+
+    <!-- DTS stream type view -->
+    <TextView
+        android:id="@+id/dts_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="left|bottom"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:focusableInTouchMode="false"/>
+    <!-- EAS alert view -->
+    <TextView
+        android:id="@+id/eas_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#aa000000"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+
+
+</merge>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selector_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@drawable/button_transparent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_transparent"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

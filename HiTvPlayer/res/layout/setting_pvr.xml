@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/setting_pvr_timeshift_to_pvr_switch"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="99dp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/setting_password_modify" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_timeshift_to_record" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/setting_pvr_path"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_record_path" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/setting_timeshift_time"
+            android:layout_width="530dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/timeshift_time"
+            pvr:entriesValue="@array/timeshift_time_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_timeshift_time" />
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- android:background="@drawable/combox_button" -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_list_file_margin100"
+    android:layout_marginRight="@dimen/activity_list_file_margin100"
+    android:layout_marginTop="@dimen/activity_list_file_margin50"
+    android:layout_marginBottom="@dimen/activity_list_file_margin50"
+    >
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/acitvity_filelist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_below="@id/top_title"
+        android:background="@drawable/listview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/gv_file_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/item_file_grid_horizontal_space"
+            android:listSelector="@drawable/gridview_item_selector"
+            android:numColumns="@integer/item_file_grid_num_col"
+            android:verticalSpacing="@dimen/item_file_grid_vertical_space" />
+
+        <ListView
+            android:id="@+id/lv_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/listview_item_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

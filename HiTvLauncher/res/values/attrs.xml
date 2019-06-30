@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WifiEncryptionState">
+        <attr name="state_encrypted" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CoverFlow">
+        <attr name="animateDuration" format="integer" />
+        <attr name="delayTime" format="integer" />
+        <attr name="images" format="integer" />
+    </declare-styleable>
+
+</resources>

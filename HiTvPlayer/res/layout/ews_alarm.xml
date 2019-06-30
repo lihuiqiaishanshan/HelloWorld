@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llay_ews"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/lay_ews_info_awas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ews_background"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/lay_ews_info_01"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ews_info_disaster_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/ews_01_earthquake" />
+
+            <ImageView
+                android:id="@+id/ews_info_authorty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/ews_authority01_bmkg" />
+
+            <LinearLayout
+                android:id="@+id/lay_ews_info_01_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ews_info_authorty"
+                android:layout_toRightOf="@id/ews_info_disaster_code"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ews_info_location_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lines="1"
+                    android:maxEms="32"
+                    android:minEms="16"
+                    android:text="@string/string_null"
+                    android:textColor="@color/red"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/ews_info_location_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lines="1"
+                    android:text="@string/string_null"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_02"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_01"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_type_title"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/str_disaster_type_description"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ews_info_disaster_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_03"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_02"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_position_title"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/str_disaster_position_description"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ews_info_disaster_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_04"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_03"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_date_title"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/str_disaster_date_description"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ews_info_disaster_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_05"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_04"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_characteristic_title"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/str_disaster_characteristic_description"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ews_info_disaster_characteristic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_06"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_05"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/str_disaster_message_description"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_info_07"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lay_ews_info_06"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="left|top"
+            android:background="@drawable/ews_txt_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_info_disaster_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_ews_info_waspada"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/ews_background"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/lay_ews_waspada_01"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ews_waspada_disaster_code"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ews_01_earthquake" />
+
+            <TextView
+                android:id="@+id/ews_waspada_location_type"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@id/ews_waspada_disaster_code"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:text="@string/string_null"
+                android:textColor="@color/green"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/ews_waspada_location_code"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_toRightOf="@id/ews_waspada_location_type"
+                android:gravity="left|center_vertical"
+                android:text="@string/string_null"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ews_waspada_authorty"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ews_authority01_bmkg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ews_waspada_02"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_below="@id/lay_ews_waspada_01"
+            android:gravity="left|top"
+            android:background="@drawable/ews_txt_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ews_waspada_disaster_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:textColor="@color/black"
+                android:text="@string/string_null"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

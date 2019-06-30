@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="760dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/id_motorsetting_search"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:background="@drawable/install_btn_bg"
+        android:text="@string/str_install_search"
+        android:textColor="@color/white"
+        android:textSize="22sp" >
+    </Button>
+
+    <include
+        android:id="@+id/id_antennaseting_signal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/install_dvbs_signal_bar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#ff3366aa" />
+
+    <LinearLayout
+        android:id="@+id/layout_motor_satellite"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_satellite"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motorsetting_satellite"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_motor_type"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motorsetting_motortype"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_motor_tp"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_transponder"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motorsetting_tp"
+            android:layout_width="478dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_usals_long"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_longitude"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:text="@string/str_install_local_long"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dvbs_motor_longtype"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="21dp"
+            android:nextFocusDown="@+id/id_dvbs_motor_latitype"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+
+        <EditText
+            android:id="@+id/id_dvbs_motor_long"
+            android:layout_width="172dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:inputType="numberDecimal"
+            android:nextFocusLeft="@+id/id_dvbs_motor_longtype"
+            android:nextFocusDown="@+id/id_dvbs_motor_lati"
+            android:maxLength="5"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_usals_lati"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_lati"
+            android:layout_width="260dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:text="@string/str_install_locat_lati"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_dvbs_motor_latitype"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="21dp"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+
+        <EditText
+            android:id="@+id/id_dvbs_motor_lati"
+            android:layout_width="172dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="2dp"
+            android:nextFocusLeft="@+id/id_dvbs_motor_latitype"
+            android:background="@drawable/channeledit_dialog_editview_bg"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sat_pos"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_sat_pos"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/str_install_pos_no"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motor_satellite_pos"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dp"
+            android:nextFocusRight="@+id/id_motor12_goto_pos"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+
+        <Button
+            android:id="@+id/id_motor12_goto_pos"
+            android:layout_width="172dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/install_btn_bg"
+            android:nextFocusLeft="@+id/id_motor_satellite_pos"
+            android:text="@string/str_motor12_goto"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_motor_move"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_motor_move"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/str_install_move_step"
+            android:textSize="25sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/id_motor_move_west"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="21dp"
+            android:background="@drawable/install_btn_bg"
+            android:nextFocusRight="@+id/id_motor_move_step"
+            android:text="@string/str_install_to_west"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motor_move_step"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+
+            android:nextFocusLeft="@+id/id_motor_move_west"
+            android:nextFocusRight="@+id/id_motor_move_east"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+
+        <Button
+            android:id="@+id/id_motor_move_east"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/install_btn_bg"
+            android:nextFocusLeft="@+id/id_motor_move_step"
+            android:text="@string/str_install_to_east"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_motor_position_save"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/install_btn_bg"
+        android:nextFocusRight="@+id/id_antennasetting_search"
+        android:text="@string/str_save"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

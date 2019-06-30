@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lock="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:id="@+id/tv_lock_setting_root"
+    android:layout_width="650dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/channel_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+<!--
+    <LinearLayout
+         android:id="@+id/total_lock_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/channel_listview_bg"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:gravity="center_vertical" >
+
+         <TextView
+             android:layout_width="210dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="43dp"
+             android:text="@string/setting_total_lock"
+             android:textSize="20sp" />
+
+         <ImageView
+             android:layout_width="15dp"
+             android:layout_height="18dp"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/selector_arrow_left" />
+
+         <Button
+             android:id="@+id/total_lock"
+             android:layout_width="200dp"
+             android:layout_height="60dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/button_transparent"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:nextFocusUp="@+id/total_lock"
+             android:textColor="@color/white"
+             android:textSize="20sp" >
+         </Button>
+
+         <ImageView
+             android:layout_width="15dp"
+             android:layout_height="18dp"
+             android:layout_gravity="center_vertical"
+             android:layout_marginRight="30dp"
+             android:background="@drawable/selector_arrow_right" />
+     </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/channel_manager_sort_lock"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/menu_lock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_menu_lock"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_arrow_left" />
+
+        <Button
+            android:id="@+id/menu_lock"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </Button>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/program_lock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_program_lock"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_arrow_left" />
+
+        <Button
+            android:id="@+id/program_lock"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parental_lock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:nextFocusDown="@+id/modify_password_layour" >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_parental_rating"
+            android:textSize="20sp" />
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_parentalrating"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/install_btn_bg"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            lock:entries="@array/parental_rating"
+            lock:entriesValue="@array/parental_rating_value"
+            lock:lineHeight="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/source_lock_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:gravity="center_vertical"
+         android:background="@drawable/channel_listview_bg">
+
+         <TextView
+             android:layout_width="210dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="43dp"
+             android:text="@string/setting_source_lock"
+             android:textSize="20sp" />
+
+         <ImageView
+             android:layout_width="15dp"
+             android:layout_height="18dp"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="20dp"
+             android:background="@drawable/selector_arrow_left" />
+
+         <Button
+             android:id="@+id/source_lock"
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/button_transparent"
+             android:focusable="false"
+             android:focusableInTouchMode="false"
+             android:textColor="@color/white"
+             android:textSize="20sp" />
+
+        <ImageView
+             android:layout_width="15dp"
+             android:layout_height="18dp"
+             android:layout_gravity="center_vertical"
+             android:layout_marginRight="30dp"
+             android:background="@drawable/selector_arrow_right" />
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/source_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_source_select"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/source_select"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/setting_source_select"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/selector_arrow_right" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/selector_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/key_lock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_key_lock"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_arrow_left" />
+
+        <Button
+            android:id="@+id/key_lock"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </Button>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modify_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/channel_listview_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/setting_password_modify"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/modify_password"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/setting_tap_to_set"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/selector_arrow_right" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/selector_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

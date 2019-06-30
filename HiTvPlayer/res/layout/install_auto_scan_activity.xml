@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 信号类型选择 -->
+    <LinearLayout
+        android:id="@+id/ly_singal_type_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_signal_type_select_view" />
+    </LinearLayout>
+
+    <!-- 信号类型选择 -->
+    <LinearLayout
+        android:id="@+id/ly_setup_country"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_setup_country_view" />
+    </LinearLayout>
+
+    <!-- setup area code -->
+    <LinearLayout
+        android:id="@+id/ly_setup_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/setup_area_code_view" />
+    </LinearLayout>
+
+    <!-- DVB-C自动搜索设置 -->
+    <LinearLayout
+        android:id="@+id/ly_auto_scan_type"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_auto_scan_type_view" />
+    </LinearLayout>
+
+    <!-- 搜索进度 -->
+    <LinearLayout
+        android:id="@+id/ly_scan_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        <include layout="@layout/install_scan_progress_view" />
+    </LinearLayout>
+</merge>

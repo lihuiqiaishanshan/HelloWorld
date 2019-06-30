@@ -1,0 +1,340 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:digtaleditext="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    xmlns:Combox="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/autoscan_type_select_lay"
+        android:layout_width="630dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/scan_type_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/scan_type_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/str_scan_type_select"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line_wide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dvbc_type_select_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_scan_type_name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.Combox
+                    android:id="@+id/id_dvbc_scan_type_combox"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/install_cbx_bg"
+                    android:textColor="@color/white"
+                    Combox:lineHeight="30sp"
+                    android:textSize="20sp" >
+                    <requestFocus />
+                </com.hisilicon.tvui.view.Combox>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_dvbc_nid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_dvbcnetworkid"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_install_ctpedit_networkid"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_dvbc_nid"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:drawableStart="@drawable/channel_white_left"
+                    android:drawableEnd="@drawable/channel_white_right"
+                    android:text="@string/atsc_cable_format_auto"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_dvbc_freq"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_dvbc_freqname"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_install_ctpedit_mainfreq"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_dvbc_freq"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:drawableStart="@drawable/channel_white_left"
+                    android:drawableEnd="@drawable/channel_white_right"
+                    android:text="@string/atsc_cable_format_auto"/>
+                <TextView
+                    android:id="@+id/tv_dvbc_freq_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/str_freq_unit"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    android:textColor="@color/white">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_install_tpedit_rate"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.DigtalEditText
+                    android:id="@+id/id_dvbc_rate"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/channeledit_dialog_editview_bg"
+                    android:maxEms="4"
+                    android:minEms="1"
+                    android:digits="0123456789"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:maxLength="4"
+                    digtaleditext:maxnumber="7200"
+                    digtaleditext:minnumber="1" >
+                </com.hisilicon.tvui.view.DigtalEditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/str_rate_unit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_install_qam"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.Combox
+                    android:id="@+id/id_dvbc_qam"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/install_cbx_bg"
+                    android:textColor="@color/white"
+                    Combox:lineHeight="30sp"
+                    android:textSize="20sp" >
+                </com.hisilicon.tvui.view.Combox>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dvbt_type_select_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_scan_type_name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.Combox
+                    android:id="@+id/id_dvbt_scan_type_combox"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/install_cbx_bg"
+                    android:textColor="@color/white"
+                    Combox:lineHeight="30sp"
+                    android:textSize="20sp" >
+                </com.hisilicon.tvui.view.Combox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_dvbt_freqname"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/str_install_ctpedit_mainfreq"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.Combox
+                    android:id="@+id/id_dvbt_frmindex"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/install_cbx_bg"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:focusable="true" >
+                </com.hisilicon.tvui.view.Combox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:gravity="left"
+                    android:text="@string/str_install_bandwidth"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" >
+                </TextView>
+
+                <com.hisilicon.tvui.view.Combox
+                    android:id="@+id/id_dvbt_scan_bandwidth_combox"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:background="@drawable/install_cbx_bg"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" >
+                </com.hisilicon.tvui.view.Combox>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/id_scan_type_btn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/install_btn_bg"
+                android:text="@string/str_install_scan_start"
+                android:textColor="@color/white"
+                android:textSize="22sp" >
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

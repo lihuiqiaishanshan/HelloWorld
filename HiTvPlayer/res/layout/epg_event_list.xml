@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="366dp"
+    android:layout_height="74dp"
+    android:gravity="center"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_epg_event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:gravity="center|left"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_epg_event_name"
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center|left"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

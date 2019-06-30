@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <config id="product">STB</config>
+    <config id="thumbnailEnable">false</config>
+    <config id="backgroundMusicEnable">true</config>
+    <config id="HDREnable">false</config>
+    <config id="netOpenSourceEnable">false</config>
+</map>

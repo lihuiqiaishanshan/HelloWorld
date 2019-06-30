@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/str_install_limit_type"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motor_limit_type"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/str_install_move_step"
+            android:textSize="25sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_motor_limit_step"
+            android:background="@drawable/install_cbx_bg"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:textSize="22sp" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_motor_limit_move_west"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_install_to_west"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/id_motor_limit_move_east"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_install_to_east"
+            android:textColor="@color/white"
+            android:textSize="22sp" >
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_motor_limit_refrence"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/install_btn_bg"
+        android:text="@string/str_install_reference"
+        android:textColor="@color/white"
+        android:textSize="22sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/id_motor_limit_save"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/install_btn_bg"
+        android:text="@string/str_save"
+        android:textColor="@color/white"
+        android:textSize="22sp" >
+    </Button>
+
+</LinearLayout>

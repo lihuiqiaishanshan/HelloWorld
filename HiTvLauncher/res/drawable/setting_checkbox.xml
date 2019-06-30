@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/setting_checked" android:state_checked="true" android:state_focused="false"/>
+    <item android:drawable="@drawable/setting_no_checked" android:state_checked="false" android:state_focused="false"/>
+    <item android:drawable="@drawable/setting_checked_focused" android:state_checked="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/setting_no_checked_focused" android:state_checked="false" android:state_focused="true"/>
+
+</selector>

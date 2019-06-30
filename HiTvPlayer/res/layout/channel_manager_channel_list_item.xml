@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/checkBox_channelmanager_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:buttonTint="@color/white"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/imageView_channel_manager_channel_list_item_ca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/common_pay_on"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_channel_manager_channel_list_item_no"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:text="@string/hello"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_channel_manager_channel_list_item_name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/hello"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView_channel_manager_channel_list_item_fav"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/favorite"
+        android:src="@drawable/channellist_fav" />
+
+    <ImageView
+        android:id="@+id/imageView_channel_manager_channel_list_item_skip"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/skip"
+        android:src="@drawable/channel_skip" />
+
+    <ImageView
+        android:id="@+id/imageView_channel_manager_channel_list_item_lock"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/lock"
+        android:src="@drawable/channellist_lock" />
+
+</LinearLayout>

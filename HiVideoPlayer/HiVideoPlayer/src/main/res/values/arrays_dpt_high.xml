@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- 菜单选项 -->
+    <string-array name="items_3D_mode_dpt_high">
+        <item>Subtitle Options</item>
+        <item>Audio Options</item>
+        <item>3D Timing</item>
+        <item>3D Mode</item>
+        <item>Jump Time</item>
+        <!--<item>Jump To</item>-->
+        <!--<item>Quit Full Screen</item>-->
+        <!--<item>Label Options</item>-->
+        <!--<item>Seek Range</item>-->
+        <item>Advanced Options</item>
+        <item>360 Mode</item>
+        <item>Speed</item>
+    </string-array>
+
+    <string-array name="items_normal_mode_dpt_high">
+        <item>Subtitle Options</item>
+        <item>Audio Options</item>
+        <item>2D Mode</item>
+        <item>Jump Time</item>
+        <!--<item>Jump To</item>-->
+        <!--<item>Quit Full Screen</item>-->
+        <!--<item>Label Options</item>-->
+        <!--<item>Seek Range</item>-->
+        <item>Advanced Options</item>
+        <item>360 Mode</item>
+        <item>Speed</item>
+    </string-array>
+    <!-- the popup menu items when open from file manager-->
+    <string-array name="items_fm_3D_mode_dpt_high">
+        <item>Subtitle Options</item>
+        <item>Audio Options</item>
+        <item>3D Timing</item>
+        <item>3D Mode</item>
+        <item>Jump Time</item>
+        <!--<item>Jump To</item>-->
+        <!--<item>Quit Full Screen</item>-->
+        <!--<item>Label Options</item>-->
+        <!--<item>Seek Range</item>-->
+        <item>Advanced Options</item>
+        <item>360 Mode</item>
+        <item>8k Mode</item>
+        <item>Speed</item>
+    </string-array>
+
+    <string-array name="items_fm_normal_mode_dpt_high">
+        <item>Subtitle Options</item>
+        <item>Audio Options</item>
+        <item>2D Mode</item>
+        <item>Jump Time</item>
+        <!--<item>Jump To</item>-->
+        <!--<item>Quit Full Screen</item>-->
+        <!--<item>Label Options</item>-->
+        <!--<item>Seek Range</item>-->
+        <item>Advanced Options</item>
+        <item>360 Mode</item>
+        <!--<item>Speed</item>-->
+        <item>8k Mode</item>
+        <item>Speed</item>
+    </string-array>
+
+
+    <string-array name="setting_items_dpt_high">
+        <item>Continue Play</item>
+        <item>Forward Rewind</item>
+        <item>Full-Screen Playback</item>
+        <item>Single Cycle</item>
+        <!--<item>Dolby Certification</item>
+        <item>Dolby DRC</item>
+        <item>Enable 1080P24Hz</item> -->
+        <item>3D MVC Adaption</item>
+        <item>SDR mode</item>
+    </string-array>
+    <!-- dra_channel end -->
+</resources>

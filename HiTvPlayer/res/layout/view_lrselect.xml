@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_weight="1"
+  >
+  <View android:id="@+id/id_view_lrselect_left" android:layout_width="60dp" android:layout_height="fill_parent"></View>
+  <Button android:layout_width="0dip"  android:layout_height="fill_parent" android:id="@+id/id_view_lrselect_btn"
+           android:layout_weight="1"></Button>
+  <View android:id="@+id/id_view_lrselect_right" android:layout_width="60dp" android:layout_height="fill_parent"></View>
+</LinearLayout>

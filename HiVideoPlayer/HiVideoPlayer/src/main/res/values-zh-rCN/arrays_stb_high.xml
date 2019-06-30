@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- 菜单选项 -->
+    <string-array name="items_3D_mode_stb_high">
+        <item>字幕设置</item>
+        <item>音频设置</item>
+        <item>3D时序</item>
+        <item>3D模式</item>
+        <item>跳转时间</item>
+        <!--<item>跳 转 到</item>-->
+        <!--<item>退出全屏</item>-->
+        <!--<item>标签选项</item>-->
+        <!--<item>seek幅度</item>-->
+        <item>高级设置</item>
+        <item>360模式</item>
+        <item>播放速度</item>
+    </string-array>
+
+    <string-array name="items_normal_mode_stb_high">
+        <item>字幕设置</item>
+        <item>音频设置</item>
+        <item>2D模式</item>
+        <item>跳转时间</item>
+        <!--<item>跳 转 到</item>-->
+        <!--<item>退出全屏</item>-->
+        <!--<item>标签选项</item>-->
+        <!--<item>seek幅度</item>-->
+        <item>高级设置</item>
+        <item>360模式</item>
+        <item>播放速度</item>
+        <item>8K模式</item>
+    </string-array>
+
+    <!-- the popup menu items when open from file manager-->
+    <string-array name="items_fm_3D_mode_stb_high">
+        <item>字幕设置</item>
+        <item>音频设置</item>
+        <item>3D时序</item>
+        <item>3D模式</item>
+        <item>跳转时间</item>
+        <!--<item>跳 转 到</item>-->
+        <!--<item>退出全屏</item>-->
+        <!--<item>标签选项</item>-->
+        <!--<item>seek幅度</item>-->
+        <item>高级设置</item>
+        <item>360模式</item>
+        <item>播放速度</item>
+    </string-array>
+
+    <string-array name="items_fm_normal_mode_stb_high">
+        <item>字幕设置</item>
+        <item>音频设置</item>
+        <item>2D模式</item>
+        <item>跳转时间</item>
+        <!--<item>跳 转 到</item>-->
+        <!--<item>退出全屏</item>-->
+        <!--<item>标签选项</item>-->
+        <!--<item>seek幅度</item>-->
+        <item>高级设置</item>
+        <item>360模式</item>
+        <item>播放速度</item>
+    </string-array>
+
+    <string-array name="setting_items_stb_high">
+        <item>断点播放</item>
+        <item>快进快退</item>
+        <item>全屏播放</item>
+        <item>单部循环</item>
+        <!--<item>杜比认证</item>
+        <item>杜比DRC</item>
+        <item>使能1080P24Hz显示</item> -->
+        <item>3D MVC 自适应</item>
+        <item>SDR 模式</item>
+    </string-array>
+</resources>

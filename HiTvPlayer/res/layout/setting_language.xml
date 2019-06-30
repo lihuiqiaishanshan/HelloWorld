@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pvr="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_epg_1"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_epg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_epg_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_subt_1"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_subt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_subt_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_subt_2"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_subt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_subt_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/seting_language_cbx_teletext_1"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@+id/seting_language_cbx_teletext_1"
+            android:layout_marginRight="97dp"
+            pvr:entries="@array/language_code"
+            pvr:entriesValue="@array/language_code_value"
+            pvr:lineHeight="50dp" />
+
+        <TextView
+            android:id="@+id/seting_language_text_teletext_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="73dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/setting_language_teletext_1" />
+    </RelativeLayout>
+
+</LinearLayout>

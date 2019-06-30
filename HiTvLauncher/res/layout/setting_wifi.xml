@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launcher_set_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_setting"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/wifi_switch_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:button="@drawable/setting_switch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empty_wifi_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="@string/wifi_starting"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/wifi_signal_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:paddingLeft="20dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/wifi_refresh_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wifi_refresh"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wifi_add_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wifi_add_new"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wifi_direct_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/wifi_direct_connect"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

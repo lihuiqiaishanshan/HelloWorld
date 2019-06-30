@@ -1,0 +1,155 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">HiFileManager</string>
+
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5] -->
+    <string name="bytes"><xliff:g id="count">%s</xliff:g> B</string>
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5] -->
+    <string name="kilobytes"><xliff:g id="count">%s</xliff:g> KB</string>
+    <!-- Size unit, displayed in a button next to an attachment  [CHAR LIMIT=5] -->
+    <string name="megabytes"><xliff:g id="count">%s</xliff:g> MB</string>
+    <!-- Size unit, displayed in a button next to an attachment  [CHAR LIMIT=5] -->
+    <string name="gigabytes"><xliff:g id="count">%s</xliff:g> GB</string>
+
+    <string name="storage_sd_card">SD card</string>
+    <string name="storage_usb_drive">USB drive</string>
+    <string name="storage_sd_card_label"><xliff:g example="SanDisk" id="manufacturer">%s</xliff:g> SD card</string>
+    <string name="storage_usb_drive_label"><xliff:g example="Seagate" id="manufacturer">%s</xliff:g> USB drive</string>
+
+    <string name="nodesc">no description</string>
+    <string name="notice">Warning</string>
+    <string name="music">Audio</string>
+    <string name="video">Video</string>
+    <string name="image">Picture</string>
+    <string name="operation">Operation</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="str_rename">Rename</string>
+    <string name="str_new">New</string>
+    <string name="search">Search</string>
+    <string name="preview">Preview</string>
+    <string name="eject_cdrom">Eject_CDROM</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_file">Please select the file</string>
+    <string name="new_dir">New Folder</string>
+    <string name="Rename_null">File name or Folder name can not be null</string>
+    <string name="your_file">The specified file/folder%1$s With the same name file/folder</string>
+    <string name="ok_add">Are you sure create the %1$s %2$s?</string>
+    <string name="file">File</string>
+    <string name="dir">Folder</string>
+    <string name="builded">Has been created</string>
+    <string name="error">Error!</string>
+    <string name="input_keyword">Please enter a keyword</string>
+    <string name="override_file">File already exists,are you sure overwrite anyway?</string>
+    <string name="paste_error">Paste failed</string>
+    <string name="paste_v">Paste success</string>
+    <string name="sub_dir">Destination folder is the source folder subfolders</string>
+    <string name="ok_delete">Are you sure you want to delete the %1$s?</string>
+    <string name="delete_v">Delete success</string>
+    <string name="delete_none">please select items</string>
+    <string name="delete_error">Delete failed</string>
+    <string name="name_no_update">Unmodified the name</string>
+    <string name="ok_update">Are you sure update %1$s%2$s name %3$s?</string>
+    <string name="update_name_ok">Successfully modify the file name</string>
+    <string name="update_name_error">Modify the file name wrong</string>
+    <string name="add_ok">Successfully added</string>
+    <string name="select_type">Please select the conditions!</string>
+    <string name="close">Close</string>
+    <string name="file_name">Name</string>
+    <string name="update_time">ModifyTime</string>
+    <string name="file_size">Size</string>
+    <string name="help_title">Help Manual</string>
+    <string name="suffix">Please enter a suffix</string>
+    <string name="str_name">Account:</string>
+    <string name="str_pass">Password:</string>
+    <string name="dispaly">ServerName:</string>
+    <string name="input_server">Server should not empty</string>
+    <string name="input_name_pass">Account or PassWord should not empty</string>
+    <string name="adding_server">Adding Server</string>
+    <string name="please_waitting">please waiting...</string>
+    <string name="str_server">new</string>
+    <string name="user_name">Account:</string>
+    <string name="user_pass">Password:</string>
+    <string name="ip_address1">Ip Address</string>
+    <string name="server_folder1">Server Folder</string>
+    <string name="folder_position">Directory:</string>
+    <string name="servers">Server:</string>
+    <string name="new_server_error">new server error</string>
+    <string name="no_server">no server</string>
+    <string name="name_long">The file name length can not over 128</string>
+    <string name="name_falid">The file name can not contains these character:/\\:*?\&quot;&lt;&gt;|</string>
+    <string name="suffix_long">The file suffix length can not over 10</string>
+    <string name="suffix_falid">The file suffix can not contains these character:/\\:*?\&quot;&lt;&gt;|</string>
+    <!-- debug -->
+    <string name="sdcard_no_capacity">no more capacity to store things</string>
+    <string name="no_search_file">Not found the match file</string>
+    <string name="suffix_exist">Filter types already exists</string>
+    <string name="has_exist">%1$s has exists</string>
+    <string name="edit">Edit</string>
+    <string name="type_undelete">%1$s is the default filter types, can not deleted</string>
+    <!-- tab title -->
+    <string name="local_tab_title">Store</string>
+    <string name="lan_tab_title">LAN</string>
+    <string name="nfs_tab_title">NFS</string>
+    <string name="suffix_no">The filter type is null</string>
+    <string name="name_empty">The file can not enter null</string>
+    <string name="network_error">network error, please check network state</string>
+    <string name="new_mout_successfully">Mount Successfully</string>
+    <!-- FTP -->
+    <string name="server1">Server</string>
+    <string name="user_name1">Account</string>
+    <string name="user_pass1">Password</string>
+    <string name="server_name">ServerName</string>
+    <string name="wait_str">Wait</string>
+    <string name="search_str">Searching servers...</string>
+    <string name="paste_str">Pasting files......</string>
+    <string name="new_mout_fail">Mount Fail</string>
+    <string name="user_or_pass">Account or password is not corrent</string>
+    <string name="pos_delete_failed">%1$s deleted failed</string>
+    <string name="del_server_dlg_title">Delete dialog</string>
+    <string name="comfirm_delete_hint">Are you sure to delete these?</string>
+    <string name="work_path">Directory</string>
+    <string name="work_path_null">The Shared directory can not empty</string>
+    <string name="net_time_out">search time out</string>
+    <string name="add_shortcut">Add Shortcut</string>
+    <string name="all_network">All NetWork</string>
+    <string name="add_short_succ">Add the shortcut success</string>
+    <string name="error_folder">Get the workFolder failed</string>
+    <string name="login_server_error">Login the server failed</string>
+    <string name="file_cannot_read">Content can not be read</string>
+    <string name="file_info_name">FileName：</string>
+    <string name="file_info_size">FileSize：</string>
+    <string name="file_info_modify_time">ModifyTime：</string>
+    <string name="file_info_type">FileType：</string>
+    <string name="file_info">DetailInfo</string>
+
+    <string name="hold_type">The %1$s format is now supported：%2$s</string>
+    <string name="is_add_short">Whether to add the directory as a shortcut</string>
+    <string name="install_equi">Install the equipment success</string>
+    <string name="uninstall_equi">Uninstall the equipment success</string>
+    <string name="quary_error">Query is Error</string>
+    <string name="shortcut_exist">Shortcut already exists</string>
+
+    <string name="cause_anr">Click to return may cause immediate death of the interface card, please wait Click to return</string>
+    <string name="running_background">task is running in background</string>
+
+    <string name="network_error_exitnetbrowse">Network error,exist to local files</string>
+    <string name="network_error_notbrowse">Network error,so can not to browser</string>
+    <string name="no_cdrom">There has no CD-ROM or the CD was pulled out, please check</string>
+    <string name="no_file_support">The file type is not supported</string>
+
+    <string name="filter_but">File filter</string>
+    <string name="sort_but">File sort</string>
+    <string name="show_but">Show style</string>
+    <string name="upnp_tab_title">UPnP</string>
+    <string name="baidu_pcs">Baidu PCS</string>
+    <string name="no_activity_info">no app</string>
+    <string name="time_demo">2016/02/23 15:52</string>
+    <string name="file_size_1">File Size : </string>
+    <string name="file_type">File Type : </string>
+    <string name="last_modified">Last Modified Time : </string>
+    <string name="name_empty_tips">Empty field ！</string>
+    <string name="service_exist">service is exist</string>
+</resources>

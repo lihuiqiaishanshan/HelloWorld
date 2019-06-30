@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_def"
+    android:gravity="center" >
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_local_explorer"
+        style="@style/NormalButton"
+        android:layout_marginLeft="@dimen/main_home_view_btn_margin_0dp"
+        android:layout_marginTop="@dimen/main_home_view_btn_margin_100dp" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_nfs_explorer"
+        style="@style/NormalButton"
+        android:layout_alignLeft="@id/btn_local_explorer"
+        android:layout_alignRight="@id/btn_local_explorer"
+        android:layout_below="@id/btn_local_explorer"
+        android:layout_marginTop="@dimen/main_home_view_btn_margin_x10dp" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_baidu_explorer"
+        style="@style/NormalButton"
+        android:layout_alignRight="@id/btn_local_explorer"
+        android:layout_below="@id/btn_local_explorer"
+        android:layout_marginLeft="@dimen/main_home_view_btn_margin_0dp"
+        android:layout_marginTop="@dimen/main_home_view_btn_margin_x10dp"
+        android:visibility="gone" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_upnp_explorer"
+        style="@style/NormalButton2"
+        android:layout_marginLeft="@dimen/main_home_view_btn_margin_x10dp"
+        android:layout_marginTop="@dimen/main_home_view_btn_margin_100dp"
+        android:layout_toRightOf="@id/btn_local_explorer" />
+
+    <com.hisilicon.explorer.ui.AnimationButton
+        android:id="@+id/btn_samba_explorer"
+        style="@style/NormalButton2"
+        android:layout_alignLeft="@id/btn_upnp_explorer"
+        android:layout_alignRight="@id/btn_upnp_explorer"
+        android:layout_alignTop="@id/btn_nfs_explorer"
+        android:layout_below="@id/btn_upnp_explorer" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_nfs_explorer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/btn_samba_explorer"
+        android:layout_below="@id/btn_nfs_explorer" >
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_0"
+            android:layout_width="@dimen/main_home_view_hot_reflected_img_0_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_home_view_btn_margin_12dp"
+            android:scaleType="fitXY" android:contentDescription="@string/nodesc"/>
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_home_view_btn_margin_468dp" android:contentDescription="@string/nodesc"/>
+
+        <ImageView
+            android:id="@+id/hot_reflected_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_home_view_btn_margin_698dp"
+            android:visibility="gone" android:contentDescription="@string/nodesc"/>
+    </RelativeLayout>
+
+</RelativeLayout>

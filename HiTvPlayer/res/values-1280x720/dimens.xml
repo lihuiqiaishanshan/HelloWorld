@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_390px">260px</dimen>
+    <dimen name="dimen_50px">33px</dimen>
+    <dimen name="dimen_1920px">1280px</dimen>
+    <dimen name="dimen_1080px">720px</dimen>
+    <dimen name="dimen_112px">74px</dimen>
+    <dimen name="dimen_54px">36px</dimen>
+    <dimen name="dimen_592px">394px</dimen>
+    <dimen name="dimen_324px">216px</dimen>
+    <dimen name="dimen_756px">504px</dimen>
+    <dimen name="dimen_1026px">684px</dimen>
+    <dimen name="dimen_1328px">885px</dimen>
+    <dimen name="dimen_1808px">1205px</dimen>
+    <dimen name="dimen_600px">400px</dimen>
+    <dimen name="dimen_400px">266px</dimen>
+    <dimen name="dimen_200px">133px</dimen>
+    <dimen name="dimen_720px">480px</dimen>
+    <dimen name="dimen_1600px">1066px</dimen>
+    <dimen name="dimen_900px">600px</dimen>
+    <dimen name="dimen_192px">128px</dimen>
+    <dimen name="dimen_108px">72px</dimen>
+    <dimen name="dimen_60px">40px</dimen>
+    <dimen name="dimen_100px">66px</dimen>
+    <dimen name="dimen_450px">-300px</dimen>
+    <dimen name="dimen_180px">-120px</dimen>
+    <dimen name="dimen_500px">333px</dimen>
+</resources>

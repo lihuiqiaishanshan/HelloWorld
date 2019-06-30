@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="290dp"
+    android:background="@drawable/custom_setting_view_bg"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llay_book_time_arriving_title"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_epg_book_arriving_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/book_time_arriving_title"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.DTVDigitalClock
+            android:id="@+id/dc_book_arriving_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_book_time_arriving"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llay_book_time_arriving_channel"
+            android:layout_width="420dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_channel_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_channel"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_channel_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_channel"
+                android:layout_width="320dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_book_time_name_duration"
+            android:layout_width="420dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_name_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_name"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_name_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_name"
+                android:layout_width="320dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_book_time_arriving_start_time"
+            android:layout_width="420dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_start_time_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_start_time"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_start_time_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_start_time"
+                android:layout_width="320dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llay_book_time_arriving_duration"
+            android:layout_width="420dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_duration_title"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/epg_book_duration"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_duration_seperate"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="@string/epg_book_seperate"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_book_time_arriving_duration"
+                android:layout_width="320dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string_null"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_book_time_arriving_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_book_time_arriving_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/book_time_alarm_tip"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llay_book_time_arriving_ok_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_book_time_arriving_tip"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/epg_description_button"
+            android:gravity="center"
+            android:text="@string/book_time_arriving_tip"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

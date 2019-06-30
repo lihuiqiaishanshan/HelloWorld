@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_install_dvbs_scanif_dlg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/install_dvbs_editdlg_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/str_install_search"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:text="@string/str_install_scan_catype"
+            android:textSize="18sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_scan_if_fta"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:text="@string/str_install_scan_channel"
+            android:textSize="18sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_scan_if_channel"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:text="@string/str_install_scan_network"
+            android:textSize="18sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_scan_if_network"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:gravity="right"
+            android:text="@string/str_install_scan_mode"
+            android:textSize="18sp" >
+        </TextView>
+
+        <com.hisilicon.tvui.view.Combox
+            android:id="@+id/id_scan_if_mode"
+            android:textColor="@color/white"
+            android:background="@drawable/install_cbx_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.hisilicon.tvui.view.Combox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_install_scanif_cancel"
+            android:textColor="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_cancel" >
+        </Button>
+
+        <Button
+            android:id="@+id/id_install_scanif_start"
+            android:textColor="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/install_btn_bg"
+            android:text="@string/str_install_scan_start" >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

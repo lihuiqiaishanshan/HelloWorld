@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="anim_name">
+        <item>None</item>
+        <item>Scale</item>
+        <item>Slide</item>
+        <item>Fade</item>
+        <item>Random</item>
+    </string-array>
+
+    <integer-array name="anim_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="sliding_interval_names">
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>20s</item>
+    </string-array>
+
+    <integer-array name="sliding_intervals">
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+    </integer-array>
+
+</resources>

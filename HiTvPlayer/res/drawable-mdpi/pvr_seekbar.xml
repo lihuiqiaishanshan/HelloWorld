@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/pvr_seekbar_bg"/>
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/pvr_seekbar_progress"/>
+
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/pvr_seekbar_secondaryprogress"/>
+    -->
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+
+            <gradient
+                android:angle="270"
+                android:centerColor="#ff111111"
+                android:centerY="0.75"
+                android:endColor="#ffcdc9c9"
+                android:startColor="#fffffafa" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ff3971ff"
+                    android:centerY="0.75"
+                    android:endColor="#ff1212ff"
+                    android:startColor="#ffffffff" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#80b2dfee"
+                    android:centerY="0.75"
+                    android:endColor="#a09ac0cd"
+                    android:startColor="#80bfefff" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

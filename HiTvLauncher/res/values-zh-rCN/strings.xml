@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 基础 -->
+    <string name="app_name">HiTvLauncher</string>
+    <string name="please_wait">应用加载中,请稍后……</string>
+    <string name="no_del_sys_app">系统应用不能卸载！</string>
+    <string name="please_sure">请确认是否卸载<g id="part1">%1$s</g>?</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="clear_data">清除数据</string>
+    <string name="clear_data_suc">清除数据成功！</string>
+    <string name="clear_data_fail">清除数据失败！</string>
+    <string name="clear_data_dlg_title">"要删除应用程序数据吗？"</string>
+    <string name="force_stop_package">"要停止此应用程序吗？"</string>
+    <string name="clear_default">"要清除默认设置吗？"</string>
+    <string name="clear_data_dlg_text">"系统会永久删除此应用程序的所有数据。删除的内容包括所有文件、设置、帐户、数据库等。"</string>
+    <string name="myapp_title">全部应用</string>
+    <string name="info_txt">按菜单键管理应用</string>
+    <string name="wifi_state_unknow">请插入外接wifi模块，或者外接wifi模块不支持</string>
+
+    <!-- 电视页 -->
+    <string name="vga">VGA</string>
+    <string name="dvbc">有线数字</string>
+    <string name="dtmb">无线数字</string>
+    <string name="dvbt">DVB-T</string>
+    <string name="atsc">ATSC</string>
+    <string name="dvbs">DVBS</string>
+    <string name="isdbt">ISDBT</string>
+    <string name="atv">模拟电视</string>
+    <string name="av1">视频1</string>
+    <string name="av2">视频2</string>
+    <string name="ypbpr">分量</string>
+    <string name="hdmi1">HDMI1</string>
+    <string name="hdmi2">HDMI2</string>
+    <string name="hdmi3">HDMI3</string>
+    <string name="hdmi4">HDMI4</string>
+    <string name="toast_av2_not_supported">此设备不支持AV2源.</string>
+    <string name="toast_hdmi4_not_supported">此设备不支持HDMI4源.</string>
+
+    <!-- 应用页 -->
+    <string name="appstore_normal">应用商城</string>
+    <string name="app_normal">全部应用</string>
+    <string name="media_normal">媒体中心</string>
+    <string name="email_normal">浏览器</string>
+    <string name="multi_normal">DLNA</string>
+    <string name="three_normal">3D跑分</string>
+    <string name="qq_normal">电视QQ</string>
+
+    <string name="exo_player_normal">ExoPlayer</string>
+    <string name="miracast_normal">Miracast</string>
+    <string name="browser_normal">浏览器</string>
+    <string name="failed_to_start">无法启动</string>
+
+    <!-- 设置页 -->
+    <string name="net_setting">网络设置</string>
+    <string name="pic_setting">图像设置</string>
+    <string name="voice_setting">音效设置</string>
+    <string name="system">系统升级</string>
+    <string name="advance_setting">高级设置</string>
+    <string name="recover_setting">恢复设置</string>
+    <string name="system_info">系统信息</string>
+    <string name="help">使用帮助</string>
+
+    <string name="netstat_connected">已连接</string>
+    <string name="netstat_unconnected">未连接</string>
+    <string name="networkerror">未找到任何升级信息，请检查网络是否连通</string>
+
+    <!-- TagView -->
+    <string name="tag_tv">电视</string>
+    <string name="tag_app">应用</string>
+    <string name="tag_setting">设置</string>
+
+    <!-- >音效设置< -->
+    <string name="sndmode_standard_string">标准</string>
+    <string name="sndmode_news_string">新闻</string>
+    <string name="sndmode_music_string">音乐</string>
+    <string name="sndmode_movie_string">电影</string>
+    <string name="sndmode_sport_string">运动</string>
+    <string name="sndmode_user_string">用户</string>
+
+    <!-- >语言切换< -->
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+
+    <!-- >系统睡眠关机< -->
+    <string name="sleep_close">关</string>
+    <string name="five_min">5分钟</string>
+    <string name="thirty_min">30分钟</string>
+    <string name="sixty_min">60分钟</string>
+    <string name="ninety_min">90分钟</string>
+    <string name="sixscore_min">120分钟</string>
+
+    <!-- >开机音乐开关< -->
+    <string name="on">开</string>
+    <string name="off">关</string>
+
+    <!-- >开机音乐选择< -->
+    <string name="music_1">音乐1</string>
+    <string name="music_2">音乐2</string>
+
+    <!-- >系统升级< -->
+    <string name="system_update_local">本地升级</string>
+    <string name="system_update_net">网络升级</string>
+
+    <!-- >选择电视类型< -->
+
+    <string name="select_TV_version">请选择升级版本：</string>
+    <!-- 网络设置 -->
+    <string name="net_ether_setting">有线设置</string>
+    <string name="net_state_setting">网络状态</string>
+
+    <!-- 网络设置 输入提示 -->
+    <string name="net_input_title">账户名:</string>
+    <string name="net_input_pwd_title">密码:</string>
+    <string name="net_input_account">请输入账户名</string>
+    <string name="net_input_pwd">请输入密码</string>
+    <string name="net_auto_connect">断线后自动重连</string>
+
+    <!-- 网络设置 连接状态 -->
+    <string name="net_connecting">正在连接……</string>
+    <string name="net_connect_failed">连接失败!</string>
+    <string name="net_connect_pppoe_auth_failed">用户名或密码错误!</string>
+    <string name="net_setting_ip">正在设置IP……</string>
+    <string name="net_set_ip_failed">请设置正确的IP</string>
+    <string name="net_getting_ip">正在获取IP……</string>
+
+    <!-- wifi设置 -->
+    <string name="wifi_setting">无线设置</string>
+    <string name="wifi_status">无线状态</string>
+    <string name="wifi_add_network">添加网络</string>
+    <string name="wifi_signal">无线信号</string>
+    <string name="wifi_speed">无线连接速度</string>
+    <string name="wifi_secured_first_item">安全方案 <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <string name="wifi_wps_available_first_item">WPS可用</string>
+    <string name="wifi_wps_available_second_item">\u0020(WPS可用)</string>
+    <string name="wifi_secured_second_item">, 安全方案 <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <string name="wifi_save">保存</string>
+    <string name="wifi_forget">取消保存</string>
+    <string name="wifi_cancel">取消连接</string>
+    <string name="wifi_remembered">保存中</string>
+    <string name="wifi_not_in_range">不在范围内</string>
+    <string name="wifi_disabled_generic">禁止</string>
+    <string name="wifi_disabled_network_failure">避免无线网连接不畅</string>
+    <string name="wifi_disabled_password_failure">验证问题</string>
+    <string name="wifi_connect">连接无线网</string>
+    <string name="wifi_fail_to_scan">无法扫描到网络</string>
+    <string name="wifi_stoped">打开Wi\u2011Fi以检查可用网络.</string>
+
+    <!-- Wi-Fi dialog -->
+    <string name="wifi_security_none">无</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <string name="wifi_security_short_wpa">WPA</string>
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_ssid">网络 SSID</string>
+    <string name="wifi_ssid_hint">输入 SSID</string>
+    <string name="wifi_security">安全</string>
+    <string name="wifi_password">密码</string>
+    <string name="wifi_show_password">显示密码</string>
+    <string name="wifi_show_advanced">显示高级选项</string>
+    <string name="proxy_settings_title">代理</string>
+    <string name="proxy_hostname_label">代理主机名</string>
+    <string name="proxy_hostname_hint">proxy.example.com</string>
+    <string name="proxy_port_label">代理端口</string>
+    <string name="proxy_port_hint">8080</string>
+    <string name="proxy_exclusionlist_label">绕过代理</string>
+    <string name="proxy_exclusionlist_hint">example.com,mycomp.test.com,localhost</string>
+    <string name="proxy_url">"PAC链接: "</string>
+    <string name="proxy_error_invalid_host">您输入的主机名无效.</string>
+    <string name="proxy_error_invalid_exclusion_list">您输入的排除列表没有正确格式化.输入逗号分隔的排除域列表.</string>
+    <string name="proxy_error_empty_port">您需要完成端口区域.</string>
+    <string name="proxy_error_empty_host_set_port">如果主机字段为空，端口字段必须为空.</string>
+    <string name="proxy_error_invalid_port">您输入的端口无效.</string>
+    <string name="proxy_warning_limited_support">HTTP代理由浏览器使用，但可能不被其他应用程序使用.</string>
+    <string name="wifi_ip_settings">IP 设置</string>
+    <string name="wifi_ip_address">IP 地址</string>
+    <string name="wifi_ip_address_hint">196.168.1.128</string>
+    <string name="wifi_gateway">网关</string>
+    <string name="wifi_gateway_hint">192.168.1.1</string>
+    <string name="wifi_network_prefix_length">网络前缀长度</string>
+
+    <string name="wifi_dns1">DNS 1 </string>
+    <string name="wifi_dns1_hint">8.8.8.8</string>
+    <string name="wifi_dns2">DNS 2</string>
+    <string name="wifi_dns2_hint">8.8.4.4</string>
+    <string name="wifi_ip_settings_invalid_ip_address">输入有效的IP地址.</string>
+    <string name="wifi_ip_settings_invalid_gateway">输入有效的网关地址.</string>
+    <string name="wifi_ip_settings_invalid_dns">输入有效的DNS地址.</string>
+    <string name="wifi_ip_settings_invalid_network_prefix_length">输入0到32之间的网络前缀长度</string>
+    <string name="wifi_unchanged">(不变)</string>
+    <string name="connected_via_wifi_assistant">通过WiFi助手连接</string>
+    <string name="wifi_no_internet">未检测到Internet访问，不会自动重新连接.</string>
+    <string name="wifi_disabled_wifi_failure">WiFi连接失败</string>
+
+
+    <string name="wifi_frequency">频率</string>
+    <string name="wifi_display_options_done">完成</string>
+    <string name="wifi_eap_method">EAP方法</string>
+    <string name="please_select_phase2">阶段2认证</string>
+    <string name="wifi_eap_ca_cert">CA证书</string>
+    <string name="wifi_eap_user_cert">用户证书e</string>
+    <string name="wifi_eap_identity">身份</string>
+    <string name="wifi_eap_anonymous">匿名身份</string>
+    <string name="proxy_url_title">"代理网址: "</string>
+
+    <string name="wifi_unspecified">(不明)</string>
+
+    <!--Wi-Fi Status-->
+    <string name="wifi_stoping">打开 Wi\u2011Fi \u2026</string>
+    <string name="wifi_starting">打开 Wi\u2011Fi \u2026</string>
+    <string name="wifi_refresh">刷新wifi列表</string>
+    <string name="wifi_add_new">添加wifi网络</string>
+    <string name="wifi_direct_connect">wifi直连</string>
+    <string name="wifi_wps_setup_msg">开始 WPS\u2026</string>
+    <string name="wifi_wps_onstart_pbc">按路由器上的Wi-Fi保护设置按钮,它可能被称为\"WPS\"或包含此符号:</string>
+    <string name="wifi_wps_onstart_pin">输入PIN码 <xliff:g id="number">%1$s</xliff:g> 于您的WiFi路由器.该设置可能需要两分钟才能完成.</string>
+    <string name="wifi_wps_complete">WPS成功了连接到网络</string>
+    <string name="wifi_wps_connected">连接到WiFi网络 <xliff:g id="network_name">%s</xliff:g></string>
+    <string name="wifi_wps_in_progress">WPS已经进行中，可能需要两分钟的时间才能完成</string>
+    <string name="wifi_wps_failed_generic">WPS失败。 请在几分钟后再试一次.</string>
+    <string name="wifi_wps_failed_wep">无线路由器安全设置（WEP）不受支持</string>
+    <string name="wifi_wps_failed_tkip">不支持无线路由器安全设置（TKIP）</string>
+    <string name="wifi_wps_failed_overlap">检测到另一个WPS会话.请在几分钟后再试一次.</string>
+    <string name="wifi_pppoe_auth_failure">Pppoe认证问题</string>
+
+    <!-- 以太网 Setting -->
+    <string name="ether">以太网</string>
+    <string name="ether_setting">有线设置</string>
+    <string name="ether_auto_ip">自动获取IP地址</string>
+    <string name="ether_manual_ip">手动设置IP地址</string>
+    <string name="ether_pppoe_set">宽带拨号设置</string>
+    <string name="ether_pppoe">宽带拨号</string>
+
+    <!-- 系统升级Dialog -->
+    <string name="system_no_update_text">没有检测到升级包!</string>
+    <string name="system_update_textview">升级操作不可逆转,现在重启电视完成升级？</string>
+    <string name="system_back_textview">重启电视以恢复系统还原的设定，此操作不可逆？</string>
+    <string name="user_back_textview">重启电视以恢复所有用户的设定，此操作不可逆？</string>
+    <string name="net_update_failed_text">检测失败，请检查电视的网络设置！</string>
+    <string name="net_update_success_text">是否下载可用升级包？</string>
+    <string name="net_update_finish_text">升级包下载完成，是否重启电视以完成升级？</string>
+    <string name="net_update_pause_text">网络连接已断开,下载已暂停</string>
+    <string name="sdcard_not_exist">没有发现sd卡</string>
+    <string name="sdcard_available_space_not_enough">sd卡剩余空间不足</string>
+    <string name="file_check_failed">文件检查失败</string>
+
+    <!-- 网络设置 IP设置2 -->
+    <string name="ip">IP</string>
+    <string name="subnet">子网掩码</string>
+    <string name="network_prefix">网络前缀长度</string>
+    <string name="gateway">默认网关</string>
+    <string name="modify">修改</string>
+    <string name="forget">不保存</string>
+    <string name="dns">DNS</string>
+    <string name="toast_download_failed">下载失败，请检查服务器的文件是否存在！</string>
+    <string name="dlg_ok">OK</string>
+    <string name="apk_not_found">TV 应用未找到</string>
+    <string name="new_service_found">发现新服务</string>
+
+    <string name="restore_success">恢复默认设置成功,重启生效</string>
+</resources>

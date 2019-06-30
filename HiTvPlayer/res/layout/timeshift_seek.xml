@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seektime="http://schemas.android.com/apk/res/com.hisilicon.tvui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/timeshift_seek"
+        android:layout_width="320dp"
+        android:layout_height="214dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/custom_setting_view_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/timeshift_seek_jump_to" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <com.hisilicon.tvui.view.DigtalEditText
+                android:id="@+id/timeshift_seek_hour"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusRight="@+id/timeshift_seek_minute"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                seektime:maxnumber="24"
+                seektime:minnumber="0" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/timeshift_seek_time_separator"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <com.hisilicon.tvui.view.DigtalEditText
+                android:id="@+id/timeshift_seek_minute"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="2"
+                seektime:minnumber="0"
+                seektime:maxnumber="59"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:nextFocusRight="@+id/timeshift_seek_second" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/timeshift_seek_time_separator"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <com.hisilicon.tvui.view.DigtalEditText
+                android:id="@+id/timeshift_seek_second"
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/channeledit_dialog_editview_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:maxLength="2"
+                seektime:minnumber="0"
+                seektime:maxnumber="59"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:nextFocusRight="@+id/timeshift_seek_ok" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/timeshift_seek_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/timeshift_seek_ok"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</merge><!--
+     android:background="@drawable/timeshift_progressbar_time_popup"
+                android:progressDrawable="@drawable/timeshift_play_strength_bg"
+                     android:progressDrawable="@drawable/timeshift_play_strength_bg
+                     android:layout_marginLeft="493dp"
+        android:layout_marginTop="192dp"
+-->

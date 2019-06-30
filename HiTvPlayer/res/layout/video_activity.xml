@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match" >
+
+    <SurfaceView
+        android:id="@+id/video_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/video_radio_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_radio_bg"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/video_PClock_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+    <include
+        android:layout_width="1050dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="40dp"
+        layout="@layout/media_controller" />
+    <LinearLayout
+        android:id="@+id/pvr_tip_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/channellist_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"  >
+
+        <TextView
+            android:id="@+id/pvr_tip_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_no_signal_title"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</merge>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DTVMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/auto_channel_lay"
+        android:layout_width="333dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dip"
+        android:layout_marginLeft="53dip"
+        android:layout_marginTop="45dip"
+        android:background="@drawable/channellist_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView
+                android:id="@+id/left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/channel_white_left" />
+
+            <TextView
+                android:id="@+id/channel_title_txt"
+                style="@style/channel_all_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="@string/channel_list"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/channel_white_right" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/channel_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1"
+            android:divider="@drawable/epg_channel_bg_line"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@drawable/custom_setting_item_selector"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

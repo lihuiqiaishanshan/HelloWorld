@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tv_item_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_window_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_window_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/tv_item_atv"
+        android:nextFocusRight="@+id/tv_item_dvbc" >
+
+        <RelativeLayout
+            android:id="@+id/view_window_pic"
+            android:layout_width="@dimen/dimen_780px"
+            android:layout_height="@dimen/dimen_440px"
+            android:gravity="center" >
+
+            <SurfaceView
+                android:id="@+id/minvideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/view_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                android:layout_alignBottom="@+id/view_window_pic"
+                android:layout_alignLeft="@+id/view_window_pic"
+                android:layout_alignRight="@+id/view_window_pic"
+                android:layout_alignTop="@+id/view_window_pic"
+                android:src="@drawable/common_radio_bg" />
+
+            <TextView
+                android:id="@+id/tv_window_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/view_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop = "20dp"
+                android:paddingRight = "20dp"
+                android:visibility="invisible"
+                android:layout_alignRight="@+id/minvideo"
+                android:layout_alignTop="@+id/minvideo"
+                android:src="@drawable/source_lock" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_dvbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_dvbc_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_dvbc_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:nextFocusRight="@+id/tv_item_av1"
+        android:nextFocusDown="@+id/tv_item_dtmb" >
+
+        <RelativeLayout
+            android:id="@+id/view_dvbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_blue"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_dvbc_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_dvbc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dvbc_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/dvbc"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_av1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_av1_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_av1_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:nextFocusRight="@+id/tv_item_ypbpr"
+        android:nextFocusDown="@+id/tv_item_av2" >
+
+        <RelativeLayout
+            android:id="@+id/view_av1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_av1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_av1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/tv_icon_av" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_av1_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/av1"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_dtmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_dtmb_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_dtmb_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:nextFocusUp="@+id/tv_item_dvbc"
+        android:nextFocusRight="@+id/tv_item_av2"
+        android:nextFocusDown="@+id/tv_item_hdmi2" >
+
+        <RelativeLayout
+            android:id="@+id/view_dtmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_deeporange"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_dtmb_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_dtv" />
+
+            <TextView
+                android:id="@+id/tv_dtmb_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dtmb_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/dtmb"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_av2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_av2_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_av2_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@+id/tv_item_av1"
+        android:nextFocusDown="@+id/tv_item_hdmi3"
+        android:nextFocusRight="@+id/tv_item_vga"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85" >
+
+        <RelativeLayout
+            android:id="@+id/view_av2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_av2"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_av2_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_av" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_av2_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/av2"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_ypbpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_ypbpr_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_ypbpr_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/tv_item_vga"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85" >
+
+        <RelativeLayout
+            android:id="@+id/view_ypbpr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_ypbpr"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_ypbpr_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_ypbpr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ypbpr_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/ypbpr"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_vga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_vga_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_vga_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/tv_item_hdmi4"
+        android:gravity="center"
+        android:scaleX="0.85"
+        android:scaleY="0.85" >
+
+        <RelativeLayout
+            android:id="@+id/view_vga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_vga"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_vga_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_vga" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_vga_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/vga"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_atv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_atv_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_atv_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/tv_item_hdmi1"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:id="@+id/view_atv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_atv"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_atv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_atv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_atv_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/atv"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_hdmi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_hdmi1_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_hdmi1_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:id="@+id/view_hdmi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_hdmi1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_hdmi1_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_hdmi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hdmi1_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/hdmi1"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_hdmi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_hdmi2_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_hdmi2_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@+id/tv_item_dtv"
+        android:gravity="center"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:id="@+id/view_hdmi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_hdmi2"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_hdmi2_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/tv_icon_hdmi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hdmi2_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/hdmi2"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_hdmi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_hdmi3_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_hdmi3_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@+id/tv_item_av2"
+        android:gravity="center"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:id="@+id/view_hdmi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_hdmi3"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_hdmi3_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_hdmi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hdmi3_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/hdmi3"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_hdmi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_item_hdmi4_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_hdmi4_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@+id/tv_item_vga"
+        android:gravity="center"
+        android:scaleX="0.825"
+        android:scaleY="0.84" >
+
+        <RelativeLayout
+            android:id="@+id/view_hdmi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_hdmi4"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/tv_hdmi4_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/tv_icon_hdmi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hdmi4_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="2dp"
+                android:text="@string/hdmi4"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

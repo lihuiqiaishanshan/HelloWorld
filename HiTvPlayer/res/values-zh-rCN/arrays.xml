@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- epg start -->
+    <string-array name="weekday_array">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <!-- epg end -->
+
+    <!-- recordinglist start -->
+    <string-array name="type_array">
+        <item>录制</item>
+        <item>播放</item>
+        <item>提醒</item>
+        <item>待机</item>
+        <item>唤醒</item>
+        <item>未知</item>
+    </string-array>
+    <string-array name="cycle_array">
+        <item>一次</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>每月</item>
+        <item>每年</item>
+        <item>未知</item>
+    </string-array>
+    <!-- recordinglist end -->
+
+    <!-- settinglock start -->
+    <string-array name="parental_rating">
+        <item>关闭</item>
+        <item>4岁</item>
+        <item>5岁</item>
+        <item>6岁</item>
+        <item>7岁</item>
+        <item>8岁</item>
+        <item>9岁</item>
+        <item>10岁</item>
+        <item>11岁</item>
+        <item>12岁</item>
+        <item>13岁</item>
+        <item>14岁</item>
+        <item>15岁</item>
+        <item>16岁</item>
+        <item>17岁</item>
+        <item>18岁</item>
+    </string-array>
+
+    <string-array name="parental_rating_value">
+        <item>0</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="sgp_parental_rating">
+        <item>OFF</item>
+        <item>G</item>
+        <item>PG</item>
+        <item>PG13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+
+    <string-array name="sgp_parental_rating_value">
+        <item>0</item>
+        <item>4</item>
+        <item>7</item>
+        <item>13</item>
+        <item>16</item>
+        <item>18</item>
+        <item>21</item>
+    </string-array>
+    <!-- settinglock end -->
+
+    <!-- settingpvr start -->
+    <string-array name="timeshift_time">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>2小时</item>
+    </string-array>
+    <string-array name="timeshift_time_value">
+        <item>900</item>
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+    </string-array>
+    <!-- settingpvr end -->
+
+    <!-- settingosd start -->
+    <string-array name="inforbar_time">
+        <item>5秒</item>
+        <item>6秒</item>
+        <item>7秒</item>
+        <item>8秒</item>
+        <item>9秒</item>
+        <item>10秒</item>
+    </string-array>
+
+    <string-array name="inforbar_time_value">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <!-- settingosd end -->
+
+    <!-- settingaudio start -->
+    <string-array name="language_code">
+        <item>中文</item>
+        <item>英语</item>
+        <item>法语</item>
+        <item>德语</item>
+        <item>印尼语</item>
+        <item>马来语</item>
+        <item>多国语言</item>
+        <item>泰语</item>
+        <item>越南语</item>
+    </string-array>
+
+    <string-array name="language_code_value">
+        <item>chi</item>
+        <item>eng</item>
+        <item>fre</item>
+        <item>deu</item>
+        <item>ind</item>
+        <item>msa</item>
+        <item>mul</item>
+        <item>tha</item>
+        <item>vie</item>
+    </string-array>
+    <!-- settingaudio end -->
+
+    <!-- PM start -->
+    <string-array name="channelmanager_sort_array">
+        <item >默认</item>
+        <item >频道名称</item>
+        <item >非加扰/加扰</item>
+        <item >服务ID传输流ID</item>
+        <item >逻辑频道号</item>
+        <item >频点ID</item>
+        <item >加锁</item>
+    </string-array>
+
+    <!-- PM end -->
+
+    <!-- subtitle start -->
+    <string-array name="sub_lang">
+        <item>关闭字幕</item>
+        <item>中文</item>
+        <item>英文</item>
+    </string-array>
+     <!-- subtitle end -->
+
+    <!-- epg start -->
+    <string-array name="epg_content_movie">
+        <item>电影/戏剧(一般)</item>
+        <item>侦探/惊悚</item>
+        <item>冒险/西部/战争</item>
+        <item>科幻/幻想/恐怖</item>
+        <item>喜剧</item>
+        <item>肥皂剧/情节剧/民俗</item>
+        <item>浪漫电影</item>
+        <item>严肃/古典/宗教/历史电影/戏剧</item>
+        <item>成人电影/戏剧</item>
+    </string-array>
+
+    <string-array name="epg_content_new">
+        <item>新闻/时事(一般)</item>
+        <item>新闻/天气预报</item>
+        <item>新闻杂志</item>
+        <item>纪录片</item>
+        <item>会谈/采访/辩论</item>
+    </string-array>
+
+    <string-array name="epg_content_game">
+        <item>秀/游戏节目(一般)</item>
+        <item>游戏节目/测验/比赛</item>
+        <item>综艺节目</item>
+        <item>谈话节目</item>
+    </string-array>
+
+    <string-array name="epg_content_sport">
+        <item>体育 (一般)</item>
+        <item>特殊赛事 (奥林匹克, 世界杯, 等.)</item>
+        <item>体育杂志</item>
+        <item>足球</item>
+        <item>网球/壁球</item>
+        <item>团队竞技 ( 排除足球)</item>
+        <item>竞技</item>
+        <item>摩托运动</item>
+        <item>水上运动</item>
+        <item>冬季运动</item>
+        <item>赛马</item>
+        <item>武术运动</item>
+    </string-array>
+
+    <string-array name="epg_content_child">
+        <item>儿童/青少年节目(一般)</item>
+        <item>学前儿童课程</item>
+        <item>6到14岁的娱乐节目</item>
+        <item>10到16岁的娱乐节目</item>
+        <item>信息/教育/学校课程</item>
+        <item>漫画/木偶</item>
+    </string-array>
+
+    <string-array name="epg_content_music">
+        <item>音乐/芭蕾/舞蹈</item>
+        <item>摇滚/流行</item>
+        <item>庄重的音乐/古典音乐</item>
+        <item>民俗/传统音乐</item>
+        <item>爵士</item>
+        <item>音乐/歌剧</item>
+        <item>芭蕾</item>
+    </string-array>
+
+    <string-array name="epg_content_art">
+        <item>艺术/文化（一般）</item>
+        <item>表演艺术</item>
+        <item>精美艺术</item>
+        <item>宗教</item>
+        <item>流行文化/传统艺术</item>
+        <item>文学</item>
+        <item>影片/电影</item>
+        <item>实验电影/视频</item>
+        <item>广播/新闻</item>
+        <item>新媒体</item>
+        <item>艺术/文化杂志</item>
+        <item>时尚</item>
+    </string-array>
+
+    <string-array name="epg_content_social">
+        <item>社会/政治问题/经济学（一般）</item>
+        <item>杂志/报告/纪录片</item>
+        <item>经济/社会咨询</item>
+        <item>卓越的人</item>
+    </string-array>
+
+    <string-array name="epg_content_edu">
+        <item>教育/科学/事实主题（一般）</item>
+        <item>大自然/动物/环境</item>
+        <item>技术/自然科学</item>
+        <item>医学/生理学/心理学</item>
+        <item>外国/考察队</item>
+        <item>社会/精神科学</item>
+        <item>继续教育</item>
+        <item>语言</item>
+    </string-array>
+
+    <string-array name="epg_content_lei">
+        <item>休闲爱好 (一般)</item>
+        <item>旅游/旅行</item>
+        <item>手工业</item>
+        <item>驾车</item>
+        <item>健身和健康</item>
+        <item>烹饪</item>
+        <item>广告/购物</item>
+        <item>园艺</item>
+    </string-array>
+
+    <string-array name="epg_content_spe">
+        <item>原始语言</item>
+        <item>黑白</item>
+        <item>未发表</item>
+        <item>现场直播</item>
+    </string-array>
+    <!-- epg end -->
+
+     <!-- autosearch start -->
+     <string-array name="auto_source_code">
+        <item>ATV</item>
+        <item>DTV</item>
+        <item>ATV+DTV</item>
+     </string-array>
+
+     <string-array name="auto_source_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+     </string-array>
+
+      <string-array name="auto_dtvtype_code">
+        <item>DTMB</item>
+        <item>DVBC</item>
+        <item>DVBT</item>
+        <item>DVBS</item>
+     </string-array>
+
+      <string-array name="auto_dtvtype_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+     </string-array>
+     <!-- autosearch end -->
+
+    <!-- dvbt_country start -->
+    <string-array name="dvbt_country_code">
+        <item>澳大利亚</item>
+        <item>德国</item>
+        <item>法国</item>
+        <item>英国</item>
+        <item>印度尼西亚</item>
+        <item>马来西亚</item>
+        <item>俄罗斯</item>
+        <item>新加坡</item>
+        <item>泰国</item>
+        <item>越南</item>
+        <item>意大利</item>
+        <item>南非</item>
+    </string-array>
+
+    <string-array name="dvbt_country_code_value">
+        <item>AUS</item>
+        <item>DEU</item>
+        <item>FRA</item>
+        <item>GBR</item>
+        <item>IDN</item>
+        <item>MYS</item>
+        <item>RUS</item>
+        <item>SGP</item>
+        <item>THA</item>
+        <item>VNM</item>
+        <item>ITA</item>
+        <item>ZAF</item>
+    </string-array>
+    <!-- dvbt_country end -->
+
+    <!-- dbt_country start -->
+    <string-array name="isdbt_country_code">
+        <item>巴西</item>
+        <item>日本</item>
+        <item>菲律宾</item>
+    </string-array>
+
+    <string-array name="isdbt_country_code_value">
+        <item>BRA</item>
+        <item>JPN</item>
+        <item>PHL</item>
+    </string-array>
+    <!-- dbt_country end -->
+
+    <!-- atsc_country start -->
+    <string-array name="atsc_country_code">
+        <item>美国</item>
+    </string-array>
+
+    <string-array name="atsc_country_code_value">
+        <item>USA</item>
+    </string-array>
+    <!-- atsc_country end -->
+
+    <!-- dtmb_country start -->
+    <string-array name="dtmb_country_code">
+        <item>中国</item>
+    </string-array>
+
+    <string-array name="dtmb_country_code_value">
+        <item>CHN</item>
+    </string-array>
+    <!-- dtmb_country end -->
+
+    <!-- dvbc_country start -->
+    <string-array name="dvbc_country_code">
+        <item>澳大利亚</item>
+        <item>中国</item>
+        <item>德国</item>
+        <item>法国</item>
+        <item>英国</item>
+        <item>印度尼西亚</item>
+        <item>马来西亚</item>
+        <item>俄罗斯</item>
+        <item>新加坡</item>
+        <item>泰国</item>
+        <item>越南</item>
+    </string-array>
+
+    <string-array name="dvbc_country_code_value">
+        <item>AUS</item>
+        <item>CHN</item>
+        <item>DEU</item>
+        <item>FRA</item>
+        <item>GBR</item>
+        <item>IDN</item>
+        <item>MYS</item>
+        <item>RUS</item>
+        <item>SGP</item>
+        <item>THA</item>
+        <item>VNM</item>
+    </string-array>
+    <!-- dvbc_country end -->
+
+    <!-- source start -->
+    <string-array name="source_value">
+        <item>ATV</item>
+        <item>DVBC</item>
+        <item>DTMB</item>
+        <item>AV1</item>
+        <item>AV2</item>
+        <item>AV3</item>
+        <item>VGA</item>
+        <item>YPBPR1</item>
+        <item>YPBPR2</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>MEDIA</item>
+        <item>MEDIA2</item>
+        <item>SCART1</item>
+        <item>SCART2</item>
+        <item>自动</item>
+        <item>DVBT</item>
+        <item>ATSC</item>
+        <item>DVBS</item>
+        <item>ISDBT</item>
+    </string-array>
+    <!-- source end -->
+
+    <!-- mts start -->
+    <string-array name="mts_values">
+        <item>MONO</item>
+        <item>STEREO</item>
+        <item>DUAL_A</item>
+        <item>DUAL_B</item>
+        <item>DUAL_AB</item>
+        <item>BTSC_MONO</item>
+        <item>BTSC_STEREO</item>
+        <item>BTSC_SAP</item>
+        <item>NICAM_FORCED_MONO</item>
+        <item>NICAM_MONO</item>
+        <item>NICAM_STEREO</item>
+        <item>NICAM_DUAL_A</item>
+        <item>NICAM_DUAL_B</item>
+        <item>NICAM_DUAL_AB</item>
+        <item>自动</item>
+    </string-array>
+    <!-- mts end -->
+
+    <!-- atv_manual_scan start -->
+    <string-array name="atv_audiosystem_values">
+        <item>BG</item>
+        <item>I</item>
+        <item>DK</item>
+        <item>M</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="atv_colorsystem_values">
+        <item>AUTO</item>
+        <item>PAL</item>
+        <item>NTSC</item>
+        <item>SECAM</item>
+        <item>PAL M</item>
+        <item>PAL N</item>
+    </string-array>
+    <!-- atv_manual_scan end -->
+
+    <!-- dra_channel start -->
+    <string-array name="dra_raw_channel_array">
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>3.0</item>
+        <item>3.1</item>
+        <item>4.0</item>
+        <item>4.1</item>
+        <item>5.0</item>
+        <item>5.1</item>
+    </string-array>
+    <!-- dra_channel end -->
+
+    <!-- install define start -->
+    <string-array name="array_install_s_menu">
+        <item>天线设置</item>
+        <item>卫星列表</item>
+        <item>转发器列表</item>
+        <item>马达设置</item>
+        <item>极限位置设置</item>
+    </string-array>
+
+</resources>

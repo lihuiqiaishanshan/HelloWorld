@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string name="app_name">视频播放器</string>
+
+       <string name="confirm">确定</string>
+       <string name="cancle">取消</string>
+       <string name="del_success">删除成功</string>
+       <string name="del_all">确定删除全部标签吗?</string>
+       <string name="nodesc">没有说明</string>
+
+       <!-- 播放界面按钮 -->
+       <string name="choicePlayMode">请选择播放模式</string>
+       <string name="video_control_menu">播放器控制菜单</string>
+       <string name="stereoMode_change">模式转换</string>
+       <string name="no_set_tag">您还没有设置书签</string>
+       <string name="now_video_playmode">当前播放模式为:</string>
+       <string name="not">否</string>
+       <string name="yes">是</string>
+       <string name="continue_playvideo">是否继续播放影片?</string>
+       <string name="save_success">保存成功</string>
+       <string name="video_tag">视频书签</string>
+       <string name="video_no_set_tag">此视频还没有设置书签</string>
+       <string name="tag_exist">此标签已经存在!</string>
+       <string name="open">打开</string>
+       <string name="delete">删除</string>
+       <string name="jumpto">跳转到</string>
+       <string name="willjumpto">将跳转到</string>
+       <string name="toplay">处播放!</string>
+       <string name="subsetTitle">字幕设置</string>
+       <string name="audiosetTitle">音频设置</string>
+       <string name="showsub">显示字幕</string>
+       <string name="closesub">关闭字幕</string>
+       <string name="soundTrack">音轨</string>
+       <string name="nosubTitle">无字幕</string>
+       <string name="noTrack">无音轨</string>
+       <string name="time">时间调节</string>
+       <string name="position">字幕位置</string>
+       <string name="size">字体大小</string>
+       <string name="space">字符间距</string>
+       <string name="line_space">字幕行距</string>
+       <string name="volume_ctl">音量调节</string>
+
+       <!-- add by 2011-8-4 weiyunkun -->
+       <string name="subexttitle">外挂字幕</string>
+       <string name="subintitle">内置字幕</string>
+       <string name="wrongsub">错误的字幕文件</string>
+       <string name="nototaltime">"--:--:--"</string>
+       <string name="close">关闭</string>
+       <string name="nofile">文件不存在!</string>
+       <string name="isloading">数据未准备好，请稍候!</string>
+       <string name="havenofile">没有标准的视频文件!</string>
+       <string name="dialogTitleLoading">请稍等</string>
+       <string name="dialogMessageContinue">是否从上次中断处观看？</string>
+       <string name="dialogTitleCheckDiscInfo">识别蓝光目录</string>
+       <string name="dialogTitleCheckIntent">检查参数</string>
+       <string name="dialogTitleCheckPath">检查蓝光目录</string>
+       <string name="dialogMessageLoading">加载中</string>
+       <string name="dialogExitToast">再按一次退出播放器</string>
+       <string name="dialogMessageCheckDiscInfo">这不是一个蓝光目录</string>
+       <string name="dialogMessageCheckIntent">不支持直接打开蓝光播放器</string>
+       <string name="dialogMessageCheckPath">找不到蓝光目录</string>
+       <string name="dialogTitleContinue">观看记录</string>
+       <string name="dialogTitleTitleSelect">选择章 - 共%d章</string>
+       <string name="dialogTitleChapterSelect">选择节 - 共%d节</string>
+       <string name="dialogGetDefaultTitleId">正在读取章节信息...</string>
+       <string name="dialogGetDefaultPlaylist">正在获取播放列表...</string>
+       <!-- 导航按键 -->
+       <string name="navigationButtonPlayMovie">播放影片</string>
+       <string name="navigationButtonSelectSection">选择章节</string>
+       <!-- 选项 -->
+       <string name="listItemTitle">第%1$s章&#160;&#160;%2$s</string>
+       <string name="listItemChapter">第%1$s节&#160;&#160;%2$s</string>
+       <string name="toastNetworkInterrupt">网络中断</string>
+       <string name="toastDeviceRemoved">设备卸载</string>
+	   <string name="toastAudio">音轨&#160;%s</string>
+	   <string name="toastSubtitle">字幕&#160;%s</string>
+	   <string name="dialogTitleAudioSelect">选择音轨 - 共%d路</string>
+	   <string name="dialogTitleSpeedSelect">选择播放速度</string>
+	   <string name="dialogTitleSubtitleSelect">选择字幕 - 共%d路</string>
+       <string name="dialogTitleAudioChannelSelect">选择声道 - 共%d路</string>
+       <string name="switchFailed">切换失败！</string>
+	   <string name="mediaInfoUnknown">未知</string>
+	   <string name="AdvancedOptions">高级设置</string>
+       <string name="DolbyTrack">音轨:</string>
+       <string name="DolbyMono">声道配置:</string>
+       <string name="DolbyVolume">音量:</string>
+       <string name="DolbyChannel">输出声道:</string>
+       <string name="DolbyVideo">视频:</string>
+       <string name="DolbyRangeInfo">杜比动态压缩范围</string>
+       <string name="DolbyRangeInfoToast">设置后，重启播放器生效！</string>
+       <string name="searchMessageLoading">正从https://www.shooter.cn/上搜索字幕,请稍候.</string>
+       <string name="searchSubtitleFailed">抱歉，没搜索到字幕.</string>
+       <string name="downloadMessageLoading">正从https://www.shooter.cn/上下载字幕,请稍候.</string>
+       <string name="downloadSubtitleFailed">下载字幕失败.</string>
+
+
+
+       <string name="toastNetworkTimeout">网络连接超时</string>
+       <string name="toastNetworkConnectFail">网络连接失败</string>
+       <string name="toastNetworkResourceNotFound">无法在网络上访问该资源</string>
+       <string name="toastNetworkDisconnect">网络断开</string>
+       <string name="toastNetworkUnknowError">未知网络错误</string>
+
+       <string name="subtitleOffToast">请打开字字幕选项 !</string>
+       <string name="mouseScaleTip">请滑动鼠标设置想放大的区域。</string>
+       <string name="mouseScaleExit">退出鼠标放大模式。</string>
+       <string name="mouseScaleOnlyOneTip">仅支持一次缩放!</string>
+       <string name="dolby">杜比</string>
+       <string name="dolby_plus">杜比加</string>
+       <string name="videolist">视频列表</string>
+       <string name="multiple">多路播放</string>
+       <string name="multiListNull">多窗口播放没有获取到播放列表，请重新打开文件 !</string>
+       <string name="notsupportmode">该文件不支持该模式</string>
+       <string name="valid_operation">不支持当前操作</string>
+</resources>
