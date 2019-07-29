@@ -466,6 +466,61 @@ class GalleryImpl extends GalleryCore {
         }
         return true;
     }
+    /**konka patch start add by lhq**/
+    @Override
+    public boolean move(int x, int y) {
+        if (mScaleLevel <= 1)
+            return false;
+
+        if(x > 0 && y > 0){
+            if (mShownFrame.left >= 0 || mShownFrame.top >= 0)
+                return false;
+
+        }else if(x > 0 && y < 0){
+            if (mShownFrame.left >= 0 || mShownFrame.bottom <= mDisplayHeight)
+                return false;
+        }else if(x > 0 && y == 0){
+            if (mShownFrame.left >= 0)
+                return false;
+        }else if(x < 0 && y > 0){
+            if (mShownFrame.right <= mDisplayWidth || mShownFrame.top >= 0)
+                return false;
+        }else if(x < 0 && y < 0){
+            if (mShownFrame.right <= mDisplayWidth || mShownFrame.bottom <= mDisplayHeight)
+                return false;
+        }else if(x < 0 && y == 0){
+            if (mShownFrame.right <= mDisplayWidth)
+                return false;
+        }
+
+        translate(x, y);
+//        switch (r) {
+//            case LEFT:
+//                if (mShownFrame.left >= 0)
+//                    return false;
+//                translate(step, 0);
+//                break;
+//            case RIGHT:
+//                if (mShownFrame.right <= mDisplayWidth)
+//                    return false;
+//                translate(-step, 0);
+//                break;
+//            case UP:
+//                if (mShownFrame.top >= 0)
+//                    return false;
+//                translate(0, step);
+//                break;
+//            case DOWN:
+//                if (mShownFrame.bottom <= mDisplayHeight)
+//                    return false;
+//                translate(0, -step);
+//                break;
+//        }
+        return true;
+    }
+
+
+    /**konka patch end**/
 
     public boolean scale(float scaleX, float scaleY) {
         Message msg = mGLHandler.obtainMessage(GLThread.GL_SCALE);

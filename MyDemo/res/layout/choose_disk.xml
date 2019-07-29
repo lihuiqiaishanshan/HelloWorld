@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="607dp"
+    android:layout_height="448dp"
+    android:background="@drawable/relevance_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="关联管理"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showAlert"
+        android:layout_width="514dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="以下账户已经与康佳通行证（18565625487）关联,使用该通行证登录网盘管理器时，将自动登录这些账户 。"
+        android:textColor="#7d7d7d"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="210dp" >
+        <include layout="@layout/include_diskactivity"/>
+    </ScrollView>
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button2_uns"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="注销康佳通行证"/>
+
+</LinearLayout>

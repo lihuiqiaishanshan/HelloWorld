@@ -252,6 +252,20 @@ public abstract class GalleryCore {
      */
     public abstract boolean move(Direction r, int step);
 
+    /**konka patch start add by lhq**/
+
+    /**
+     * 移动当前图片
+     *
+     * @param x x轴方向的偏移量（像素）
+     * @param y y轴方向的偏移量（像素）
+     * @return true 图片移动成功，false 图片不能像该方向移动
+     * @see Direction
+     */
+    public abstract boolean move(int x, int y);
+
+    /**konka patch end**/
+
     /**
      * 旋转当前图片
      *

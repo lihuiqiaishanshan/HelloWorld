@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/layout" >
+
+	<SurfaceView
+		android:id="@+id/surfaceview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+		/>
+
+	<ImageView
+		android:id="@+id/imageview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/ic_launcher"
+		android:contentDescription="haha"
+		/>
+</RelativeLayout>

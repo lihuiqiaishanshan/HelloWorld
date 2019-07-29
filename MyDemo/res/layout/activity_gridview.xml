@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<GridView 
+    android:id="@+id/gridView"
+    android:layout_height="wrap_content"
+    android:layout_width="100dp"
+    android:listSelector="@color/transparent"
+    android:numColumns="3"></GridView>
+
+<Button 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="heheh"/>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/contentProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改mac地址" />
+
+        <Button
+            android:id="@+id/dialog_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dialog测试 " />
+
+        <Button
+            android:id="@+id/get_contentProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取provider共享的数据" />
+
+        <Button
+            android:id="@+id/yonghuguanlian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户关联布局" />
+
+        <Button
+            android:id="@+id/sqlitetest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据库拷贝测试" />
+
+        <Button
+            android:id="@+id/baidumap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baidu地图测试" />
+
+        <Button
+            android:id="@+id/cloud_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云端文件夹缩略图" />
+
+        <Button
+            android:id="@+id/picTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片缩放测试" />
+
+        <Button
+            android:id="@+id/gridTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gridView测试" />
+
+        <Button
+            android:id="@+id/bitmap_config_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitmap.Config测试" />
+
+        <Button
+            android:id="@+id/start_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动ACT测试" />
+
+        <Button
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="selectText" />
+
+        <Button
+            android:id="@+id/alpha_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="半透明效果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/draw_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画专辑光盘" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alarm_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="闹钟测试" />
+
+    <Button
+        android:id="@+id/broadcast_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广播test" />
+
+    <Button
+        android:id="@+id/meminfo_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内存信息" />
+
+    <Button
+        android:id="@+id/add_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加String list" />
+
+    <Button
+        android:id="@+id/lrc_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌词搜索测试" />
+
+    <Button
+        android:id="@+id/weather_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气SDK测试" />
+    
+    
+      <AutoCompleteTextView
+        android:id="@+id/textview"
+        android:singleLine="true"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    
+    
+
+
+
+
+
+</LinearLayout>
